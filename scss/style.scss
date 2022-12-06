@@ -2,7 +2,10 @@
 * {
     margin: 0px;
     padding: 0px;
+	margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
+    // border: 0;
 }
 ul,ol,li {
     list-style: none;
@@ -11,62 +14,68 @@ a {
     text-decoration: none;
 }
 body {
-    background: #fff;
-    #wrapper {
-        width: 100%;
-        margin: 0 auto;
-        // max-width: 1920px;
-        #header {
-            width: 100%;
-            position: relative;
-            .inner {
-                h4 {
-                    margin-left: 150px;
-                    margin-top: 10px;
-                    color: #fff;
-                }
-                #topNavWrap {
-                    top: 0;
-                    right: 0;
-                    padding: 100px 100px;
-                    margin-right: 150px;
-                    text-align: center;
-                    position: absolute;
-                    #topNav {
-                         
-                        display: flex;
-                        flex-direction: right;
-                        float: right;
-                        top: 0;
-                        right: 0;
-                        padding: 100px 100px;
-                        margin-right: 150px;
-                        text-align: center;
+    // background: #fff;
+    // width: 100%;
+    // height: 100vh;
+    // justify-content: center;
+    // align-items: center;
+    // position: relative;
+    // overflow: hidden;
+    // #wrapper {
+    //     border: 1px solid #000;
+    //     width: 1920px;
+    //     height: 100vh;
+    //     .header {
+            // .top_nav_bg {
+                nav {
+                    display: flex;
+                    width: 100%;
+                    position: relative;
+                    
+                    #horizontal-underline {
                         position: absolute;
-
-                        .top_nav_sub {
-                            padding: 20px 10px;
-                            margin-right: 150px;
-                            top: 150px;
-                            right: 0;
-                            position: absolute;
+                        width: 0;
+                        background-color: red;
+                        top: 0px;
+                        left: 0px;
+                        height: 1px;
+                        transition: 0.2s;
+                        margin-top: 10px;
+                    }
+                    li {
+                        a {
+                            color: black;
+                            // margin-left: 1em;
+                            font-size: 15px;
                             
-                            float: right;
-                            display: flex;
-                            flex-direction: right;
-
+                            &:hover li {
+                  
                     
-
+                            }   
                         }
+                        
+                        &:first-child {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        &:nth-child(2) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            
+                        } 
+                        
                     }
+                
                     
-
-                    }
-                }
-
+                
+            }  
+                
+                
             }
-            
-        }
-    }
+        // }
+    
 
-
+    // display: grid;
+        // grid-template-columns: repeat(6, 1fr);
+        // grid-template-rows: (6, 200px);
