@@ -14,12 +14,28 @@ a {
   text-decoration: none;
 }
 
-body nav {
-  display: flex;
+body {
+  background: #fff;
   width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  overflow: hidden;
 }
-body nav #horizontal-underline {
+body #wrapper {
+  border: 1px solid #000;
+  width: 1920px;
+  height: 100vh;
+}
+body #wrapper nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  position: relative;
+  top: 5px;
+}
+body #wrapper nav #horizontal-underline {
   position: absolute;
   width: 0;
   background-color: red;
@@ -27,20 +43,29 @@ body nav #horizontal-underline {
   left: 0px;
   height: 1px;
   transition: 0.2s;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-body nav li a {
+body #wrapper nav li {
+  width: 80px;
+}
+body #wrapper nav li a {
   color: black;
-  font-size: 15px;
+  font: bold 13px/1;
 }
-body nav li:first-child {
+body #wrapper nav li:first-child {
   display: flex;
   justify-content: center;
 }
-body nav li:nth-child(2) {
+body #wrapper nav li:nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+body #wrapper .top_nav_bg h4 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 10px 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

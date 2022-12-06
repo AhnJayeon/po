@@ -14,65 +14,77 @@ a {
     text-decoration: none;
 }
 body {
-    // background: #fff;
-    // width: 100%;
-    // height: 100vh;
-    // justify-content: center;
-    // align-items: center;
-    // position: relative;
-    // overflow: hidden;
-    // #wrapper {
-    //     border: 1px solid #000;
-    //     width: 1920px;
-    //     height: 100vh;
-    //     .header {
-            // .top_nav_bg {
-                nav {
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    #wrapper {
+        border: 1px solid #000;
+        width: 1920px;
+        height: 100vh;
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 40%;
+            position: relative;
+            top: 5px;
+            
+            #horizontal-underline {
+                position: absolute;
+                width: 0;
+                background-color: red;
+                top: 0px;
+                left: 0px;
+                height: 1px;
+                transition: 0.2s;
+                margin-top: 20px;
+                }
+            li {
+                width: 80px;
+                
+
+                a {
+                    color: black;
+                    // margin-left: 1em;
+                    font: bold 13px/1;
+                    &:hover li {
+
+                    }   
+                }                        
+                &:first-child {
                     display: flex;
-                    width: 100%;
-                    position: relative;
+                    justify-content: center;
+                }
+                &:nth-child(2) {
+                    display: flex;
+                    flex-direction: column;
+                
+                    align-items: center;
                     
-                    #horizontal-underline {
-                        position: absolute;
-                        width: 0;
-                        background-color: red;
-                        top: 0px;
-                        left: 0px;
-                        height: 1px;
-                        transition: 0.2s;
-                        margin-top: 10px;
-                    }
-                    li {
-                        a {
-                            color: black;
-                            // margin-left: 1em;
-                            font-size: 15px;
-                            
-                            &:hover li {
-                  
-                    
-                            }   
-                        }
-                        
-                        &:first-child {
-                            display: flex;
-                            justify-content: center;
-                        }
-                        &:nth-child(2) {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            
-                        } 
-                        
-                    }
+                } 
                 
-                    
+            } //li
+    
                 
-            }  
-                
-                
-            }
+    }  //nav
+    .top_nav_bg {
+        h4 {
+            top: 0;
+            left: 0;
+            position: absolute;
+            padding: 10px 100px;
+        }
+    }
+}       
+} //body
+
+
+
+
         // }
     
 
