@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    font-family: 'Noto Sans', sans-serif;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/*FONT
+font-family: 'Fredoka One', cursive;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Luckiest Guy', cursive;
+*/
+
+/*LAYOUT*/
+/* .container {
+    width: 1180px;
+    margin: 0 auto;
+} */
+
+/*TYPOGRAPHY*/
+/* body {
+    font: normal 14px/27px 'Nanum Gothic', sans-serif;
+}
+.main_t {
+    font: bold 30px/1 'Fredoka One', cursive;
+    color: #333;
+    letter-spacing: 1.2;
+}
+.content_t {
+    font: bold 25px/35px 'Yanone Kaffeesatz', sans-serif;
+}
+.content_sub_t {
+    font: normal 20px/30px 'Yanone Kaffeesatz', sans-serif;
+} 
+.content_details {
+    font: normal 13px/27px 'Noto Sans', sans-serif;
+*/

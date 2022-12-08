@@ -1,14 +1,37 @@
-let horizontalUnderline = document.getElementById("horizontal-underline");
-let horizontalBar = document.getElementById("horizontal-underline");
-let horizontalMenus = document.querySelectorAll("nav:first-child a");
-
-
-function horizontalIndicator(e) {
-    horizontalBar.style.left = e.offsetLeft + "px";
-    horizontalBar.style.width = e.offsetWidth + "px";
-    horizontalBar.style.top = e.offsetTop + e.offsetHeight + "px";
+let curPos = 0;
+let postion = 0;
+const IMAGE_WIDTH = 590;
+const prevBtn = document.querySelector(".prev")
+const nextBtn = document.querySelector(".next")
+const images = document.querySelector(".images")
+ 
+function prev(){
+  if(curPos > 0){
+    nextBtn.removeAttribute("disabled")
+    postion += IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
+    curPos = curPos - 1;
+  }
+  if(curPos == 0){
+    prevBtn.setAttribute('disabled', 'true')
+  }
 }
-
-
-horizontalMenus.forEach(menu=>menu.addEventListener("mouseover",(e)=>horizontalIndicator(e.currentTarget)));
-
+function next(){
+  if(curPos < 4){
+    prevBtn.removeAttribute("disabled")
+    postion -= IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
+    curPos = curPos + 1;
+  }
+  if(curPos == 4){
+    nextBtn.setAttribute('disabled', 'true')
+  }
+}
+ 
+function init(){
+  prevBtn.setAttribute('disabled', 'true')
+  prevBtn.addEventListener("click", prev)
+  nextBtn.addEventListener("click", next)
+}
+ 
+init(); 
