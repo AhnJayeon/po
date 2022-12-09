@@ -13,7 +13,7 @@ btnCall.onclick = function(e){
 // main page basic slide
 let curPos = 0;
 let postion = 0;
-const IMAGE_WIDTH = 590;
+const IMAGE_WIDTH = 580;
 const prevBtn = document.querySelector(".prev")
 const nextBtn = document.querySelector(".next")
 const images = document.querySelector(".images")

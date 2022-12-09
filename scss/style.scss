@@ -10,49 +10,52 @@ ul,ol,li {
 a {
     text-decoration: none;
 }
-$tablet: 1179px;
-$mobile: 539px;
-.hidden {
-	position: absolute;
-	top: -99999999px;
-	opacity: 0;
-}
+$tablet: 768px;
+$mobile: 480px;
+// .hidden {
+// 	position: absolute;
+// 	top: -99999999px;
+// 	opacity: 0;
+// }
 // fieldset {
 // 	border: none;
 // }
 // table {
 // 	border-collapse: collapse;
 // }
-.wrap::after {
-	content: "";
-	display: block;
-	clear: both;
-}
+// .container::after {
+// 	content: "";
+// 	display: block;
+// 	clear: both;
+// }
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 #header {
     width: 100%;
     min-width: 1180px;
     height: 100px;
+    margin-bottom: 10px;
     .container {
         width: 1180px;
         height: 100%;
         margin: 0 auto;
         position: relative;
-        display: flex;    
+        
+        // display: flex;    
             a {
                 font: bold 45px/1 'Yanone Kaffeesatz', sans-serif;
                 color: #444;
-                margin-top: -40px;
+                margin-top: 20px;
                 padding: 0 20px;
             }
         .menu_web {
             #gnb {
                 top: 0;
-                display: inline-flex;  
+                position: absolute;  
                 .menu { 
+                    float: left;
                     width: 120px;
-                    margin-top: 60px;
+                    margin-top: 70px;
                     padding: 5px 30px 10px 15px;
                     z-index: 10;
                     cursor: pointer;
@@ -124,11 +127,10 @@ $mobile: 539px;
             } //gnb    
         } //menu_web
         form {
-            .container{
+            .wrap{
                 top: 0;
-                left: 50%;
-                margin-top: 10px;
-                margin-left: 140px;                   
+                right: 0;
+                margin: 10px 10px 15px;                   
                 display: block;
                 position: absolute;
                 font-size: 14px;
@@ -146,8 +148,41 @@ $mobile: 539px;
                     border: 1px solid #aaa;
                     cursor: pointer; 
                 }
-            } 
+            } //wrap
         } //form
+        .f_box {
+                width: 300px;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                margin: 50px 0px 10px; 
+                right: 0;
+
+                input[type=text] {
+                    background-color: #fff;
+                    width: 230px;
+                    height: 40px; 
+                    padding: 10px;
+                    margin-right: -7px;
+                    border: 1px solid #6fa7a0;
+                    border-radius: 25px 0 0 25px;
+                    cursor: pointer;
+                }
+                input[type=text]::placeholder {
+                    color: #8bd1c9;
+                    font-weight: bold;
+                }
+                input[type=submit] {
+                    width: 60px;
+                    height: 40px;
+                    padding: 10px;
+                    border: none;
+                    background-color: #6fa7a0;
+                    border-radius: 0 25px 25px 0;
+                    cursor: pointer;
+                
+            }    //input
+        }    //f_box       
         .btnCall {
 			position: absolute;
 			right: 30px;
@@ -156,6 +191,7 @@ $mobile: 539px;
 			display: none;
 			width: 20px;
 			height: 20px;
+            z-index: 11;
 			&::before {
 				content: "";
 				display: block;
@@ -206,7 +242,7 @@ $mobile: 539px;
 					opacity: 0;
 				}
 			}
-		}
+		} //btnCall
         .menuMo {
 			width: 270px;
 			height: 100vh;
@@ -261,7 +297,7 @@ $mobile: 539px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
+    justify-content: center;
     position: relative;
         .album {   
             // margin-left: 200px;
@@ -554,116 +590,93 @@ $mobile: 539px;
         } //article2
         .article3 {
             width: 380px;
-            padding: 50px 25px;
+            
             border-radius: 10px;
             background-color: #444;
             box-shadow: 0 0 10px (0,0,0,0.1);
-            .f_box {
-                width: 300px;
-                height: 100px;
-                border: none;
-                h3 {
-                    font-weight: normal;
-                    line-height: 35px;
-                }
-                input {
-                margin: 30px auto;
-                 
-                input[type=text] {
-                    background-color: #fff;
-                    width: 230px;
-                    height: 40px; 
-                    padding: 10px;
-                    margin-right: -7px;
-                    border-radius: 25px 0 0 25px;
-                    cursor: pointer;
-                }
-                input[type=text]::placeholder {
-                    color: #8bd1c9;
-                    font-weight: bold;
-                }
-                input[type=submit] {
-                    width: 60px;
-                    height: 40px;
-                    padding: 10px;
-                    border: none;
-                    background-color: #6fa7a0;
-                    border-radius: 0 25px 25px 0;
-                    cursor: pointer;
-                }
-            }                             
+            p {
+                font: normal 10px/27px 'Noto Sans', sans-serif;
+                padding: 50px 30px;   
+            }
             .b_util {
                 width: 380px;
-                margin: 0 auto;
+                margin: 30px auto;
                 position: relative;
-                // display: flex;
-                // justify-content: center;
-                p {
-                    font: normal 10px/27px 'Noto Sans', sans-serif;   
+                display: flex;
+                justify-content: center;
+               
+                .f_link {
+                    a {
+                        font-size: 25px;
+                        color: #fff;
+                        padding: 20px 10px;
+                    }
                 }
-                // .f_link {
-                //     a {
-                //         height: 50px;
-                //         color: #fff;
-                //     }
-                // }
                     
             } //b_util
             } //f_box
         } //article3
-        } //container
-    } //footer
+        } //footer
+    
 
 
-// //tablet
-// @media screen and (max-width: $tablet) {
-// 	//header
+//tablet
+@media screen and (max-width: $tablet) {
+	//header
 
-// 	#header {
-// 		.container {
-// 			width: 60%;
-// 			height: 100px;
-		
-// 			.menuWeb {
-// 				display: none;
-// 			}
-//             .form {
-//                 width: 60%;
-//                 height: 60%
-//             }
-// 			.btnCall {
-// 				display: block;
-// 			}
-// 		}
-// 	}
-// 	//figure-gallery
-// 	#gallery {
-// 		height: calc(100vh - 101px);
-// 		}
-// 		.container {
-// 			width: 60%;
-// 			.album {
-// 				object-fit: cover;
-//                 height: 20vmax;
-// 			}
-//             .v_box {
-// 			    width: 60%;
+    
+	#header {
+		.container {
+			width: 70%;
+			height: 100px;
+            
+			.menu_web {
+				display: none;
+			}
+            .form {
+                width: 60%;
+                height: 60%
+                
+            }
+			.btnCall {
+				display: block;
+			}
+		}
+	}
+	//figure-gallery
+	#gallery {
+		height: calc(100vh - 101px);
+		}
+		.container {
+			width: 70%;
+            display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+            object-fit: contain;
+			.album {
+				
+                height: 20vmax;
+            
+			}
+            .v_box {
+			    width: 60%;
 
-//                 h1 {
-//                     font: bold 25px/40px 'Noto Sans', sans-serif;  
-//                 }
-//                 h4 {
-//                     font: normal 13px/20px 'Nanum Gothic', sans-serif;
-//                 }
-//                 a {
-//                     font-size: 30px;
-//                     cursor: pointer;  
-//                     span {
-//                         font: normal 12px/65px 'Nanum Gothic', sans-serif;
-//                     }
-//                 } //a      
-//             }
-// 		}
+                h1 {
+                    font: bold 25px/40px 'Noto Sans', sans-serif;  
+                }
+                h4 {
+                    font: normal 13px/20px 'Nanum Gothic', sans-serif;
+                }
+                a {
+                    font-size: 30px;
+                    cursor: pointer;  
+                    span {
+                        font: normal 12px/65px 'Nanum Gothic', sans-serif;
+                    }
+                } //a      
+            }
+		}
 	
 // 	//article
 // 	#article {
@@ -773,3 +786,4 @@ $mobile: 539px;
 //     }
 // } //#gallery
 // }
+}
