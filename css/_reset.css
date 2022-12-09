@@ -52,4 +52,20 @@ font-family: 'Luckiest Guy', cursive;
 } 
 .content_details {
     font: normal 13px/27px 'Noto Sans', sans-serif;
+
+h1 {
+                font: bold 40px/50px 'Noto Sans', sans-serif;
+            }
+
+
+  h4 {
+                    font: normal 14px/24px 'Nanum Gothic', sans-serif;
+  } 
+  
+  
+            font: normal 13px/27px 'Noto Sans', sans-serif;
+a {
+                    font-size: 50px;
+                    color: #fff;    
+                }
 */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="reset" href="css/_reset.css">
     <script defer src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/4cc160be56.js" crossorigin="anonymous"></script>
    
@@ -22,6 +23,15 @@
                             <ul>
                                 <li><a href="#">sub1</a></li>
                                 <li><a href="#">sub1</a></li>
+                                 <li class="isSub"><a href="#">sub1</a>
+                                <i class="fas fa-angle-right"></i>
+                                    <div class="sub_menu2">
+                                        <ul>
+                                            <li><a href="#">sub2</a></li>
+                                            <li><a href="#">sub2</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><a href="# ">sub1</a></li>
                                 <li class="isSub"><a href="#">sub1</a>
                                     <i class="fas fa-angle-right"></i>
@@ -39,7 +49,16 @@
                         <div class="sub_menu1">
                             <ul>
                                 <li><a href="#">sub1</a></li>
-                                <li><a href="#">sub1</a></li> 
+                                <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                    <i class="fas fa-angle-right"></i>
+                                        <div class="sub_menu2">
+                                            <ul>
+                                                <li><a href="#">sub2</a></li>
+                                                <li><a href="#">sub2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li> 
                                 <li><a href="#">sub1</a></li> 
                             </ul>  
                         </div>
@@ -58,10 +77,19 @@
                                     </div>
                                 </li>
                                 <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                    <i class="fas fa-angle-right"></i>
+                                        <div class="sub_menu2">
+                                            <ul>
+                                                <li><a href="#">sub2</a></li>
+                                                <li><a href="#">sub2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
                             </ul>
                         </div>
                     </li>
-                  <li class="menu"><a href="#">Menu4</a>
+                    <li class="menu"><a href="#">Menu4</a>
                     <div class="sub_menu1">
                         <ul>
                             <li><a href="#">sub1</a></li>
@@ -78,18 +106,27 @@
                             <li><a href="#">sub1</a></li>
                         </ul>
                     </div>
-                </li>
-                <li class="menu"><a href="#">Menu5</a>
-                    <div class="sub_menu1">
-                        <ul>
-                            <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li> 
-                        </ul>
-                    </div>    
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                    <li class="menu"><a href="#">Menu5</a>
+                        <div class="sub_menu1">
+                            <ul>
+                                <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                    <i class="fas fa-angle-right"></i>
+                                        <div class="sub_menu2">
+                                            <ul>
+                                                <li><a href="#">sub2</a></li>
+                                                <li><a href="#">sub2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                <li><a href="#">sub1</a></li>
+                                <li><a href="#">sub1</a></li> 
+                            </ul>
+                        </div>    
+                    </li>
+                </ul>
+            </nav>
         <!-- header - form 영역 -->
             <form>
                 <div class="container">
@@ -99,46 +136,29 @@
                     <input type="password" name="password1" id="pwd">
                 </div>
             </form>
-
-        <!-- <form action="index.html" method="get"> -->
-        <!-- <a href="#" class="btnCall">
+        <!-- 메뉴호출 영역 -->
+        <form action="index.html" method="get">
+        <a href="#" class="btnCall">
             <span>메뉴호출</span>
-            </a>
-
+        </a>
         <nav class="menuMo">
-                <ul id="gnb">
-                    <li class="menu"><a href="#">Menu1</a>
-                        <div class="sub_menu1">
-                            <ul>
-                                <li><a href="#">sub1</a></li>
-                                <li><a href="#">sub1</a></li>
-                                <li><a href="# ">sub1</a></li>
+            <ul id="gnb">
+                <li class="menu"><a href="#">Menu1</a>
+                    <div class="sub_menu1">
+                        <ul>
+                            <li><a href="#">sub1</a></li>
+                            <li><a href="#">sub1</a></li>
                                 <li class="isSub"><a href="#">sub1</a>
-                                    <i class="fas fa-angle-right"></i>
-                                        <div class="sub_menu2">
-                                            <ul>
-                                                <li><a href="#">sub2</a></li>
-                                                <li><a href="#">sub2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="menu"><a href="#">Menu2</a>
-                        <div class="sub_menu1">
-                            <ul>
-                                <li><a href="#">sub1</a></li>
-                                <li><a href="#">sub1</a></li> 
-                                <li><a href="#">sub1</a></li> 
-                            </ul>  
-                        </div>
-                    </li>
-                    <li class="menu"><a href="#">Menu3</a>
-                        <div class="sub_menu1">
-                            <ul>
-                                <li><a href="#">sub1</a></li>
-                                <li class="isSub"><a href="#">sub1</a>
+                            <i class="fas fa-angle-right"></i>
+                                <div class="sub_menu2">
+                                    <ul>
+                                        <li><a href="#">sub2</a></li>
+                                        <li><a href="#">sub2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="# ">sub1</a></li>
+                            <li class="isSub"><a href="#">sub1</a>
                                 <i class="fas fa-angle-right"></i>
                                     <div class="sub_menu2">
                                         <ul>
@@ -147,11 +167,72 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">sub1</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                  <li class="menu"><a href="#">Menu4</a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu"><a href="#">Menu2</a>
+                    <div class="sub_menu1">
+                        <ul>
+                            <li><a href="#">sub1</a></li>
+                            <li><a href="#">sub1</a></li>
+                            <li class="isSub"><a href="#">sub1</a>
+                                <i class="fas fa-angle-right"></i>
+                                    <div class="sub_menu2">
+                                        <ul>
+                                            <li><a href="#">sub2</a></li>
+                                            <li><a href="#">sub2</a></li>
+                                        </ul>
+                                    </div>
+                                </li> 
+                            <li><a href="#">sub1</a></li> 
+                        </ul>  
+                    </div>
+                </li>
+                <li class="menu"><a href="#">Menu3</a>
+                    <div class="sub_menu1">
+                        <ul>
+                            <li><a href="#">sub1</a></li>
+                            <li class="isSub"><a href="#">sub1</a>
+                            <i class="fas fa-angle-right"></i>
+                                <div class="sub_menu2">
+                                    <ul>
+                                        <li><a href="#">sub2</a></li>
+                                        <li><a href="#">sub2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">sub1</a></li>
+                            <li class="isSub"><a href="#">sub1</a>
+                                <i class="fas fa-angle-right"></i>
+                                    <div class="sub_menu2">
+                                        <ul>
+                                            <li><a href="#">sub2</a></li>
+                                            <li><a href="#">sub2</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu"><a href="#">Menu4</a>
+                <div class="sub_menu1">
+                    <ul>
+                        <li><a href="#">sub1</a></li>
+                        <li class="isSub"><a href="#">sub1</a>
+                            <i class="fas fa-angle-right"></i>
+                                <div class="sub_menu2">
+                                    <ul>
+                                        <li><a href="#">sub2</a></li>
+                                        <li><a href="#">sub2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <li><a href="#">sub1</a></li>
+                        <li><a href="#">sub1</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li class="menu"><a href="#">Menu5</a>
                     <div class="sub_menu1">
                         <ul>
                             <li><a href="#">sub1</a></li>
@@ -165,27 +246,18 @@
                                     </div>
                                 </li>
                             <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="menu"><a href="#">Menu5</a>
-                    <div class="sub_menu1">
-                        <ul>
-                            <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li>
                             <li><a href="#">sub1</a></li> 
                         </ul>
                     </div>    
                 </li>
             </ul>
-        </nav>--> 
+        </nav>         
     </div>
-    </header> 
+</header>
 
 <!-- figure 영역     -->
     <section id="gallery">
-        <!-- figure - container 1 (슬라이드) 영역 -->
+        <!-- figure - (슬라이드) 영역 -->
         <div class="container">
             <div class="album">
               <div class="images">
@@ -196,18 +268,19 @@
                 <img src="img/m_sl5.png">
               </div>
             </div>
-            <div class="btns">
-                <button class="prev">PREV</button>
-                <button class="next">NEXT</button> 
-            </div> 
-          </div>
-        <!-- figure - container 2 (txt box) 영역 -->    
-          <div class="container">
+            
+          
             <div class="v_box">
             <h1>Build smart,<br>effective<br>websites in no<br>time.</h1>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus quaerat atque doloribus Lorem ipsum dolo  voluptatibus</h4>
                 <a href="#"><i class="fa-regular fa-circle-play"></i><span>view more lists.</span></a>
             </div>
+
+            <div class="btns">
+                <button class="prev">PREV</button>
+                <button class="next">NEXT</button> 
+            </div> 
+          </div>
         </div>
     </section>  
     
@@ -215,19 +288,19 @@
     <section id="article">
         <div class="container">
 <!-- article 1-->
-            <div class="article">
+            <div class="atc_box">
                 <a href="#"><i class="fa-solid fa-file-pen"></i></a>
                 <h4>Titles are here.</h4>
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
             </div>
 <!-- article 2-->
-            <div class="article">
+            <div class="atc_box">
                 <a href="#"><i class="fa-solid fa-person-chalkboard"></i></a>
                 <h4>Titles are here.</h4>
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
             </div>
 <!-- article 3-->
-            <div class="article">
+            <div class="atc_box">
                 <a href="#"><i class="fa-solid fa-people-roof"></i></a>
                 <h4>Titles are here.</h4>
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
@@ -238,72 +311,78 @@
 <!-- brand 영역 -->
     <section id="brand">
         <div class="container">   
-            <div class="wrap">
-                <div class="txt">
+                <div class="txt_l">
                     <h2>Assemble pages with over 150 unique content blocks.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut molestias neque?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut molestias neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#">view more</a>
                 </div>
-               <div class="pic">
-                        <img src="#" alt="">
+                <div class="txt_r1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">view more</a>
                     </div>
+                <div class="txt_r2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">view more</a>
+                    </div>
+               
                 
-            </div>
+            
         </div>
     </section>
 <!-- util 영역 -->
     <section id="util">
         <div class="container">
-            <ul class="link">
-                <li><a href="#"><i class=""></i></a></li>
-                <li><a href="#"><i class=""></i></a></li>
-                <li><a href="#"><i class=""></i></a></li>
-                <li><a href="#"><i class=""></i></a></li>
-                <li><a href="#"><i class=""></i></a></li>
-                <li><a href="#"><i class=""></i></a></li>
-            </ul>
+                <li class="link"><a href="#"><i class="fas fa-spinner"></i></a></li>
+                <li class="link"><a href="#"><i class="fas fa-life-ring"></i></a></li>
+                <li class="link"><a href="#"><i class="fas fa-server"></i></a></li>
+                <li class="link"><a href="#"><i class="fas fa-stroopwafel"></i></a></li>
+                <li class="link"><a href="#"><i class="fas fa-tablet-alt"></i></a></li>
+                <li class="link"><a href="#"><i class="fas fa-shapes"></i></li>
+                 
         </div>
     </section>
+
 <!-- footer 영역 -->
     <footer id="footer">
         <div class="container">
-            <div class="box1">
-            <h1>Pillar.</h1>
-            <ul>
-                <li><h3>Contents are here</h3></li>
-                <li><p>Here are details</p></li>
-                <li><p>Here are details</p></li>
-            </ul>
-        </div>
-        <div class="box2">
-            <h4>title</h4>
-             <ul>
-                <li><p>T. 1544-6062</p></li>
-                <li><p>F. 0505-200-6060</p></li>
-                <li><p>E. hdweb@hdweb.co.kr</p></li>
-            </ul>
-        </div>
-        <div class="search">
-            <form class="f_box">
-            <h3>Search</h3>
-            <input type="text" value="Type...">
-            <input type="submit" value="Search">
-        </form>
-        <div class="cont">
-            <p>Contact...</p>
-                <ul class="b_util">
-                    
-                        <li><a href="#"><i class=""></i></a></li>
-                        <li><a href="#"><i class=""></i></a></li>
-                        <li><a href="#"><i class=""></i></a></li>
-                        <li><a href="#"><i class=""></i></a></li>
-                        <li><a href="#"><i class=""></i></a></li>
-                        <li><a href="#"><i class=""></i></a></li>
+            <!-- footer 1-->
+            <div class="article1">
+                <h1><a href="index.html">Pillar.</a></h1>
+                <ul>
+                    <li><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</h3></li>
+                    <li><p>Here are details</p></li>
+                    <li><p>Here are details</p></li>
                 </ul>
             </div>
-        </div>
+            <!-- footer 2-->
+            <div class="article2">
+                <h4>title</h4>
+                <ul>
+                    <li><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</h3></li>
+                    <li><p>T. 1544-6062</p></li>
+                    <li><p>F. 0505-200-6060</p></li>
+                    <li><p>E. hdweb@hdweb.co.kr</p></li>
+                </ul>
+            </div>
+            <!-- footer 3-->
+            <div class="article3">
+                <form class="f_box">
+                    <h3>Search</h3>
+                    <input type="text" placeholder="Type...">
+                    <input type="submit" value="Search">
+                </form>
+                
+                <div class="b_util">
 
-        
+                    <p>Contact.......... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ea facere!</p>  
+                    <!-- <li class="f_link"><a href="#"><i class="fas fa-spinner"></i></a></li>
+                <li class="f_link"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="f_link"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="f_link"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                <li class="f_link"><a href="#"><i class="fas fa-comment"></i></a></li>
+                <li class="f_link"><a href="#"><i class="fas fa-share-alt-square"></i></li> -->
+                </div>
+            </div>  
         </div>
     </footer>
 

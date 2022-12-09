@@ -1,4 +1,3 @@
-@import url(_reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 * {
   margin: 0px;
@@ -15,25 +14,35 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  position: absolute;
+  top: -99999999px;
+  opacity: 0;
+}
+
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #header {
-  width: 100vw;
+  width: 100%;
+  min-width: 1180px;
+  height: 100px;
 }
 #header .container {
   width: 1180px;
-  height: 100px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
   display: flex;
-  align-items: center;
-  position: relative;
 }
-#header .container h1 {
-  margin-top: -50px;
-  padding: 0 20px;
-}
-#header .container h1 a {
-  font: bold 32px/1 "Yanone Kaffeesatz", sans-serif;
+#header .container a {
+  font: bold 45px/1 "Yanone Kaffeesatz", sans-serif;
   color: #444;
+  margin-top: -40px;
+  padding: 0 20px;
 }
 #header .container .menu_web #gnb {
   top: 0;
@@ -48,6 +57,7 @@ a {
 }
 #header .container .menu_web #gnb .menu:hover {
   background: #8bd1c9;
+  border-radius: 5px;
 }
 #header .container .menu_web #gnb .menu:hover .sub_menu1 {
   display: block;
@@ -55,6 +65,7 @@ a {
   margin-top: 10px;
   margin-left: -15px;
   background: #aaa;
+  border-radius: 5px;
 }
 #header .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
@@ -80,6 +91,7 @@ a {
   background: #d0ece9;
   margin-top: -25px;
   margin-left: 160px;
+  border-radius: 5px;
 }
 #header .container .menu_web #gnb .menu a {
   font: bold 16px/1 "arial";
@@ -111,47 +123,161 @@ a {
   margin-left: 140px;
   display: block;
   position: absolute;
-  font-size: 15px;
+  font-size: 14px;
+}
+#header .container form .container label {
+  font: 12px "arial";
+  color: #666;
+}
+#header .container form .container input[type=text] {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#header .container form .container input[type=password] {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#header .container .btnCall {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+#header .container .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header .container .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header .container .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  transition: 1s;
+  text-indent: -9999px;
+}
+#header .container .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header .container .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header .container .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header .container .menuMo {
+  width: 270px;
+  height: 100vh;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  padding: 35px 30px;
+  z-index: 10;
+  transition: 0.5s;
+}
+#header .container .menuMo.on {
+  left: 0;
+}
+#header .container .menuMo h1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #666;
+}
+#header .container .menuMo h1 a {
+  display: block;
+  font: bold 24px/1 "arial";
+  color: #fff;
+  text-align: center;
+}
+#header .container .menuMo h1 span {
+  font-size: 12px;
+  color: #aaa;
+}
+#header .container .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font: bold 14px/1 "arial";
+  color: #888;
+  text-align: center;
 }
 
 #gallery {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-#gallery .container {
-  margin-left: 200px;
-  width: 590px;
+  width: 100%;
+  min-width: 1180px;
   height: 500px;
 }
+#gallery .container {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
 #gallery .container .album {
+  width: 580px;
+  height: 100%;
   overflow: hidden;
-  width: 100%;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #gallery .container .album .images {
-  position: relative;
+  width: 100%;
   display: flex;
   object-fit: cover;
 }
 #gallery .container .btns {
-  display: block;
   position: absolute;
-  left: 50%;
-  margin-left: -400px;
+  left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 9;
 }
 #gallery .container .btns button, #gallery .container .btns button:active, #gallery .container .btns button:focus {
   width: 100px;
   height: 30px;
   border: none;
+  border-radius: 10px;
   color: white;
   background-color: rgba(246, 237, 103, 0.5);
-  outline: none;
 }
 #gallery .container .btns button:hover {
+  color: rgb(236, 146, 51);
   background-color: #e5dc2d;
+  cursor: pointer;
 }
 #gallery .container .btns button:disabled {
   background-color: rgba(247, 214, 31, 0.5);
@@ -162,16 +288,17 @@ a {
 #gallery .container .btns .next {
   float: right;
 }
-#gallery .container {
-  margin-left: 0;
-}
 #gallery .container .v_box {
-  width: 590px;
-  height: 500px;
-  padding: 60px 100px;
-  display: block;
+  width: 580px;
+  height: 100%;
+  margin-left: 10px;
   background-color: black;
   color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  float: right;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  padding: 60px 100px 30px;
 }
 #gallery .container .v_box h1 {
   font: bold 40px/50px "Noto Sans", sans-serif;
@@ -183,6 +310,7 @@ a {
 #gallery .container .v_box a {
   font-size: 50px;
   color: #fff;
+  cursor: pointer;
 }
 #gallery .container .v_box a span {
   font: normal 12px/65px "Nanum Gothic", sans-serif;
@@ -190,104 +318,258 @@ a {
   position: absolute;
 }
 
+#article {
+  width: 100%;
+  min-width: 1180px;
+  height: 400px;
+}
 #article .container {
   width: 1180px;
-  height: 400px;
+  height: 100%;
   position: relative;
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
   background-color: #6fa7a0;
 }
-#article .container .article {
-  width: 33.3333333333%;
+#article .container .atc_box {
+  width: 380px;
   height: 100%;
   font: normal 13px/27px "Noto Sans", sans-serif;
   color: #fff;
+  border-radius: 10px;
+  background-color: #6fa7a0;
   position: relative;
   padding: 100px 15px;
 }
-#article .container .article a {
+#article .container .atc_box a {
   font-size: 50px;
   color: #fff;
+  cursor: pointer;
 }
-#article .container .article h4 {
+#article .container .atc_box h4 {
   font: normal 14px/24px "Nanum Gothic", sans-serif;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 15px 0 20px;
 }
-#article .container .article p {
+#article .container .atc_box p {
   font: 15px/27px "Noto Sans", sans-serif;
 }
-#article .container .article:nth-of-type(1) {
-  margin-left: 100px;
+#article .container .atc_box:nth-of-type(1) {
+  width: 380px;
+  height: 100%;
+  margin: 0 20px;
 }
-#article .container .article:nth-of-type(3) {
-  margin-right: 100px;
+#article .container .atc_box:nth-of-type(3) {
+  width: 380px;
+  height: 100%;
 }
 
-#brand .container {
+#brand {
   width: 100%;
+  min-width: 1180px;
+  height: 500px;
+}
+#brand .container {
+  width: 1180px;
+  height: 100%;
+  margin: 20px auto;
   position: relative;
-  overflow: hidden;
-  display: flex;
+  display: block;
 }
-#brand .container .wrap {
+#brand .container .txt_l {
+  width: 580px;
   height: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  float: left;
+  margin-right: 10px;
+  padding: 50px 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  background-color: #8bd1c9;
 }
-#brand .container .wrap .txt {
-  width: 590px;
-  height: 500px;
-  background-color: rgb(243, 69, 81);
+#brand .container .txt_l h2 {
+  font: bold 35px/45px "Noto Sans", sans-serif;
 }
-#brand .container .wrap .pic {
-  width: 590px;
-  height: 500px;
-  background-color: rgb(143, 177, 252);
+#brand .container .txt_l p {
+  font: normal 14px/22px "Nanum Gothic", sans-serif;
+  margin: 20px auto;
+}
+#brand .container .txt_l a {
+  font: bold 18px/45px "Noto Sans", sans-serif;
+  color: #444;
+  cursor: pointer;
+}
+#brand .container .txt_r1 {
+  width: 580px;
+  height: 240px;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 30px 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  background-color: #d0ece9;
+}
+#brand .container .txt_r1 p {
+  font: normal 14px/22px "Nanum Gothic", sans-serif;
+  margin: 20px auto;
+}
+#brand .container .txt_r1 a {
+  font: bold 18px/45px "Noto Sans", sans-serif;
+  color: #444;
+  cursor: pointer;
+}
+#brand .container .txt_r2 {
+  width: 580px;
+  height: 240px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 30px 60px;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  background-color: #6fa7a0;
+}
+#brand .container .txt_r2 p {
+  font: normal 14px/22px "Nanum Gothic", sans-serif;
+  margin: 20px auto;
+}
+#brand .container .txt_r2 a {
+  font: bold 18px/45px "Noto Sans", sans-serif;
+  color: #444;
+  cursor: pointer;
 }
 
 #util {
-  position: relative;
-  margin: 0 auto;
+  width: 100%;
+  min-width: 1180px;
+  height: 200px;
 }
 #util .container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#util .container .link {
-  background-color: rgb(123, 128, 169);
-  height: 300px;
   width: 1180px;
-}
-#footer {
-  margin: 0 auto;
-}
-#footer .container {
-  width: 100%;
   height: 100%;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-#footer .container .box1 {
-  height: 300px;
-  width: 393.3333333333px;
-  background-color: rgb(205, 187, 50);
+#util .container .link a {
+  font-size: 60px;
+  color: #375350;
+  margin: 100px 50px;
+  cursor: pointer;
 }
-#footer .container .box2 {
-  height: 300px;
-  width: 393.3333333333px;
-  background-color: rgb(166, 151, 37);
+
+#footer {
+  width: 100%;
+  min-width: 1180px;
+  height: 350px;
 }
-#footer .container .search {
-  height: 300px;
-  width: 393.3333333333px;
-  background-color: rgb(37, 110, 166);
+#footer .container {
+  width: 1180px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer .container .article1 {
+  width: 380px;
+  height: 350px;
+  background-color: #444;
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer .container .article1 a {
+  font: bold 35px/1 "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
+}
+#footer .container .article1 li h3 {
+  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer .container .article1 li p {
+  font: 15px/27px "Noto Sans", sans-serif;
+}
+#footer .container .article2 {
+  background-color: #444;
+  width: 380px;
+  margin: 0 20px;
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer .container .article2 h4 {
+  font: 22px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer .container .article2 li h3 {
+  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer .container .article2 li p {
+  font: 15px/27px "Noto Sans", sans-serif;
+}
+#footer .container .article3 {
+  width: 380px;
+  padding: 50px 25px;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer .container .article3 .f_box {
+  width: 300px;
+  height: 100px;
+  border: none;
+}
+#footer .container .article3 .f_box h3 {
+  font-weight: normal;
+  line-height: 35px;
+}
+#footer .container .article3 .f_box input {
+  margin: 30px auto;
+}
+#footer .container .article3 .f_box input input[type=text] {
+  background-color: #fff;
+  width: 230px;
+  height: 40px;
+  padding: 10px;
+  margin-right: -7px;
+  border-radius: 25px 0 0 25px;
+  cursor: pointer;
+}
+#footer .container .article3 .f_box input input[type=text]::placeholder {
+  color: #8bd1c9;
+  font-weight: bold;
+}
+#footer .container .article3 .f_box input input[type=submit] {
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #6fa7a0;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+#footer .container .article3 .f_box .b_util {
+  width: 380px;
+  margin: 0 auto;
+  position: relative;
+}
+#footer .container .article3 .f_box .b_util p {
+  font: normal 10px/27px "Noto Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

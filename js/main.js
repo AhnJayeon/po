@@ -1,3 +1,16 @@
+//btnCall
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+btnCall.onclick = function(e){
+    e.preventDefault();
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle('on');
+}
+
+
+
+
+// main page basic slide
 let curPos = 0;
 let postion = 0;
 const IMAGE_WIDTH = 590;
