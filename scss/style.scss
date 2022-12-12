@@ -262,7 +262,6 @@ $mobile: 767px;
                     padding: 10px 10px;
                     border-bottom: 3px solid #8bd1c9;
                     border-radius: 1.5px;
-
                 &:hover {
                     background: #8bd1c9;
                     border-radius: 5px;
@@ -307,6 +306,14 @@ $mobile: 767px;
 			        } //ul
                 }
             }
+        }
+        
+        .close {
+            display: block;
+            z-index: 10;
+            color: #999;
+            font-size: 40px; 
+            text-align: right;   
         }
             .sub_menu1 {
                 display: none;
@@ -477,8 +484,7 @@ $mobile: 767px;
                     height: 100%;
                     margin: 0 20px;
                 }
-                &:nth-of-type(2) {                        
-                }
+                
                 &:nth-of-type(3) {
                     width: 380px;
                     height: 100%;    
