@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #header {
   width: 100%;
   min-width: 1180px;
@@ -82,7 +87,7 @@ a {
   border-radius: 5px;
 }
 #header .container .menu_web #gnb .menu a {
-  font: bold 16px/1 "arial";
+  font: bold 15px/1 "arial";
   color: #777;
 }
 #header .container .menu_web #gnb .menu .sub_menu1 {
@@ -255,7 +260,7 @@ a {
   background: transparent;
   align-items: center;
   text-align: left;
-  font: 1.5rem "arial";
+  font: 1.1rem "Noto Sans", sans-serif;
   color: #ccc;
 }
 #header .container .menuMo .menu:hover .sub_menu1 ul li:last-child {
@@ -275,6 +280,7 @@ a {
   margin-top: -65px;
   margin-left: 160px;
   border-radius: 5px;
+  font: 1rem "Noto Sans", sans-serif;
 }
 #header .container .menuMo .close {
   display: block;
@@ -288,7 +294,6 @@ a {
 }
 #header .container .menuMo .sub_menu1 .sub_menu2 {
   display: none;
-  font: 1.5rem "arial";
 }
 #header .container .menuMo #gnbMo li a {
   display: block;
@@ -615,7 +620,10 @@ a {
 
 @media screen and (max-width: 1179px) {
   body {
-    width: 70vw;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
   }
   body #header .container {
     height: 100px;
@@ -641,15 +649,7 @@ a {
     position: fixed;
   }
   body #gallery .container {
-    object-fit: contain;
-  }
-  body #gallery .container .album {
-    width: 49%;
-    height: 100%;
-  }
-  body #gallery .container .v_box {
-    width: 49%;
-    height: 100%;
+    overflow: hidden;
   }
   body #gallery .container .v_box h1 {
     font: bold 25px/40px "Noto Sans", sans-serif;

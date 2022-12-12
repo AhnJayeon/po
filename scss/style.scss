@@ -3,6 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif; 
+    
+
 }
 ul,ol,li {
     list-style: none;
@@ -29,8 +31,12 @@ $mobile: 767px;
 // 	clear: both;
 // }
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
-#header {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+    
+    #header {
     width: 100%;
     min-width: 1180px;
     height: 100px;
@@ -99,7 +105,7 @@ $mobile: 767px;
                         } //sub_menu_1
                     } //hover
                     a { 
-                        font: bold 16px/1 "arial";
+                        font: bold 15px/1 "arial";
                         color: #777;
                     } //a
                     .sub_menu1 {
@@ -254,6 +260,7 @@ $mobile: 767px;
 			z-index: 10;
 			transition: 0.5s;
             
+            
 			&.on {
 				left: 0;
                 }
@@ -262,6 +269,9 @@ $mobile: 767px;
                     padding: 10px 10px;
                     border-bottom: 3px solid #8bd1c9;
                     border-radius: 1.5px;
+                    
+                    
+
                 &:hover {
                     background: #8bd1c9;
                     border-radius: 5px;
@@ -280,7 +290,8 @@ $mobile: 767px;
                                 background: transparent;
                                 align-items: center;
                                 text-align: left;
-                                font: 1.5rem "arial";
+                                font: 1.1rem 'Noto Sans', sans-serif;
+                                
                                 color: #ccc;
                                 &:last-child {
                                     border-bottom: none;
@@ -300,6 +311,7 @@ $mobile: 767px;
                                     margin-top: -65px;
                                     margin-left: 160px;
                                     border-radius: 5px;
+                                    font: 1.0rem 'Noto Sans', sans-serif;
                                 }
 
                             } //li
@@ -317,9 +329,10 @@ $mobile: 767px;
         }
             .sub_menu1 {
                 display: none;
+                
                 .sub_menu2 {
                     display: none; 
-                    font: 1.5rem "arial";
+                    
                     
 
                 }
@@ -341,6 +354,7 @@ $mobile: 767px;
 			// }
 			#gnbMo {
 				li {
+                    
 					a {
 						display: block;
 						width: 100%;
@@ -688,11 +702,14 @@ $mobile: 767px;
     
 
 
+
 //tablet
 @media screen and (max-width: $tablet) {
     body {
-        width: 70vw;
-    
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        margin: 0 auto;
 	//header
     
 	#header {
@@ -726,15 +743,17 @@ $mobile: 767px;
 	//figure-gallery
 	#gallery {
 		.container {   
-            object-fit: contain;
+        // width: 100vw;
+        overflow: hidden;
+            // object-fit: contain;
 			.album {
-			    width: 49%;
-                // height: 20vmax;
-                height: 100%;
+            // width: 49vw;
+            // height: 49vh;
 			} //album
             .v_box {
-			    width: 49%;
-                height: 100%;
+                
+			    // width: 49vw;
+                // height: 49vh;
                 h1 {
                     font: bold 25px/40px 'Noto Sans', sans-serif;  
                 }
