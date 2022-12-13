@@ -174,42 +174,45 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
   display: none;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   z-index: 11;
 }
 #header .container .btnCall::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 2px;
-  background: #000;
+  width: 80%;
+  height: 3px;
+  background: #444;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5px;
+  border-radius: 1.5px;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
 #header .container .btnCall::after {
   content: "";
   display: block;
-  width: 100%;
-  height: 2px;
-  background: #000;
+  width: 80%;
+  height: 3px;
+  background: #444;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 5px;
+  border-radius: 1.5px;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
 #header .container .btnCall span {
   display: block;
-  width: 100%;
-  height: 2px;
-  background: #000;
+  width: 80%;
+  height: 3px;
+  background: #666;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 5px;
   margin-top: -1px;
   transition: 1s;
+  border-radius: 1.5px;
   text-indent: -9999px;
 }
 #header .container .btnCall.on::before {
@@ -319,11 +322,13 @@ html, body {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 #gallery .container .album {
   float: left;
-  width: 49%;
+  width: 590px;
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -336,9 +341,9 @@ html, body {
   object-fit: cover;
 }
 #gallery .container .btns {
-  width: 40%;
+  width: 200px;
   position: absolute;
-  left: 0;
+  left: 85px;
   bottom: 0;
   z-index: 9;
 }
@@ -365,7 +370,7 @@ html, body {
   float: left;
 }
 #gallery .container .v_box {
-  width: 49%;
+  width: 590px;
   height: 100%;
   margin-left: 10px;
   background-color: black;
@@ -601,7 +606,7 @@ html, body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article3 p {
-  font: normal 10px/27px "Noto Sans", sans-serif;
+  font: normal 10px/26px "Noto Sans", sans-serif;
   padding: 50px 30px;
 }
 #footer .container .article3 .b_util {
@@ -625,16 +630,14 @@ html, body {
   body #header .container {
     width: 100%;
     height: 100px;
-  }
-  body #header .container .h1 {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   body #header .container .menu_web {
     display: none;
   }
   body #header .container .wrap {
     width: 15%;
-    margin: -60px 0px 100px 250px;
+    margin: -70px 0px 100px 220px;
     position: relative;
   }
   body #header .container .f_box {
@@ -647,21 +650,28 @@ html, body {
     display: block;
     background-color: #ccc;
     padding: 20px 20px;
-    border-radius: 5px;
-    margin-right: 5px;
+    border-radius: 10px;
     top: 40px;
     position: fixed;
   }
+  body #gallery {
+    margin: 20px auto;
+  }
   body #gallery .container {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    margin: 0 auto;
   }
   body #gallery .container .album {
     width: 43vw;
+    height: 80vh;
+  }
+  body #gallery .container .album .images {
+    object-fit: cover;
   }
   body #gallery .container .v_box {
     width: 43vw;
+    padding: 20px 30px 30px;
   }
   body #gallery .container .v_box h1 {
     font: bold 25px/40px "Noto Sans", sans-serif;
@@ -678,27 +688,26 @@ html, body {
   }
   body #article .container {
     background-color: #fff;
-    width: 94%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
   }
   body #article .container .atc_box {
-    display: block;
     height: 100%;
   }
   body #article .container .atc_box a {
     font-size: 30px;
   }
   body #article .container .atc_box:nth-of-type(1) {
-    width: 30%;
+    width: 27%;
     margin-right: 0;
   }
   body #article .container .atc_box:nth-of-type(2) {
-    width: 30%;
-    margin: 0 20px;
+    width: 27%;
+    margin: 0 10px;
   }
   body #article .container .atc_box:nth-of-type(3) {
-    width: 30%;
-    margin: 0 0px;
+    width: 27%;
   }
   body #brand .container {
     width: 90%;
@@ -717,8 +726,58 @@ html, body {
     width: 43vw;
     height: 48.5vh;
   }
+  body #util {
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    z-index: 8;
+  }
+  body #util .container {
+    width: 90%;
+    height: 50%;
+  }
+  body #util .container .link a {
+    font-size: 30px;
+    margin: 10px 20px;
+    padding: 10px 10px;
+  }
+  body #footer .container {
+    width: 90%;
+    background-color: #fff;
+    margin: 20px auto;
+    display: block;
+  }
+  body #footer .container .article1 {
+    width: 42vw;
+    float: left;
+  }
+  body #footer .container .article1 a {
+    font-size: 20px;
+  }
+  body #footer .container .article1 li h3 {
+    font: normal 15px/20px "Nanum Gothic", sans-serif;
+  }
+  body #footer .container .article1 li p {
+    font: 13px/18px "Noto Sans", sans-serif;
+  }
+  body #footer .container .article2 {
+    width: 42vw;
+    float: right;
+  }
+  body #footer .container .article2 h4 {
+    font: 14px/20px "Nanum Gothic", sans-serif;
+  }
+  body #footer .container .article2 li p {
+    font: 13vmin/18px "Noto Sans", sans-serif;
+  }
+  body #footer .container .article2 .article3 {
+    width: 42vw;
+  }
+  body #footer .container .article2 .article3 p {
+    display: none;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 539px) {
   body {
     width: 100%;
     margin: 0 auto;
@@ -726,6 +785,12 @@ html, body {
   body .container #header .btnCall {
     background-color: #6fa7a0;
   }
+}
+#gallery .container {
+  width: 90%;
+}
+#gallery .container h1 {
+  font: normal 12vmin/1 "arial";
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@ btnCall.onclick = function(e){
     btnCall.classList.toggle("on");
     menuMo.classList.toggle("on");
 }
+
 //mobile 메뉴 내 close 버튼
 const close = document.querySelector(".close");
 close.onclick = function(e){
