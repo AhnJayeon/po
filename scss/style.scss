@@ -512,14 +512,14 @@ html, body {
             box-shadow: 0 0 10px (0,0,0,0.1);
             background-color: #8bd1c9;
                 h2 {
-                    font: bold 35px/45px 'Noto Sans', sans-serif;
+                    font: 1.1rem 'Noto Sans', sans-serif;
                 }
                 p {
-                    font: normal 14px/22px 'Nanum Gothic', sans-serif;
+                    font: 0.8rem 'Nanum Gothic', sans-serif;
                     margin: 20px auto;  
                 }
                 a {
-                    font: bold 18px/45px 'Noto Sans', sans-serif;
+                    font: 0.7rem 'Noto Sans', sans-serif;
                     color: #444;
                     cursor: pointer;
                 }
@@ -569,14 +569,14 @@ html, body {
     } //container
 } //brand
 
-#util {
+#m_util {
     width: 100%;
     // min-width: 1180px;
-    height: 200px;
+    height: 100%;
     
     .container {
         width: 1180px;
-        height: 100%;
+        height: 100px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -690,7 +690,7 @@ html, body {
     // width: 90%;
     height: 250px;
     .container {
-        width: 90vw;
+        width: 100vw;
         position: relative;
         text-align: center;
         margin: 0 auto; 
@@ -785,10 +785,13 @@ html, body {
         overflow: hidden;
         margin: 0 auto;
         
+        
             // object-fit: contain;
 			.album {
-            width: 45%;
-            margin-left: 0;
+            width: 50%;
+            // margin-left: 0;
+           
+            
             
             .images {
                 width: 100%;
@@ -797,8 +800,9 @@ html, body {
             // height: 49vh;
 			} //album
             .v_box {
-                margin-right: 0;
-			    width: 45%;
+                
+                // margin-right: 0;
+			    width: 50%;
                 padding: 10px 20px 15px;
 
                 h1 {
@@ -823,28 +827,29 @@ html, body {
 		.container {
 			background-color: #fff;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             
 			.atc_box {
                 
-                margin: 10px auto;
+                // margin: 10px auto;
                 display: block;
                 
 				a {
                     font-size: 25px; 
                 }
                 &:nth-of-type(1) {
-                    width: 100%;
+                    width: 50%;
+                    
                     margin: 0;
-                    float: center;
+                    float: left;
                     }
                 &:nth-of-type(2) { 
-                    width: 100%;  
-                    float: center;                      
+                    width: 50%; 
+                    margin: 0; 
+                    float: right;                      
                     }
                 &:nth-of-type(3) {
-                    width: 100%;  
-                    float: center;
+                    display: none;
 				}
 			}
 		}
@@ -855,12 +860,15 @@ html, body {
         
 		.container {
 			width: 100%;
-            margin: 10px auto;
+            height: 100%;
+            margin: 0 auto;
             // height: 100%;
             
             .txt_l {
             width: 100%;
             float: center;
+            margin: 10px auto;
+            padding-bottom: 0;
             }
 			.txt_r1 {
             width: 100%;
@@ -875,23 +883,23 @@ html, body {
 		}
 	}
 //-------tablet- util
-	#util {
-        width: 100%;
-        height: 70vh;
-        margin: 0 auto;
-       
-        z-index: 8;
+	#m_util {
+        // display: none;
+        height: 100%;
+        // z-index: 8;
 		.container {
             width: 100%;
-            height: 30vh;
-            padding: 0px 10px;
+        
+        margin : 0;
+            margin: 0 auto;
+
             .link {
+                margin: 0;
+
                 a {
-            font-size: 30px;
+            font-size: 20px;
             margin: 0px 20px;
-            
-            
-            
+            padding: 0px 10px;
 
                 }
             } 
@@ -906,6 +914,18 @@ html, body {
 }//footer
 #t_footer {
     display: block;
+    width: 100%;
+    .container {
+        margin: 0 auto;
+        h1 {
+            margin: 0;
+            padding: 0;
+            }
+    }
+    
+
+
+
 }
 }
 }
@@ -914,23 +934,23 @@ html, body {
 @media screen and (max-width: $mobile) {
 
     #article {
-        width: 90vw;
+        width: 100vw;
         height: 100vh;
         .container {
             display: block;
             margin: 0 auto;
             .atc_box {
                 &:nth-of-type(1) {
-                    width: 90%;
+                    width: 100%;
                     margin-right: 0;
                     
                     }
                 &:nth-of-type(2) { 
-                    width: 90%;  
+                    width: 100%;  
                     margin: 0 10px;                         
                     }
                 &:nth-of-type(3) {
-                    width: 90%;     
+                    width: 100%;     
 				}
             }
         }
@@ -947,9 +967,9 @@ html, body {
 #util {
 
     display: block;
-    height: 90%;
+
     .container {
-        height: 50%;
+
         .link {
             
             a {
