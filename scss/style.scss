@@ -135,8 +135,8 @@ html, body {
             .wrap{
                 top: 0;
                 right: 0;
-                width: 35%;
-                margin: 10px 10px 15px;                   
+                width: 40%;
+                margin: 10px 0px 15px;                   
                 display: block;
                 position: absolute;
                 font-size: 1.1vw;
@@ -272,6 +272,9 @@ html, body {
                     padding: 10px 10px;
                     border-bottom: 3px solid #8bd1c9;
                     border-radius: 1.5px;
+                    a {
+                        font-size: 18px;
+                    }
                 &:hover {
                     background: #8bd1c9;
                     border-radius: 5px;
@@ -359,17 +362,17 @@ html, body {
     height: 100%;
     margin: 0 auto;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
         .album {   
             // margin-left: 200px;
-            float: left;
-            width: 590px; 
+            // float: left;
+            width: 50%; 
             height: 100%;
             overflow: hidden;
             border-radius: 10px;
-            margin-right: 10px;
+            // margin-right: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
             .images {
                 width: 100%;
@@ -381,7 +384,7 @@ html, body {
             // float: left;
             width: 200px; 
             position: absolute;
-            left: 85px;
+            left: 5px;
             bottom: 0;
             z-index: 9;
             
@@ -409,14 +412,14 @@ html, body {
             }
         } //btns   
         .v_box {
-            width: 590px; 
+            width: 50%; 
             height: 100%;
-            margin-left: 10px;               
+            // margin-left: 10px;               
             background-color: black;
             color: #fff;
             border-radius: 10px;
             overflow: hidden;
-            float: right;
+            // float: right;
             box-shadow: 0 0 10px (0,0,0,0.1);
             padding: 60px 100px 30px;
             h1 {
@@ -732,7 +735,7 @@ html, body {
 
 
 
-//tablet
+//-----tablet
 @media screen and (max-width: $tablet) {
     body {
         width: 100%;
@@ -740,11 +743,11 @@ html, body {
         
         // display: block;
         
-	//tablet -header
+	//----tablet -header
 	#header {
 		.container {
 			width: 100%;
-			height: 100px;
+			height: 100vh;
             margin-left: 30px;
         
 			.menu_web {
@@ -774,31 +777,30 @@ html, body {
 		}
 	}
 
-	//tablet -figure-gallery
+	//-----tablet -figure-gallery
 	#gallery {
-        margin: 20px auto;
-        
 		.container {   
         width: 100%;
         height: 100%;
         overflow: hidden;
-        // margin: 0 auto;
+        margin: 0 auto;
         
             // object-fit: contain;
 			.album {
-            width: 43vw;
-            height: 80vh;
+            width: 45%;
+            margin-left: 0;
+            
             .images {
-                // width: 100%;
+                width: 100%;
                 object-fit: cover;
             } //images
             // height: 49vh;
 			} //album
             .v_box {
-                // clear: both;
-			    width: 43vw;
-                padding: 20px 30px 30px;
-                // height: 49vh;
+                margin-right: 0;
+			    width: 45%;
+                padding: 10px 20px 15px;
+
                 h1 {
                     font: bold 25px/40px 'Noto Sans', sans-serif;  
                 }
@@ -816,72 +818,79 @@ html, body {
 		} //container
     }
 	
-	//tablet -article
+	//-----tablet -article
 	#article {
 		.container {
 			background-color: #fff;
             width: 100%;
-        margin: 0 auto;
-        justify-content: space-evenly;
-            
-           
+            height: 100vh;
             
 			.atc_box {
-                height: 100%;
+                
+                margin: 10px auto;
+                display: block;
+                
 				a {
-                    font-size: 30px; 
+                    font-size: 25px; 
                 }
                 &:nth-of-type(1) {
-                    width: 27%;
-                    margin-right: 0;
+                    width: 100%;
+                    margin: 0;
+                    float: center;
                     }
                 &:nth-of-type(2) { 
-                    width: 27%;  
-                    margin: 0 10px;                         
+                    width: 100%;  
+                    float: center;                      
                     }
                 &:nth-of-type(3) {
-                    width: 27%;     
+                    width: 100%;  
+                    float: center;
 				}
 			}
 		}
 	}
 
-// 	//brand
+//-----tablet -brand
 	#brand {
         
 		.container {
-			width: 90%;
-            margin: 20px auto;
-            height: 100vh;
+			width: 100%;
+            margin: 10px auto;
+            // height: 100%;
+            
             .txt_l {
-            width: 43vw;
-            height: 100vh;
+            width: 100%;
+            float: center;
             }
 			.txt_r1 {
-            width: 43vw;
-            height: 48.5vh;
+            width: 100%;
+            float: center;
+            // margin-bottom: 10px;
             }
             .txt_r2 {
-                width: 43vw;
-            height: 48.5vh;
+            width: 100%;
+            float: center;
+            // margin-top: 10px;
             }		
 		}
 	}
-// 	// tablet- util
+//-------tablet- util
 	#util {
-        width: 90%;
-        height: 50vh;
+        width: 100%;
+        height: 70vh;
         margin: 0 auto;
+       
         z-index: 8;
 		.container {
-            width: 90%;
-            height: 50%;
-            // display: block;
+            width: 100%;
+            height: 30vh;
+            padding: 0px 10px;
             .link {
                 a {
-                    font-size: 30px;
-            margin: 10px 20px;
-            padding: 10px 10px;
+            font-size: 30px;
+            margin: 0px 20px;
+            
+            
             
 
                 }
@@ -901,37 +910,66 @@ html, body {
 }
 }
 
-//mobile
+//------mobile--------
 @media screen and (max-width: $mobile) {
-    body {
-        width: 100%;
-        margin: 0 auto;
-        .container {
-			// width: 70%;
-			// height: 100px;
-            #header {   
-			
-            
-			.btnCall {
-				
-                background-color: #6fa7a0;
-               
-			}
-		} //header    
-	} //container
-        
-    }
-}  //media
 
-// 	//figure-gallery
-#gallery{
-    // width: 90%;
-    .container {
-        width: 90%;
-        h1 {
-            font: normal 12vmin/1 "arial";
+    #article {
+        width: 90vw;
+        height: 100vh;
+        .container {
+            display: block;
+            margin: 0 auto;
+            .atc_box {
+                &:nth-of-type(1) {
+                    width: 90%;
+                    margin-right: 0;
+                    
+                    }
+                &:nth-of-type(2) { 
+                    width: 90%;  
+                    margin: 0 10px;                         
+                    }
+                &:nth-of-type(3) {
+                    width: 90%;     
+				}
+            }
         }
     }
-} //#gallery
-// }
+    #brand {
+        margin-bottom: 50px;
+        .container {
+            height: 100vh;
+            
+        }
+        
+    }
+
+#util {
+
+    display: block;
+    height: 90%;
+    .container {
+        height: 50%;
+        .link {
+            
+            a {
+        font-size: 16px;
+        margin: 0px 20px;
+            }
+        }   
+
+    }  
+}
+#t_footer {
+    height: 100%;
+    .container {
+        margin: 0 auto;
+        
+        .f_link {
+            line-height: 30px;
+        }
+    }
+}  
+}  //media
+
 
