@@ -681,7 +681,54 @@ html, body {
             } //f_box
         } //article3
         } //footer
-    
+//tablet,mobile -footer
+#t_footer {
+    display: none;
+    // width: 90%;
+    height: 250px;
+    .container {
+        width: 90vw;
+        position: relative;
+        text-align: center;
+        margin: 0 auto; 
+        display: block;
+        float: center;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #444;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        a {
+            font: bold 20px/1 'Yanone Kaffeesatz', sans-serif;
+            color: #fff;    
+        }
+        li {
+            h3 {
+                font: normal 13px/24px 'Nanum Gothic', sans-serif;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            p {
+                font: 12px/20px 'Noto Sans', sans-serif; 
+            }
+        } //li
+        .b_util {
+            width: 60%;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+           
+            .f_link {
+                a {
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 20px 10px;
+                }
+            }
+                
+        } //b_util
+    }
+} //t_footer
 
 
 
@@ -846,47 +893,11 @@ html, body {
 // 	// tablet- footer
 
 	#footer {		
-		.container {
-			width: 90%;
-            background-color: #fff;
-            margin: 20px auto;
-            display: block;
-
-            
-            .article1 {
-                width: 42vw;
-                float: left;
-                a {
-                font-size: 20px; 
-                }
-                li {
-                    h3 {
-                        font: normal 15px/20px 'Nanum Gothic', sans-serif;
-                    }
-                    p {
-                        font: 13px/18px 'Noto Sans', sans-serif; 
-                    }
-                }
-            } //article1
-            .article2 {
-			width: 42vw;
-            float: right;
-            h4 {
-                font: 14px/20px 'Nanum Gothic', sans-serif;    
-            }
-            li p {
-                font: 13vmin/18px 'Noto Sans', sans-serif; 
-            }
-            .article3 {
-			    width: 42vw;
-                p {
-                    display: none;
-                }
-            } //article3
-		} //article2
-	} //container
+        display: none
 }//footer
-// }
+#t_footer {
+    display: block;
+}
 }
 }
 

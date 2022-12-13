@@ -622,6 +622,47 @@ html, body {
   padding: 20px 10px;
 }
 
+#t_footer {
+  display: none;
+  height: 250px;
+}
+#t_footer .container {
+  width: 90vw;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  float: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#t_footer .container a {
+  font: bold 20px/1 "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
+}
+#t_footer .container li h3 {
+  font: normal 13px/24px "Nanum Gothic", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#t_footer .container li p {
+  font: 12px/20px "Noto Sans", sans-serif;
+}
+#t_footer .container .b_util {
+  width: 60%;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#t_footer .container .b_util .f_link a {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 10px;
+}
+
 @media screen and (max-width: 1179px) {
   body {
     width: 100%;
@@ -741,40 +782,11 @@ html, body {
     margin: 10px 20px;
     padding: 10px 10px;
   }
-  body #footer .container {
-    width: 90%;
-    background-color: #fff;
-    margin: 20px auto;
-    display: block;
-  }
-  body #footer .container .article1 {
-    width: 42vw;
-    float: left;
-  }
-  body #footer .container .article1 a {
-    font-size: 20px;
-  }
-  body #footer .container .article1 li h3 {
-    font: normal 15px/20px "Nanum Gothic", sans-serif;
-  }
-  body #footer .container .article1 li p {
-    font: 13px/18px "Noto Sans", sans-serif;
-  }
-  body #footer .container .article2 {
-    width: 42vw;
-    float: right;
-  }
-  body #footer .container .article2 h4 {
-    font: 14px/20px "Nanum Gothic", sans-serif;
-  }
-  body #footer .container .article2 li p {
-    font: 13vmin/18px "Noto Sans", sans-serif;
-  }
-  body #footer .container .article2 .article3 {
-    width: 42vw;
-  }
-  body #footer .container .article2 .article3 p {
+  body #footer {
     display: none;
+  }
+  body #t_footer {
+    display: block;
   }
 }
 @media screen and (max-width: 539px) {
