@@ -121,10 +121,9 @@ html, body {
   margin: 10px 0px 15px;
   display: block;
   position: absolute;
-  font-size: 1.1vw;
 }
 #header .container form .wrap label {
-  font: 0.8vw "arial";
+  font: 0.7rem "arial";
   color: #666;
 }
 #header .container form .wrap input[type=text] {
@@ -770,17 +769,17 @@ html, body {
   }
   body #m_util {
     height: 100%;
+    margin: 0;
   }
   body #m_util .container {
     width: 100%;
-    margin: 0;
     margin: 0 auto;
   }
   body #m_util .container .link {
     margin: 0;
   }
   body #m_util .container .link a {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0px 20px;
     padding: 0px 10px;
   }
@@ -789,19 +788,55 @@ html, body {
   }
   body #t_footer {
     display: block;
-    width: 100%;
+    height: 50%;
   }
   body #t_footer .container {
     margin: 0 auto;
+    height: 100%;
   }
   body #t_footer .container h1 {
-    margin: 0;
+    font: 20px/30px "Noto Sans", sans-serif;
+    margin-top: 0;
     padding: 0;
   }
 }
 @media screen and (max-width: 539px) {
+  #header .container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 10px;
+  }
+  #header .container a {
+    font: bold 24px "Yanone Kaffeesatz", sans-serif;
+    padding: 0;
+  }
+  #header .container .menu_web {
+    display: none;
+  }
+  #header .container form .wrap {
+    position: absolute;
+    top: 70px;
+    left: -120px;
+  }
+  #header .container .f_box {
+    display: none;
+  }
+  #header .container .menuMo {
+    display: block;
+  }
+  #header .container .btnCall {
+    display: block;
+    background-color: #ccc;
+    padding: 10px 10px;
+    border-radius: 10px;
+    top: 40px;
+    position: fixed;
+  }
+  #gallery {
+    display: none;
+  }
   #article {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
   #article .container {
@@ -816,30 +851,32 @@ html, body {
     width: 100%;
     margin: 0 10px;
   }
-  #article .container .atc_box:nth-of-type(3) {
-    width: 100%;
-  }
-  #brand {
-    margin-bottom: 50px;
-  }
   #brand .container {
     height: 100vh;
   }
-  #util {
+  #m_util {
     display: block;
   }
-  #util .container .link a {
-    font-size: 16px;
-    margin: 0px 20px;
+  #m_util .container {
+    width: 100%;
+  }
+  #m_util .container .link {
+    margin: 0px auto;
+  }
+  #m_util .container .link i {
+    font-size: 20px;
   }
   #t_footer {
     height: 100%;
+    width: 100%;
   }
   #t_footer .container {
-    margin: 0 auto;
+    padding: 20px 10px;
   }
-  #t_footer .container .f_link {
-    line-height: 30px;
+  #t_footer .container .b_util .f_link a {
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 10px;
   }
 }
 

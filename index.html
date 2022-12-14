@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <meta name="viewport" content="user-scalable=0;"/>
+    <!-- <meta name="viewport" content="user-scalable=0;"/> -->
     <title>main</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="reset" href="css/reset.css">
     <script defer src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/4cc160be56.js" crossorigin="anonymous"></script>
-   
 </head>
+
 <body>
 <!-- header 영역 -->
     <header id="header">
         <div class="container">
             <h1><a href="index.html">Pillar.</a></h1>
+<!-- header - menu_web -->
             <nav class="menu_web">
+<!-- header - #gnb -->
                 <ul id="gnb">
                     <li class="menu"><a href="#">Menu1</a>
                         <div class="sub_menu1">
@@ -142,31 +144,22 @@
                 <input type="text" placeholder="Type...">
                 <input type="submit" value="Search">
             </form>
-<!-- 메뉴호출 영역 -->
-        <form action="index.html" method="get">
-        <a href="#" class="btnCall">
-            <span>메뉴호출</span>
-        </a>
-<!-- nav.menuMo -->        
-        <nav class="menuMo">
-            <ul id="gnb">
-                <li class="menu">
+<!-- header - 메뉴호출 영역 -->
+            <form action="index.html" method="get">
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+<!-- header - nav.menuMo -->        
+            <nav class="menuMo">
+                <ul id="gnb">
+<!-- header - nav.menuMo - Menu1 --> 
+                    <li class="menu">
                     <a href="#">Menu1</a>
-                    <div class="sub_menu1">
-                        <ul>
-                            <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li>
+                        <div class="sub_menu1">
+                            <ul>
+                                <li><a href="#">sub1</a></li>
+                                <li><a href="#">sub1</a></li>
                                 <li class="isSub"><a href="#">sub1</a>
-                            <i class="fas fa-angle-right"></i>
-                                <div class="sub_menu2">
-                                    <ul>
-                                        <li><a href="#">sub2</a></li>
-                                        <li><a href="#">sub2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="# ">sub1</a></li>
-                            <li class="isSub"><a href="#">sub1</a>
                                 <i class="fas fa-angle-right"></i>
                                     <div class="sub_menu2">
                                         <ul>
@@ -175,42 +168,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="menu"><a href="#">Menu2</a>
-                    <div class="sub_menu1">
-                        <ul>
-                            <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li>
-                            <li class="isSub"><a href="#">sub1</a>
-                                <i class="fas fa-angle-right"></i>
-                                    <div class="sub_menu2">
-                                        <ul>
-                                            <li><a href="#">sub2</a></li>
-                                            <li><a href="#">sub2</a></li>
-                                        </ul>
-                                    </div>
-                                </li> 
-                            <li><a href="#">sub1</a></li> 
-                        </ul>  
-                    </div>
-                </li>
-                <li class="menu"><a href="#">Menu3</a>
-                    <div class="sub_menu1">
-                        <ul>
-                            <li><a href="#">sub1</a></li>
-                            <li class="isSub"><a href="#">sub1</a>
-                            <i class="fas fa-angle-right"></i>
-                                <div class="sub_menu2">
-                                    <ul>
-                                        <li><a href="#">sub2</a></li>
-                                        <li><a href="#">sub2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">sub1</a></li>
-                            <li class="isSub"><a href="#">sub1</a>
+                                <li><a href="# ">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
                                 <i class="fas fa-angle-right"></i>
                                     <div class="sub_menu2">
                                         <ul>
@@ -219,28 +178,57 @@
                                         </ul>
                                     </div>
                                 </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="menu"><a href="#">Menu4</a>
-                <div class="sub_menu1">
-                    <ul>
-                        <li><a href="#">sub1</a></li>
-                        <li class="isSub"><a href="#">sub1</a>
-                            <i class="fas fa-angle-right"></i>
-                                <div class="sub_menu2">
-                                    <ul>
-                                        <li><a href="#">sub2</a></li>
-                                        <li><a href="#">sub2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        <li><a href="#">sub1</a></li>
-                        <li><a href="#">sub1</a></li>
-                    </ul>
-                </div>
-                </li>
-                <li class="menu"><a href="#">Menu5</a>
+                            </ul>  <!-- sub_menu1 ul --> 
+                    </div> <!-- sub_menu1 --> 
+                    </li> <!-- menuMo - Menu1 --> 
+<!-- header - nav.menuMo - Menu2 --> 
+                    <li class="menu"><a href="#">Menu2</a>
+                        <div class="sub_menu1">
+                            <ul>
+                                <li><a href="#">sub1</a></li>
+                                <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                    <i class="fas fa-angle-right"></i>
+                                        <div class="sub_menu2">
+                                            <ul>
+                                                <li><a href="#">sub2</a></li>
+                                                <li><a href="#">sub2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li> 
+                                <li><a href="#">sub1</a></li> 
+                            </ul>  
+                        </div>
+                    </li> <!-- menuMo - Menu2 -->
+<!-- header - nav.menuMo - Menu3 --> 
+                    <li class="menu"><a href="#">Menu3</a>
+                        <div class="sub_menu1">
+                            <ul>
+                                <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                <i class="fas fa-angle-right"></i>
+                                    <div class="sub_menu2">
+                                        <ul>
+                                            <li><a href="#">sub2</a></li>
+                                            <li><a href="#">sub2</a></li>
+                                        </ul> <!-- ul...sub_menu2-->
+                                    </div>
+                                </li>
+                                <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                    <i class="fas fa-angle-right"></i>
+                                        <div class="sub_menu2">
+                                            <ul>
+                                                <li><a href="#">sub2</a></li>
+                                                <li><a href="#">sub2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </li> <!-- menuMo - Menu3 -->
+<!-- header - nav.menuMo - Menu4 --> 
+                    <li class="menu"><a href="#">Menu4</a>
                     <div class="sub_menu1">
                         <ul>
                             <li><a href="#">sub1</a></li>
@@ -254,19 +242,39 @@
                                     </div>
                                 </li>
                             <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub1</a></li> 
+                            <li><a href="#">sub1</a></li>
                         </ul>
-                    </div>    
-                </li>
-                <li class="close"><i class="fas fa-times"></i></li> 
-            </ul>
-        </nav>         
-    </div>
-</header>
+                    </div>
+                    </li>  <!-- menuMo - Menu4 -->
+<!-- header - nav.menuMo - Menu5 --> 
+                    <li class="menu"><a href="#">Menu5</a>
+                        <div class="sub_menu1">
+                            <ul>
+                                <li><a href="#">sub1</a></li>
+                                <li class="isSub"><a href="#">sub1</a>
+                                    <i class="fas fa-angle-right"></i>
+                                        <div class="sub_menu2">
+                                            <ul>
+                                                <li><a href="#">sub2</a></li>
+                                                <li><a href="#">sub2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                <li><a href="#">sub1</a></li>
+                                <li><a href="#">sub1</a></li> 
+                            </ul>
+                        </div>    
+                    </li>  <!-- menuMo - Menu5 -->
+<!-- header - nav.menuMo - close --> 
+                    <li class="close"><i class="fas fa-times"></i></li> 
+                </ul> <!-- gnb -->
+            </nav>         
+        </div>
+    </header>
 
 <!-- figure 영역     -->
     <section id="gallery">
-        <!-- figure - (슬라이드) 영역 -->
+<!-- figure - (슬라이드) 영역 -->
         <div class="container">
             <div class="album">
               <div class="images">
@@ -276,15 +284,14 @@
                 <img src="img/m_sl4.png">
                 <img src="img/m_sl5.png">
               </div>
-            </div>
-            
-          
+            </div>           
+<!-- figure - v_box 영역 -->        
             <div class="v_box">
-            <h1>Build smart,<br>effective<br>websites in no<br>time.</h1>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus quaerat atque doloribus Lorem ipsum dolo  voluptatibus</h4>
+                <h1>Build smart,<br>effective<br>websites in no<br>time.</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus quaerat atque doloribus Lorem ipsum dolo  voluptatibus</h4>
                 <a href="#"><i class="fa-regular fa-circle-play"></i><span>view more lists.</span></a>
             </div>
-
+<!-- figure - btns 영역 --> 
             <div class="btns">
                 <button class="prev">PREV</button>
                 <button class="next">NEXT</button> 
@@ -292,7 +299,7 @@
           </div>
         </div>
     </section>  
-    
+
 <!-- article 영역 -->
     <section id="article">
         <div class="container">
@@ -315,39 +322,39 @@
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
             </div>   
         </div>
-    </section>
+    </section>  <!-- section- article 영역 -->
 
 <!-- brand 영역 -->
     <section id="brand">
-        <div class="container">   
-                <div class="txt_l">
-                    <h2>Assemble pages with over 150 unique content blocks.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut molestias neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">view more</a>
-                </div>
-                <div class="txt_r1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">view more</a>
-                    </div>
-                <div class="txt_r2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">view more</a>
-                    </div>
-               
-                
-            
+        <div class="container"> 
+<!-- brand - txt_l -->  
+            <div class="txt_l">
+                <h2>Assemble pages with over 150 unique content blocks.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut molestias neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">view more</a>
+            </div>
+<!-- brand - txt_r -->
+            <div class="txt_r1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">view more</a>
+            </div>
+<!-- brand - txt_r2 -->
+            <div class="txt_r2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">view more</a>
+            </div>
         </div>
-    </section>
-<!-- util 영역 -->
+    </section>   <!-- section -brand 영역 --> 
+        
+<!-- m_util 영역 -->
     <section id="m_util">
         <div class="container">
-                <li class="link"><a href="#"><i class="fas fa-spinner"></i></a></li>
-                <li class="link"><a href="#"><i class="fas fa-life-ring"></i></a></li>
-                <li class="link"><a href="#"><i class="fas fa-server"></i></a></li>
-                <li class="link"><a href="#"><i class="fas fa-stroopwafel"></i></a></li>
-                <li class="link"><a href="#"><i class="fas fa-tablet-alt"></i></a></li>
-                <li class="link"><a href="#"><i class="fas fa-shapes"></i></li>
-                 
+            <li class="link"><a href="#"><i class="fas fa-spinner"></i></a></li>
+            <li class="link"><a href="#"><i class="fas fa-life-ring"></i></a></li>
+            <li class="link"><a href="#"><i class="fas fa-server"></i></a></li>
+            <li class="link"><a href="#"><i class="fas fa-stroopwafel"></i></a></li>
+            <li class="link"><a href="#"><i class="fas fa-tablet-alt"></i></a></li>
+            <li class="link"><a href="#"><i class="fas fa-shapes"></i></li> 
         </div>
     </section>
 
@@ -374,24 +381,24 @@
             <div class="article3"> 
                 <p>Contact.......... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ea facere!</p>                
                 <div class="b_util">
-                <li class="f_link"><a href="#"><i class="fas fa-spinner"></i></a></li>
-                <li class="f_link"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="f_link"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="f_link"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-                <li class="f_link"><a href="#"><i class="fas fa-comment"></i></a></li>
-                <li class="f_link"><a href="#"><i class="fas fa-share-alt-square"></i></li> -->
+                    <li class="f_link"><a href="#"><i class="fas fa-spinner"></i></a></li>
+                    <li class="f_link"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="f_link"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="f_link"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li class="f_link"><a href="#"><i class="fas fa-comment"></i></a></li>
+                    <li class="f_link"><a href="#"><i class="fas fa-share-alt-square"></i></li> 
                 </div>
             </div>  
         </div>
     </footer>
 <!-- tablet, mobile용 footer -->
- <footer id="t_footer">
+ <div id="t_footer">
     <div class="container">
-        <h1><a href="index.html">Pillar.</a></h1>
-                <ul>
-                    <li><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</h3></li>
-                    <li><p>Here are details</p></li>
-                    <li><p>Here are details</p></li>
+        <h1>Pillar.</h1>
+            <ul>
+                <li><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</h3></li>
+                <li><p>Here are details</p></li>
+                <li><p>Here are details</p></li>
         <div class="b_util">  
             <li class="f_link"><a href="#"><i class="fas fa-spinner"></i></a></li>
             <li class="f_link"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -399,8 +406,8 @@
             <li class="f_link"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
             <li class="f_link"><a href="#"><i class="fas fa-comment"></i></a></li>
             <li class="f_link"><a href="#"><i class="fas fa-share-alt-square"></i></li> 
-            </div>
+        </div>
     </div>
- </footer>
+</div>
 </body>
 </html> 
