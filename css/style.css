@@ -1694,6 +1694,23 @@ body #t_footer_sub .container .b_util .f_link a {
     top: 40px;
     position: fixed;
   }
+  body .tab-wrapper {
+    width: 100vw;
+    height: 100%;
+    height: 370px;
+  }
+  body #box .container {
+    width: 100vw;
+  }
+  body #box .container .wrap {
+    height: 100vh;
+    display: block;
+  }
+  body #box .container .wrap article {
+    width: 48%;
+    float: left;
+    margin: 1% 1%;
+  }
   body #footer_sub {
     display: none;
   }
@@ -1777,7 +1794,7 @@ a {
   clear: both;
 }
 
-html, body {
+body {
   width: 100vw;
   overflow-x: hidden;
   margin: 0 auto;
@@ -1798,6 +1815,8 @@ html, body {
   font: bold 3.5vw "Yanone Kaffeesatz", sans-serif;
   color: #444;
   padding: 0 20px;
+  cursor: pointer;
+  display: block;
 }
 #header .container .menu_web #gnb {
   top: 0;
@@ -2075,82 +2094,32 @@ html, body {
 }
 
 #gallery {
-  width: 100%;
-  height: 500px;
-}
-#gallery .container {
   width: 1180px;
-  height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-}
-#gallery .container .album {
-  width: 50%;
   height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#gallery .container .album .images {
+#gallery .v_box {
   width: 100%;
-  display: flex;
-  object-fit: cover;
-}
-#gallery .container .btns {
-  width: 200px;
-  position: absolute;
-  left: 5px;
-  bottom: 0;
-  z-index: 9;
-}
-#gallery .container .btns button, #gallery .container .btns button:active, #gallery .container .btns button:focus {
-  width: 100px;
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background-color: rgba(246, 237, 103, 0.5);
-}
-#gallery .container .btns button:hover {
-  color: rgb(236, 146, 51);
-  background-color: #e5dc2d;
-  cursor: pointer;
-}
-#gallery .container .btns button:disabled {
-  background-color: rgba(247, 214, 31, 0.5);
-}
-#gallery .container .btns .prev {
-  float: left;
-}
-#gallery .container .btns .next {
-  float: left;
-}
-#gallery .container .v_box {
-  width: 50%;
   height: 100%;
   background-color: black;
   color: #fff;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
   padding: 60px 100px 30px;
 }
-#gallery .container .v_box h1 {
+#gallery .v_box h1 {
   font: bold 40px/50px "Noto Sans", sans-serif;
 }
-#gallery .container .v_box h4 {
+#gallery .v_box h4 {
   font: normal 14px/24px "Nanum Gothic", sans-serif;
   margin-top: 10px;
 }
-#gallery .container .v_box a {
+#gallery .v_box a {
   font-size: 50px;
   color: #fff;
   cursor: pointer;
 }
-#gallery .container .v_box a span {
+#gallery .v_box a span {
   font: normal 12px/65px "Nanum Gothic", sans-serif;
   margin-left: 10px;
   position: absolute;
@@ -2463,6 +2432,7 @@ html, body {
   body {
     width: 100%;
     height: 100vh;
+    margin: 0 auto;
   }
   body #header .container {
     width: 100%;
@@ -2491,34 +2461,27 @@ html, body {
     top: 40px;
     position: fixed;
   }
-  body #gallery .container {
-    width: 100%;
+  body #gallery {
+    width: 100vw;
     height: 100%;
-    overflow: hidden;
-    margin: 0 auto;
+    position: relative;
   }
-  body #gallery .container .album {
-    width: 50%;
-  }
-  body #gallery .container .album .images {
+  body #gallery .v_box {
     width: 100%;
-    object-fit: cover;
-  }
-  body #gallery .container .v_box {
-    width: 50%;
+    margin: 0 auto;
     padding: 10px 20px 15px;
   }
-  body #gallery .container .v_box h1 {
+  body #gallery .v_box h1 {
     font: bold 25px/40px "Noto Sans", sans-serif;
   }
-  body #gallery .container .v_box h4 {
+  body #gallery .v_box h4 {
     font: normal 13px/20px "Nanum Gothic", sans-serif;
   }
-  body #gallery .container .v_box a {
+  body #gallery .v_box a {
     font-size: 30px;
     cursor: pointer;
   }
-  body #gallery .container .v_box a span {
+  body #gallery .v_box a span {
     font: normal 12px/30px "Nanum Gothic", sans-serif;
   }
   body #article .container {
@@ -2629,16 +2592,18 @@ html, body {
     top: 40px;
     position: fixed;
   }
-  #gallery {
-    display: none;
+  #gallery .v_box {
+    width: 100%;
+    display: block;
   }
   #article {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   }
   #article .container {
     display: block;
     margin: 0 auto;
+    padding: 0;
   }
   #article .container .atc_box:nth-of-type(1) {
     width: 100%;

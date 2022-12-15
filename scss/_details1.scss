@@ -344,13 +344,11 @@
                    &.active {
                     background : #8bd1c9;
                     color: #fff;
-                   }
-                   
-                    
+                   }  
                 }
             } //li
             
-        }
+        } //tab-menu
     }
     #tab-content {
         min-height: 300px;
@@ -362,10 +360,7 @@
                 display: block;
             }
         }
-    }
-
-
-
+    } //tab-content
 
 #box {
     width: 100%;
@@ -426,9 +421,6 @@
     } //wrap
 } //container
 } //box
-
-
-
 
 //...FOOTER_SUB ...
 #footer_sub {
@@ -605,7 +597,29 @@
 			}
 		}
 	} //-----tablet -header
-//-----tablet -
+//-----tablet -tab-wrapper
+.tab-wrapper {
+    width: 100vw;
+    height: 100%;
+    height: 370px;
+}
+#box {
+    .container {
+        width: 100vw;
+        
+        .wrap {
+            height: 100vh;
+            display: block;
+
+            article {
+                width: 48%;
+                float: left;
+                margin: 1% 1%;
+            }
+        }
+    }
+    
+}
 
 
 
