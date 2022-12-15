@@ -1,26 +1,22 @@
-const tabMenu = document.querySelectorAll('.tab-menu li');
-const tabContent = document.querySelectorAll('#tab-content > div');
-const highLight = document.querySelector('.highlight');
 
-tabMenu.forEach(function(item.index){
-    item.addEventListener('click',
-    function(e){
+var targetLink = document.querySelectorAll('.tab-menu a');
+var tabContent = document.querySelectorAll('#tab-content > div');
+console.log(tabContent);
+
+for(var i = 0; i < targetLink.length; i++){
+    targetLink[i].addEventListener('click',function(e){
         e.preventDefault();
-        showContent(idx);
-        moveHighLight(idx);
-    });
+        var orgTarget = e.target.getAttribute('href');
+        var tabTarget = orgTarget.replace('#','');
+        for(var x = 0; x < tabContent.length; x++){
+            tabContent[x].style.display = 'none';
+        }
+        document.getElementById(tabTarget).style.display='block';
 
-});
-function showContent (num){
-    tabContent.forEach(function(item){
-        item.style.display = 'none';
+        for(var j=0; j<targetLink.length; j++){
+            targetLink[j].classList.remove('active');
+            e.target.classList.add('active');
+        }
     });
-    tabContent[num].style.display = 'block';
 }
-function moveHighLight(num){
-    const newLeft = tabMenu[num].offsetLeft;
-    const newWidth = tabMenu[num].offsetWidth;
-    console.log(newWidth);
-    highLight.style.left = newLeft + 'px';
-    highLight.style.width = newWidth + 'px';
-}
+document.getElementById('tabs-1').style.display='block';

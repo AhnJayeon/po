@@ -315,15 +315,15 @@
 //...  Contents 영역 --> 
 .tab-wrapper {
     width: 1180px;
-    margin: 0 auto;
-    .tabs {
+    height: 100%;
+    border: 2px solid #ccc;
         position: relative;
+        margin: 0 auto;
         .tab-menu {
             display: flex;
             border-bottom: 1px solid #8bd1c9;  
             height: 60px;
-            position: relative;
-            z-index: 1;
+            // position: relative;
             &::after {
                 content: '';
                 display: block;
@@ -333,9 +333,6 @@
                 flex: 1;
                 border: 1px solid #ddd;
                 border-left: none;
-                &:first-child {
-                    border-left: 1px solid #ddd;
-                }
                 a {
                     display: block;
                     height: 60px;
@@ -344,44 +341,21 @@
                     text-align: center;
                     line-height: 60px;
                     border: 1px solid #ddd;
-                    border-left: none;
-                    border-bottom: none;
-                    .active {
-                        color: #fff;
-                    }
-                    &.on {
-                        border-color: #8bd1c9;
-                        border-top-width: 2px;
-                        height: 59px;
-                        border-bottom: 2px solid #fff;
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            left: 0;
-                            top: 0;
-                            width: 1px;
-                            height: 100%;
-                            background: #8bd1c9;
-                            border-top: 2px #8bd1c9;
-                        }
-                    }
+                   &.active {
+                    background : #8bd1c9;
+                    color: #fff;
+                   }
+                   
                     
                 }
             } //li
-            .highlight {
-                position: absolute;
-                width: 230px;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                background: #000;
-                transition: 0.3s;
-
-            }
+            
         }
     }
     #tab-content {
         min-height: 300px;
+        padding: 20px 30px;
+        background-color: #e7f5f4; 
         div {
             display: none;
             &:first-child {
@@ -389,7 +363,7 @@
             }
         }
     }
-}
+
 
 
 
