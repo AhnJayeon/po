@@ -312,8 +312,146 @@
 		} //menuMo
     } //container
 } //HEADER
-//...  Contents 영역 -->       
+//...  Contents 영역 --> 
+.tab-wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    .tabs {
+        position: relative;
+        .tab-menu {
+            display: flex;
+            border-bottom: 1px solid #8bd1c9;  
+            height: 60px;
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            li {
+                flex: 1;
+                border: 1px solid #ddd;
+                border-left: none;
+                &:first-child {
+                    border-left: 1px solid #ddd;
+                }
+                a {
+                    display: block;
+                    height: 60px;
+                    font-size: 14px;
+                    color: #555;
+                    text-align: center;
+                    line-height: 60px;
+                    border: 1px solid #ddd;
+                    border-left: none;
+                    border-bottom: none;
+                    .active {
+                        color: #fff;
+                    }
+                    &.on {
+                        border-color: #8bd1c9;
+                        border-top-width: 2px;
+                        height: 59px;
+                        border-bottom: 2px solid #fff;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                            width: 1px;
+                            height: 100%;
+                            background: #8bd1c9;
+                            border-top: 2px #8bd1c9;
+                        }
+                    }
+                    
+                }
+            } //li
+            .highlight {
+                position: absolute;
+                width: 230px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: #000;
+                transition: 0.3s;
 
+            }
+        }
+    }
+    #tab-content {
+        min-height: 300px;
+        div {
+            display: none;
+            &:first-child {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+#box {
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    .container {
+        width: 1180px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        .wrap {
+            width: 100%;
+            &::after {
+                content: '';
+                display: block; 
+                clear: both;
+            }
+            article {
+                width: 24%; 
+                height: 200px; 
+                float: left;
+                margin-right: 1%; 
+                background-color: #e7f5f4;
+                padding: 30px 20px;
+                position: relative;
+                border-radius: 10px; 
+                box-shadow: 0 0 10px (0,0,0,0.1);
+
+                h2 {
+                    font: bold 20px/1 'arial';
+                    color: #444;
+                    margin-bottom: 15px;
+                }
+                    p {
+                        font: normal 13px/24px 'Noto Sans', sans-serif;
+                        a {
+                            font: 14px/1 'arial';
+                            color: #555;
+                            letter-spacing: 2px;
+                        }
+                    }
+                
+                .btnMore{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 1;
+                    color: #8bd1c9;  
+                  }
+            }
+                &:last-of-type {
+                    margin-right: 0px;
+                } 
+               
+
+               
+
+    } //wrap
+} //container
+} //box
 
 
 
@@ -510,7 +648,6 @@
         .container {
             margin: 0 auto;
             height: 100%;
-            background-color: #aaa;
             // height: 300px;
             // width: 100%;
             h1 {
@@ -584,5 +721,3 @@
         }
     }  //---mobile-t_footer
 }  //media-MOBILE
-
-

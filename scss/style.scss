@@ -4,9 +4,12 @@ $tablet: 1179px;
 $mobile: 539px;
 
 @import "sub_layout.scss";
+@import "gallery.scss";
+@import "details1.scss";
 // @import "community.scss";
+
 // @import "department.scss";
-// @import "gallery.scss";
+
 // @import "join.scss";
 // @import "location.scss";
 // @import "youtube.scss";
@@ -553,7 +556,7 @@ html, body {
                     height: 30px;
                     background-color: #b9e3de;
                     font: bold 12px/24px 'arial'; color: #537d78;  text-align: center;
-                    border: 1px solid #537d78;  
+                    border: 1px solid #6fa7a0;  
                     border-radius: 10px;
                     box-shadow: 0 0 15px (0,0,0,0.2);
                     cursor: pointer;
@@ -779,7 +782,7 @@ html, body {
 			}
             .wrap {
                 width: 15%;
-                margin: -70px 0px 100px 220px;
+                margin: -50px 0px 100px 220px;
                 position: relative;   
             }
             .f_box {
