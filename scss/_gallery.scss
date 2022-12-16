@@ -10,7 +10,7 @@
         margin: 0 auto;
         position: relative;  
             a {
-                font: bold 3.5vw 'Yanone Kaffeesatz', sans-serif;
+                font: bold 3.3vw 'Yanone Kaffeesatz', sans-serif;
                 color: #444;
                 padding: 0 20px;
             }
@@ -22,9 +22,10 @@
                 .menu { 
                     float: left;
                     width: 120px;
-                    margin-top: 70px;
+                    margin-top: 90px;
                     padding: 5px 30px 10px 15px;
                     z-index: 10;
+                    text-align: center;
                     cursor: pointer;
                     &:hover {
                         background: #8bd1c9;
@@ -324,7 +325,7 @@ body {
         border-radius: 10px;
         padding-bottom: 50px;
         h3 {
-            font: bold 18px/100px 'Nanum Gothic', sans-serif;
+            font: bold 20px/100px 'Nanum Gothic', sans-serif;
             text-align: center;
             color: #555;
         }
@@ -441,12 +442,12 @@ body {
         margin: 0 auto; 
         color: #fff;
         border-radius: 10px;
-        background-color: #444;
+        background-color: #777;
         box-shadow: 0 0 10px (0,0,0,0.1);
         .article1 {
             width: 380px;
             height: 350px;
-            background-color: #444;               
+            background-color: #777;               
             padding: 50px 25px;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
@@ -466,7 +467,7 @@ body {
                 } //li
             } //article1
         .article2 {
-            background-color: #444;
+            background-color: #777;
             width: 380px;
             margin: 0 20px;
             padding: 50px 25px;
@@ -492,7 +493,7 @@ body {
             width: 380px;
             
             border-radius: 10px;
-            background-color: #444;
+            background-color: #777;
             box-shadow: 0 0 10px (0,0,0,0.1);
             p {
                 font: normal 10px/26px 'Noto Sans', sans-serif;
@@ -517,8 +518,7 @@ body {
             } //f_box
         } //article3
         } //...FOOTER ...
-
-//tablet,mobile -T_FOOTER_SUB
+//tablet,mobile -T_FOOTER
 #t_footer_sub {
     display: none;
     // width: 90%;

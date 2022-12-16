@@ -10,7 +10,7 @@
         margin: 0 auto;
         position: relative;  
             a {
-                font: bold 3.5vw 'Yanone Kaffeesatz', sans-serif;
+                font: bold 3.3vw 'Yanone Kaffeesatz', sans-serif;
                 color: #444;
                 padding: 0 20px;
             }
@@ -22,9 +22,10 @@
                 .menu { 
                     float: left;
                     width: 120px;
-                    margin-top: 70px;
+                    margin-top: 90px;
                     padding: 5px 30px 10px 15px;
                     z-index: 10;
+                    text-align: center;
                     cursor: pointer;
                     &:hover {
                         background: #8bd1c9;
@@ -313,13 +314,35 @@
     } //container
 } //HEADER
 //...  Contents 영역 -->       
-
+.content {
+	width: 100%;
+	padding: 0 0 150px;
+	.container {
+		width: 1180px;
+		margin: 0 auto;
+		min-height: 500px;
+		h1 {
+			font: normal 50px/1 "arial";
+			color: #000;
+			margin-bottom: 60px;
+			span {
+				font: normal 20px/1 "맑은 고딕";
+				color: #aaa;
+				&::before {
+					content: "/";
+					margin-right: 20px;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
 
 
 
 
 //...FOOTER_SUB ...
-#footer_sub {
+#footer {
     width: 100%;
     // min-width: 1180px;
     height: 350px;
@@ -333,12 +356,12 @@
         margin: 0 auto; 
         color: #fff;
         border-radius: 10px;
-        background-color: #444;
+        background-color: #777;
         box-shadow: 0 0 10px (0,0,0,0.1);
         .article1 {
             width: 380px;
             height: 350px;
-            background-color: #444;               
+            background-color: #777;               
             padding: 50px 25px;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
@@ -358,7 +381,7 @@
                 } //li
             } //article1
         .article2 {
-            background-color: #444;
+            background-color: #777;
             width: 380px;
             margin: 0 20px;
             padding: 50px 25px;
@@ -384,7 +407,7 @@
             width: 380px;
             
             border-radius: 10px;
-            background-color: #444;
+            background-color: #777;
             box-shadow: 0 0 10px (0,0,0,0.1);
             p {
                 font: normal 10px/26px 'Noto Sans', sans-serif;
@@ -409,8 +432,8 @@
             } //f_box
         } //article3
         } //...FOOTER ...
-//tablet,mobile -T_FOOTER_SUB
-#t_footer_sub {
+//tablet,mobile -T_FOOTER
+#t_footer {
     display: none;
     // width: 90%;
     height: 250px;

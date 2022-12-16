@@ -10,7 +10,7 @@
         margin: 0 auto;
         position: relative;  
             a {
-                font: bold 3.5vw 'Yanone Kaffeesatz', sans-serif;
+                font: bold 3.3vw 'Yanone Kaffeesatz', sans-serif;
                 color: #444;
                 padding: 0 20px;
             }
@@ -22,9 +22,10 @@
                 .menu { 
                     float: left;
                     width: 120px;
-                    margin-top: 70px;
+                    margin-top: 90px;
                     padding: 5px 30px 10px 15px;
                     z-index: 10;
+                    text-align: center;
                     cursor: pointer;
                     &:hover {
                         background: #8bd1c9;
@@ -318,11 +319,12 @@
     height: 100%;
     border: 2px solid #ccc;
         position: relative;
-        margin: 0 auto;
+        margin: 50px auto;
         .tab-menu {
             display: flex;
             border-bottom: 1px solid #8bd1c9;  
             height: 60px;
+            font: bold 15px/30px 'Noto Sans', sans-serif;
             // position: relative;
             &::after {
                 content: '';

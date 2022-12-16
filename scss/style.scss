@@ -6,6 +6,8 @@ $mobile: 539px;
 @import "sub_layout.scss";
 @import "gallery.scss";
 @import "details1.scss";
+@import "gallery2.scss";
+@import "faq.scss";
 // @import "community.scss";
 
 // @import "department.scss";
@@ -32,6 +34,11 @@ a {
 	display: block;
 	clear: both;
 }
+.wrap::after {
+	content: "";
+	display: block;
+	clear: both;
+}
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 body {
@@ -50,13 +57,17 @@ body {
         height: 100%;
         margin: 0 auto;
         position: relative; 
-        a {
-            font: bold 3.5vw 'Yanone Kaffeesatz', sans-serif;
-            color: #444;
-            padding: 0 20px;
-            cursor: pointer;
-            display: block;
+        > h1 {
+            // position: absolute;
+			// left: 0;
+
+            > a {
+                font: bold 3.3vw 'Yanone Kaffeesatz', sans-serif;
+                color: #444;
+                padding: 0 20px;
+                // display: block;
         }
+    }
 //...header menu_web
         .menu_web {
             #gnb {
@@ -65,9 +76,10 @@ body {
                 .menu { 
                     float: left;
                     width: 120px;
-                    margin-top: 70px;
+                    margin-top: 90px;
                     padding: 5px 30px 10px 15px;
                     z-index: 10;
+                    text-align: center;
                     cursor: pointer;
                     &:hover {
                         background: #8bd1c9;
@@ -82,7 +94,7 @@ body {
                             ul {
                                 li {
                                     width: 120px;
-                                    padding: 10px;
+                                    padding: 10px 10px 10px 25px;
                                     border-bottom: 1px dashed #ddd;
                                     background: transparent;
                                     text-align: left;
@@ -355,45 +367,43 @@ body {
 		} //menuMo
     } //container
 } //HEADER
-//...GALLERY ...          
-#gallery {
+//...GALLERY ...   
+#visual {
     width: 1180px;
+    height: calc(50vh - 121px);
+    overflow: hidden;
+    background: #537d78;  
     margin: 0 auto;
+    border-radius: 10px;
+    video {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        opacity: 0.15;
+    }
+    .inner {
+        width: 1180px;
+		margin: 0 auto;
+		position: absolute;
+		top: 22%;
+		left: 25%;
+    }
+}       
 
-    // // min-width: 1180px;
-    height: 100%;
-    // .container {
-    // width: 1180px;
-    // height: 500px;
-    // margin: 0 auto;
-    // display: block;
-    // position: relative;
-    // .album {   
-    //         // margin-left: 200px;
-    //         // float: left;
-    //         width: 48%; 
-    //         height: 100%;
-    //         float: left;
-    //         overflow: hidden;
-    //         border-radius: 10px;
-    //         margin: 1% 1%;
-    //         box-shadow: 0 0 10px (0,0,0,0.1);
-    //         .images {
-    //             width: 100%;
-    //             display: flex;
-    //             object-fit: cover;
-    //         } //images
-    //     } //album
         
-        .v_box {
-            width: 100%; 
-            height: 100%;     
-            background-color: black;
+    #v_box {
+        width: 100%; 
+        height: 100%;  
+            .container {  
+            width: 1180px;
+            margin: 20px auto;
+            background-color:#333;
             color: #fff;
             border-radius: 10px;
             // overflow: hidden;
             box-shadow: 0 0 10px (0,0,0,0.1);
             padding: 60px 100px 30px;
+            position: relative;
             h1 {
                 font: bold 40px/50px 'Noto Sans', sans-serif;
             }
@@ -410,10 +420,11 @@ body {
                     margin-left: 10px;
                     position: absolute;
                 }
-            } //a      
+            } //a  
+        }     
         } //v_box     
     // } //container         
-} //GALLERY
+
 //...SECTION-ARTICLE ...
 #article {
     width: 100%;
@@ -612,12 +623,12 @@ body {
         margin: 0 auto; 
         color: #fff;
         border-radius: 10px;
-        background-color: #444;
+        background-color: #777;
         box-shadow: 0 0 10px (0,0,0,0.1);
         .article1 {
             width: 380px;
             height: 350px;
-            background-color: #444;               
+            background-color: #777;               
             padding: 50px 25px;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
@@ -637,7 +648,7 @@ body {
                 } //li
             } //article1
         .article2 {
-            background-color: #444;
+            background-color: #777;
             width: 380px;
             margin: 0 20px;
             padding: 50px 25px;
@@ -663,7 +674,7 @@ body {
             width: 380px;
             
             border-radius: 10px;
-            background-color: #444;
+            background-color: #777;
             box-shadow: 0 0 10px (0,0,0,0.1);
             p {
                 font: normal 10px/26px 'Noto Sans', sans-serif;
@@ -774,15 +785,22 @@ body {
 		}
 	} //-----tablet -header
 //-----tablet -figure-gallery
-	#gallery {
+#visual {
+    width: 100vw;
+    height: 50vh;
+
+    .inner {
+        height: 100%;
+    }
+}
+#v_box {
         width: 100vw;
         height: 100%;
-        position: relative;
+        // position: relative;
         // margin: 0;
-        .v_box {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px 20px 15px;
+        .container {
+            height: 100vh;
+            padding: 20px 20px;
             h1 {
                 font: bold 25px/40px 'Noto Sans', sans-serif;  
             }
@@ -934,13 +952,15 @@ body {
 		}
 	} //---mobile-header
 //------mobile-GALLERY-------
-    #gallery {
-                    .v_box {
-                width: 100%;
-            display: block;
+#visaul {
+    width: 100vw;
+}
+    #v_box {
+        width: 100vw;
+        display: block;
             
         }
-    } //---mobile-gallery
+
 //------mobile-ARTICLE-------
     #article {
         width: 100vw;

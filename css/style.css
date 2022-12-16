@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 #header_sub {
   width: 100%;
@@ -11,7 +12,7 @@
   position: relative;
 }
 #header_sub .container a {
-  font: bold 3.5vw "Yanone Kaffeesatz", sans-serif;
+  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -22,9 +23,10 @@
 #header_sub .container .menu_web #gnb .menu {
   float: left;
   width: 120px;
-  margin-top: 70px;
+  margin-top: 90px;
   padding: 5px 30px 10px 15px;
   z-index: 10;
+  text-align: center;
   cursor: pointer;
 }
 #header_sub .container .menu_web #gnb .menu:hover {
@@ -290,11 +292,35 @@
   text-align: center;
 }
 
-#footer_sub {
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+}
+.content .container {
+  width: 1180px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.content .container h1 {
+  font: normal 50px/1 "arial";
+  color: #000;
+  margin-bottom: 60px;
+}
+.content .container h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.content .container h1 span::before {
+  content: "/";
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#footer {
   width: 100%;
   height: 350px;
 }
-#footer_sub .container {
+#footer .container {
   width: 1180px;
   height: 100%;
   display: flex;
@@ -304,78 +330,78 @@
   margin: 0 auto;
   color: #fff;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#footer_sub .container .article1 {
+#footer .container .article1 {
   width: 380px;
   height: 350px;
-  background-color: #444;
+  background-color: #777;
   padding: 50px 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#footer_sub .container .article1 a {
+#footer .container .article1 a {
   font: bold 35px/1 "Yanone Kaffeesatz", sans-serif;
   color: #fff;
 }
-#footer_sub .container .article1 li h3 {
+#footer .container .article1 li h3 {
   font: normal 15px/24px "Nanum Gothic", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-#footer_sub .container .article1 li p {
+#footer .container .article1 li p {
   font: 15px/27px "Noto Sans", sans-serif;
 }
-#footer_sub .container .article2 {
-  background-color: #444;
+#footer .container .article2 {
+  background-color: #777;
   width: 380px;
   margin: 0 20px;
   padding: 50px 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#footer_sub .container .article2 h4 {
+#footer .container .article2 h4 {
   font: 22px/24px "Nanum Gothic", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-#footer_sub .container .article2 li h3 {
+#footer .container .article2 li h3 {
   font: normal 15px/24px "Nanum Gothic", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-#footer_sub .container .article2 li p {
+#footer .container .article2 li p {
   font: 15px/27px "Noto Sans", sans-serif;
 }
-#footer_sub .container .article3 {
+#footer .container .article3 {
   width: 380px;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#footer_sub .container .article3 p {
+#footer .container .article3 p {
   font: normal 10px/26px "Noto Sans", sans-serif;
   padding: 50px 30px;
 }
-#footer_sub .container .article3 .b_util {
+#footer .container .article3 .b_util {
   width: 380px;
   margin: 30px auto;
   position: relative;
   display: flex;
   justify-content: center;
 }
-#footer_sub .container .article3 .b_util .f_link a {
+#footer .container .article3 .b_util .f_link a {
   font-size: 25px;
   color: #fff;
   padding: 20px 10px;
 }
 
-#t_footer_sub {
+#t_footer {
   display: none;
   height: 250px;
 }
-#t_footer_sub .container {
+#t_footer .container {
   width: 100vw;
   position: relative;
   text-align: center;
@@ -387,26 +413,26 @@
   background-color: #444;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#t_footer_sub .container a {
+#t_footer .container a {
   font: bold 20px/1 "Yanone Kaffeesatz", sans-serif;
   color: #fff;
 }
-#t_footer_sub .container li h3 {
+#t_footer .container li h3 {
   font: normal 13px/24px "Nanum Gothic", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-#t_footer_sub .container li p {
+#t_footer .container li p {
   font: 12px/20px "Noto Sans", sans-serif;
 }
-#t_footer_sub .container .b_util {
+#t_footer .container .b_util {
   width: 60%;
   margin: 20px auto;
   position: relative;
   display: flex;
   justify-content: center;
 }
-#t_footer_sub .container .b_util .f_link a {
+#t_footer .container .b_util .f_link a {
   font-size: 20px;
   color: #fff;
   padding: 20px 10px;
@@ -519,7 +545,7 @@
   position: relative;
 }
 #header_sub .container a {
-  font: bold 3.5vw "Yanone Kaffeesatz", sans-serif;
+  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -530,9 +556,10 @@
 #header_sub .container .menu_web #gnb .menu {
   float: left;
   width: 120px;
-  margin-top: 70px;
+  margin-top: 90px;
   padding: 5px 30px 10px 15px;
   z-index: 10;
+  text-align: center;
   cursor: pointer;
 }
 #header_sub .container .menu_web #gnb .menu:hover {
@@ -810,7 +837,7 @@ body #photos .container {
   padding-bottom: 50px;
 }
 body #photos .container h3 {
-  font: bold 18px/100px "Nanum Gothic", sans-serif;
+  font: bold 20px/100px "Nanum Gothic", sans-serif;
   text-align: center;
   color: #555;
 }
@@ -919,13 +946,13 @@ body #footer_sub .container {
   margin: 0 auto;
   color: #fff;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 body #footer_sub .container .article1 {
   width: 380px;
   height: 350px;
-  background-color: #444;
+  background-color: #777;
   padding: 50px 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
@@ -943,7 +970,7 @@ body #footer_sub .container .article1 li p {
   font: 15px/27px "Noto Sans", sans-serif;
 }
 body #footer_sub .container .article2 {
-  background-color: #444;
+  background-color: #777;
   width: 380px;
   margin: 0 20px;
   padding: 50px 25px;
@@ -966,7 +993,7 @@ body #footer_sub .container .article2 li p {
 body #footer_sub .container .article3 {
   width: 380px;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 body #footer_sub .container .article3 p {
@@ -1159,7 +1186,7 @@ body #t_footer_sub .container .b_util .f_link a {
   position: relative;
 }
 #header_sub .container a {
-  font: bold 3.5vw "Yanone Kaffeesatz", sans-serif;
+  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -1170,9 +1197,10 @@ body #t_footer_sub .container .b_util .f_link a {
 #header_sub .container .menu_web #gnb .menu {
   float: left;
   width: 120px;
-  margin-top: 70px;
+  margin-top: 90px;
   padding: 5px 30px 10px 15px;
   z-index: 10;
+  text-align: center;
   cursor: pointer;
 }
 #header_sub .container .menu_web #gnb .menu:hover {
@@ -1443,12 +1471,13 @@ body #t_footer_sub .container .b_util .f_link a {
   height: 100%;
   border: 2px solid #ccc;
   position: relative;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 .tab-wrapper .tab-menu {
   display: flex;
   border-bottom: 1px solid #8bd1c9;
   height: 60px;
+  font: bold 15px/30px "Noto Sans", sans-serif;
 }
 .tab-wrapper .tab-menu::after {
   content: "";
@@ -1773,6 +1802,1113 @@ body #t_footer_sub .container .b_util .f_link a {
     padding: 20px 10px;
   }
 }
+#header_sub {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 25px;
+}
+#header_sub .container {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#header_sub .container a {
+  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+  color: #444;
+  padding: 0 20px;
+}
+#header_sub .container .menu_web #gnb {
+  top: 0;
+  position: absolute;
+}
+#header_sub .container .menu_web #gnb .menu {
+  float: left;
+  width: 120px;
+  margin-top: 90px;
+  padding: 5px 30px 10px 15px;
+  z-index: 10;
+  text-align: center;
+  cursor: pointer;
+}
+#header_sub .container .menu_web #gnb .menu:hover {
+  background: #8bd1c9;
+  border-radius: 5px;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -15px;
+  background: #aaa;
+  border-radius: 5px;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
+  width: 120px;
+  padding: 10px;
+  border-bottom: 1px dashed #ddd;
+  background: transparent;
+  text-align: left;
+  font: 14px/1 "arial";
+  color: #ccc;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li:last-child {
+  border-bottom: none;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li a:hover {
+  color: #8bd1c9;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li .fa-angle-right {
+  float: right;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li.isSub:hover .sub_menu2 {
+  position: absolute;
+  display: block;
+  background: #d0ece9;
+  margin-top: -25px;
+  margin-left: 160px;
+  border-radius: 5px;
+}
+#header_sub .container .menu_web #gnb .menu a {
+  font: bold 15px/1 "arial";
+  color: #777;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 {
+  display: none;
+  z-index: 9;
+  cursor: pointer;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 a {
+  font: bold 14px/1 "arial";
+  color: #fff;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 .sub_menu2 {
+  display: none;
+  z-index: 10;
+  left: -40px;
+  position: absolute;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 .sub_menu2 a {
+  font: bold 13px/1 "arial";
+  color: #6fa7a0;
+}
+#header_sub .container form .wrap {
+  top: 0;
+  right: 0;
+  width: 40%;
+  margin: 10px 0px 15px;
+  display: block;
+  position: absolute;
+}
+#header_sub .container form .wrap label {
+  font: 0.7rem "arial";
+  color: #666;
+}
+#header_sub .container form .wrap input[type=text] {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#header_sub .container form .wrap input[type=password] {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#header_sub .container .f_box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  margin: 70px 0px 10px;
+  right: 0;
+}
+#header_sub .container .f_box input[type=text] {
+  background-color: #fff;
+  width: 230px;
+  height: 40px;
+  padding: 10px;
+  margin-right: -7px;
+  border: 1px solid #6fa7a0;
+  border-radius: 25px 0 0 25px;
+  cursor: pointer;
+}
+#header_sub .container .f_box input[type=text]::placeholder {
+  color: #8bd1c9;
+  font-weight: bold;
+}
+#header_sub .container .f_box input[type=submit] {
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #6fa7a0;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+#header_sub .container .btnCall {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  width: 30px;
+  height: 30px;
+  z-index: 11;
+}
+#header_sub .container .btnCall::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: #444;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  border-radius: 1.5px;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .container .btnCall::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: #444;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  border-radius: 1.5px;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .container .btnCall span {
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: #666;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin-top: -1px;
+  transition: 1s;
+  border-radius: 1.5px;
+  text-indent: -9999px;
+}
+#header_sub .container .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .container .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .container .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .container .menuMo {
+  width: 220px;
+  height: 100vh;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  padding: 35px 30px;
+  z-index: 10;
+  transition: 0.5s;
+  display: none;
+}
+#header_sub .container .menuMo.on {
+  left: 0;
+}
+#header_sub .container .menuMo .menu {
+  margin: 20px auto;
+  padding: 10px 10px;
+  border-bottom: 3px solid #8bd1c9;
+  border-radius: 1.5px;
+}
+#header_sub .container .menuMo .menu a {
+  font-size: 18px;
+}
+#header_sub .container .menuMo .menu:hover {
+  background: #8bd1c9;
+  border-radius: 5px;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 147px;
+  background: #aaa;
+  border-radius: 5px;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li {
+  width: 180px;
+  padding: 20px;
+  border-bottom: 1px dashed #ddd;
+  background: transparent;
+  align-items: center;
+  text-align: left;
+  font: 1.1rem "Noto Sans", sans-serif;
+  color: #ccc;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li:last-child {
+  border-bottom: none;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li a:hover {
+  color: #8bd1c9;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li .fa-angle-right {
+  float: right;
+  font-size: 20px;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li.isSub:hover .sub_menu2 {
+  position: absolute;
+  display: block;
+  background: #d0ece9;
+  margin-top: -65px;
+  margin-left: 160px;
+  border-radius: 5px;
+  font: 1rem "Noto Sans", sans-serif;
+}
+#header_sub .container .menuMo .close {
+  display: block;
+  z-index: 10;
+  color: #999;
+  font-size: 40px;
+  text-align: right;
+}
+#header_sub .container .menuMo .sub_menu1 {
+  display: none;
+}
+#header_sub .container .menuMo .sub_menu1 .sub_menu2 {
+  display: none;
+}
+#header_sub .container .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font: bold 14px/1 "arial";
+  color: #888;
+  text-align: center;
+}
+
+#box1 {
+  width: 100%;
+}
+#box1 .container {
+  width: 1180px;
+  margin: 50px auto;
+  position: relative;
+}
+#box1 .container h1 {
+  font: bold 2.5rem "Noto Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 80px;
+}
+#box1 .container .wrap {
+  width: 100%;
+}
+#box1 .container .wrap article {
+  width: 32%;
+  border: 1px solid #999;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+#box1 .container .wrap article:nth-of-type(3n) {
+  margin-right: 0;
+}
+#box1 .container .wrap article .pic {
+  width: 100%;
+  height: 200px;
+  background-color: #444;
+  margin-bottom: 20px;
+}
+#box1 .container .wrap article a {
+  font: bold 12px/1 "arial";
+  color: #333;
+}
+
+#footer_sub {
+  width: 100%;
+  height: 350px;
+}
+#footer_sub .container {
+  width: 1180px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article1 {
+  width: 380px;
+  height: 350px;
+  background-color: #444;
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article1 a {
+  font: bold 35px/1 "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
+}
+#footer_sub .container .article1 li h3 {
+  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer_sub .container .article1 li p {
+  font: 15px/27px "Noto Sans", sans-serif;
+}
+#footer_sub .container .article2 {
+  background-color: #444;
+  width: 380px;
+  margin: 0 20px;
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article2 h4 {
+  font: 22px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer_sub .container .article2 li h3 {
+  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer_sub .container .article2 li p {
+  font: 15px/27px "Noto Sans", sans-serif;
+}
+#footer_sub .container .article3 {
+  width: 380px;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article3 p {
+  font: normal 10px/26px "Noto Sans", sans-serif;
+  padding: 50px 30px;
+}
+#footer_sub .container .article3 .b_util {
+  width: 380px;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#footer_sub .container .article3 .b_util .f_link a {
+  font-size: 25px;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+#t_footer_sub {
+  display: none;
+  height: 250px;
+}
+#t_footer_sub .container {
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  float: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#t_footer_sub .container a {
+  font: bold 20px/1 "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
+}
+#t_footer_sub .container li h3 {
+  font: normal 13px/24px "Nanum Gothic", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#t_footer_sub .container li p {
+  font: 12px/20px "Noto Sans", sans-serif;
+}
+#t_footer_sub .container .b_util {
+  width: 60%;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#t_footer_sub .container .b_util .f_link a {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 1179px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  body #header_sub .container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 30px;
+  }
+  body #header_sub .container .menu_web {
+    display: none;
+  }
+  body #header_sub .container .wrap {
+    width: 15%;
+    margin: -50px 0px 100px 220px;
+    position: relative;
+  }
+  body #header_sub .container .f_box {
+    display: none;
+  }
+  body #header_sub .container .menuMo {
+    display: block;
+  }
+  body #header_sub .container .btnCall {
+    display: block;
+    background-color: #ccc;
+    padding: 20px 20px;
+    border-radius: 10px;
+    top: 40px;
+    position: fixed;
+  }
+  body .tab-wrapper {
+    width: 100vw;
+    height: 100%;
+    height: 370px;
+  }
+  body #box .container {
+    width: 100vw;
+  }
+  body #box .container .wrap {
+    height: 100vh;
+    display: block;
+  }
+  body #box .container .wrap article {
+    width: 48%;
+    float: left;
+    margin: 1% 1%;
+  }
+  body #footer_sub {
+    display: none;
+  }
+  body #t_footer_sub {
+    display: block;
+    height: 50%;
+  }
+  body #t_footer_sub .container {
+    margin: 0 auto;
+    height: 100%;
+  }
+  body #t_footer_sub .container h1 {
+    font: 20px/30px "Noto Sans", sans-serif;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  #header_sub .container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 10px;
+  }
+  #header_sub .container a {
+    font: bold 24px "Yanone Kaffeesatz", sans-serif;
+    padding: 0;
+  }
+  #header_sub .container .menu_web {
+    display: none;
+  }
+  #header_sub .container form .wrap {
+    position: absolute;
+    top: 70px;
+    left: -120px;
+  }
+  #header_sub .container .f_box {
+    display: none;
+  }
+  #header_sub .container .menuMo {
+    display: block;
+  }
+  #header_sub .container .btnCall {
+    display: block;
+    background-color: #ccc;
+    padding: 10px 10px;
+    border-radius: 10px;
+    top: 40px;
+    position: fixed;
+  }
+  #t_footer_sub {
+    height: 100%;
+    width: 100%;
+  }
+  #t_footer_sub .container {
+    padding: 20px 10px;
+  }
+  #t_footer_sub .container .b_util .f_link a {
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 10px;
+  }
+}
+#header_sub {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 25px;
+}
+#header_sub .container {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#header_sub .container a {
+  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+  color: #444;
+  padding: 0 20px;
+}
+#header_sub .container .menu_web #gnb {
+  top: 0;
+  position: absolute;
+}
+#header_sub .container .menu_web #gnb .menu {
+  float: left;
+  width: 120px;
+  margin-top: 90px;
+  padding: 5px 30px 10px 15px;
+  z-index: 10;
+  text-align: center;
+  cursor: pointer;
+}
+#header_sub .container .menu_web #gnb .menu:hover {
+  background: #8bd1c9;
+  border-radius: 5px;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -15px;
+  background: #aaa;
+  border-radius: 5px;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
+  width: 120px;
+  padding: 10px;
+  border-bottom: 1px dashed #ddd;
+  background: transparent;
+  text-align: left;
+  font: 14px/1 "arial";
+  color: #ccc;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li:last-child {
+  border-bottom: none;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li a:hover {
+  color: #8bd1c9;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li .fa-angle-right {
+  float: right;
+}
+#header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li.isSub:hover .sub_menu2 {
+  position: absolute;
+  display: block;
+  background: #d0ece9;
+  margin-top: -25px;
+  margin-left: 160px;
+  border-radius: 5px;
+}
+#header_sub .container .menu_web #gnb .menu a {
+  font: bold 15px/1 "arial";
+  color: #777;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 {
+  display: none;
+  z-index: 9;
+  cursor: pointer;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 a {
+  font: bold 14px/1 "arial";
+  color: #fff;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 .sub_menu2 {
+  display: none;
+  z-index: 10;
+  left: -40px;
+  position: absolute;
+}
+#header_sub .container .menu_web #gnb .menu .sub_menu1 .sub_menu2 a {
+  font: bold 13px/1 "arial";
+  color: #6fa7a0;
+}
+#header_sub .container form .wrap {
+  top: 0;
+  right: 0;
+  width: 40%;
+  margin: 10px 0px 15px;
+  display: block;
+  position: absolute;
+}
+#header_sub .container form .wrap label {
+  font: 0.7rem "arial";
+  color: #666;
+}
+#header_sub .container form .wrap input[type=text] {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#header_sub .container form .wrap input[type=password] {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#header_sub .container .f_box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  margin: 70px 0px 10px;
+  right: 0;
+}
+#header_sub .container .f_box input[type=text] {
+  background-color: #fff;
+  width: 230px;
+  height: 40px;
+  padding: 10px;
+  margin-right: -7px;
+  border: 1px solid #6fa7a0;
+  border-radius: 25px 0 0 25px;
+  cursor: pointer;
+}
+#header_sub .container .f_box input[type=text]::placeholder {
+  color: #8bd1c9;
+  font-weight: bold;
+}
+#header_sub .container .f_box input[type=submit] {
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #6fa7a0;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+#header_sub .container .btnCall {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  width: 30px;
+  height: 30px;
+  z-index: 11;
+}
+#header_sub .container .btnCall::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: #444;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  border-radius: 1.5px;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .container .btnCall::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: #444;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  border-radius: 1.5px;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .container .btnCall span {
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: #666;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin-top: -1px;
+  transition: 1s;
+  border-radius: 1.5px;
+  text-indent: -9999px;
+}
+#header_sub .container .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .container .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .container .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .container .menuMo {
+  width: 220px;
+  height: 100vh;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  padding: 35px 30px;
+  z-index: 10;
+  transition: 0.5s;
+  display: none;
+}
+#header_sub .container .menuMo.on {
+  left: 0;
+}
+#header_sub .container .menuMo .menu {
+  margin: 20px auto;
+  padding: 10px 10px;
+  border-bottom: 3px solid #8bd1c9;
+  border-radius: 1.5px;
+}
+#header_sub .container .menuMo .menu a {
+  font-size: 18px;
+}
+#header_sub .container .menuMo .menu:hover {
+  background: #8bd1c9;
+  border-radius: 5px;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 147px;
+  background: #aaa;
+  border-radius: 5px;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li {
+  width: 180px;
+  padding: 20px;
+  border-bottom: 1px dashed #ddd;
+  background: transparent;
+  align-items: center;
+  text-align: left;
+  font: 1.1rem "Noto Sans", sans-serif;
+  color: #ccc;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li:last-child {
+  border-bottom: none;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li a:hover {
+  color: #8bd1c9;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li .fa-angle-right {
+  float: right;
+  font-size: 20px;
+}
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li.isSub:hover .sub_menu2 {
+  position: absolute;
+  display: block;
+  background: #d0ece9;
+  margin-top: -65px;
+  margin-left: 160px;
+  border-radius: 5px;
+  font: 1rem "Noto Sans", sans-serif;
+}
+#header_sub .container .menuMo .close {
+  display: block;
+  z-index: 10;
+  color: #999;
+  font-size: 40px;
+  text-align: right;
+}
+#header_sub .container .menuMo .sub_menu1 {
+  display: none;
+}
+#header_sub .container .menuMo .sub_menu1 .sub_menu2 {
+  display: none;
+}
+#header_sub .container .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font: bold 14px/1 "arial";
+  color: #888;
+  text-align: center;
+}
+
+.faq-container {
+  width: 1180px;
+  margin: 50px auto;
+  padding: 10px;
+}
+.faq-container h2 {
+  font: bold 40px/50px "Noto Sans", sans-serif;
+  color: #6fa7a0;
+}
+.faq-container #question {
+  cursor: pointer;
+}
+.faq-container #question.active .q-heading {
+  background-color: #8bd1c9;
+  color: #fff;
+}
+.faq-container #question.active .q-answer {
+  display: block;
+}
+.faq-container #question .q-heading {
+  background-color: #999;
+  font: bold 1.1rem "Noto Sans", sans-serif;
+  line-height: 2.2rem;
+  padding: 10px;
+  color: #eee;
+}
+.faq-container #question .q-answer {
+  padding: 20px;
+  display: none;
+  background-color: #e7f5f4;
+}
+
+#footer_sub {
+  width: 100%;
+  height: 350px;
+}
+#footer_sub .container {
+  width: 1180px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article1 {
+  width: 380px;
+  height: 350px;
+  background-color: #444;
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article1 a {
+  font: bold 35px/1 "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
+}
+#footer_sub .container .article1 li h3 {
+  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer_sub .container .article1 li p {
+  font: 15px/27px "Noto Sans", sans-serif;
+}
+#footer_sub .container .article2 {
+  background-color: #444;
+  width: 380px;
+  margin: 0 20px;
+  padding: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article2 h4 {
+  font: 22px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer_sub .container .article2 li h3 {
+  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#footer_sub .container .article2 li p {
+  font: 15px/27px "Noto Sans", sans-serif;
+}
+#footer_sub .container .article3 {
+  width: 380px;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#footer_sub .container .article3 p {
+  font: normal 10px/26px "Noto Sans", sans-serif;
+  padding: 50px 30px;
+}
+#footer_sub .container .article3 .b_util {
+  width: 380px;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#footer_sub .container .article3 .b_util .f_link a {
+  font-size: 25px;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+#t_footer_sub {
+  display: none;
+  height: 250px;
+}
+#t_footer_sub .container {
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  float: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+}
+#t_footer_sub .container a {
+  font: bold 20px/1 "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
+}
+#t_footer_sub .container li h3 {
+  font: normal 13px/24px "Nanum Gothic", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#t_footer_sub .container li p {
+  font: 12px/20px "Noto Sans", sans-serif;
+}
+#t_footer_sub .container .b_util {
+  width: 60%;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#t_footer_sub .container .b_util .f_link a {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 1179px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  body #header_sub .container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 30px;
+  }
+  body #header_sub .container .menu_web {
+    display: none;
+  }
+  body #header_sub .container .wrap {
+    width: 15%;
+    margin: -50px 0px 100px 220px;
+    position: relative;
+  }
+  body #header_sub .container .f_box {
+    display: none;
+  }
+  body #header_sub .container .menuMo {
+    display: block;
+  }
+  body #header_sub .container .btnCall {
+    display: block;
+    background-color: #ccc;
+    padding: 20px 20px;
+    border-radius: 10px;
+    top: 40px;
+    position: fixed;
+  }
+  body .faq-container {
+    width: 90vw;
+  }
+  body #footer_sub {
+    display: none;
+  }
+  body #t_footer_sub {
+    height: 50%;
+  }
+  body #t_footer_sub .container {
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #aaa;
+  }
+  body #t_footer_sub .container h1 {
+    font: 20px/30px "Noto Sans", sans-serif;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  #header_sub .container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 10px;
+  }
+  #header_sub .container a {
+    font: bold 24px "Yanone Kaffeesatz", sans-serif;
+    padding: 0;
+  }
+  #header_sub .container .menu_web {
+    display: none;
+  }
+  #header_sub .container form .wrap {
+    position: absolute;
+    top: 70px;
+    left: -120px;
+  }
+  #header_sub .container .f_box {
+    display: none;
+  }
+  #header_sub .container .menuMo {
+    display: block;
+  }
+  #header_sub .container .btnCall {
+    display: block;
+    background-color: #ccc;
+    padding: 10px 10px;
+    border-radius: 10px;
+    top: 40px;
+    position: fixed;
+  }
+  #t_footer_sub {
+    height: 100%;
+    width: 100%;
+  }
+  #t_footer_sub .container {
+    padding: 20px 10px;
+  }
+  #t_footer_sub .container .b_util .f_link a {
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 10px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -1789,6 +2925,12 @@ a {
 }
 
 .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap::after {
   content: "";
   display: block;
   clear: both;
@@ -1811,12 +2953,10 @@ body {
   margin: 0 auto;
   position: relative;
 }
-#header .container a {
-  font: bold 3.5vw "Yanone Kaffeesatz", sans-serif;
+#header .container > h1 > a {
+  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
   color: #444;
   padding: 0 20px;
-  cursor: pointer;
-  display: block;
 }
 #header .container .menu_web #gnb {
   top: 0;
@@ -1825,9 +2965,10 @@ body {
 #header .container .menu_web #gnb .menu {
   float: left;
   width: 120px;
-  margin-top: 70px;
+  margin-top: 90px;
   padding: 5px 30px 10px 15px;
   z-index: 10;
+  text-align: center;
   cursor: pointer;
 }
 #header .container .menu_web #gnb .menu:hover {
@@ -1844,7 +2985,7 @@ body {
 }
 #header .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -2093,33 +3234,55 @@ body {
   text-align: center;
 }
 
-#gallery {
+#visual {
+  width: 1180px;
+  height: calc(50vh - 121px);
+  overflow: hidden;
+  background: #537d78;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#visual video {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  opacity: 0.15;
+}
+#visual .inner {
   width: 1180px;
   margin: 0 auto;
-  height: 100%;
+  position: absolute;
+  top: 22%;
+  left: 25%;
 }
-#gallery .v_box {
+
+#v_box {
   width: 100%;
   height: 100%;
-  background-color: black;
+}
+#v_box .container {
+  width: 1180px;
+  margin: 20px auto;
+  background-color: #333;
   color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
   padding: 60px 100px 30px;
+  position: relative;
 }
-#gallery .v_box h1 {
+#v_box .container h1 {
   font: bold 40px/50px "Noto Sans", sans-serif;
 }
-#gallery .v_box h4 {
+#v_box .container h4 {
   font: normal 14px/24px "Nanum Gothic", sans-serif;
   margin-top: 10px;
 }
-#gallery .v_box a {
+#v_box .container a {
   font-size: 50px;
   color: #fff;
   cursor: pointer;
 }
-#gallery .v_box a span {
+#v_box .container a span {
   font: normal 12px/65px "Nanum Gothic", sans-serif;
   margin-left: 10px;
   position: absolute;
@@ -2320,13 +3483,13 @@ body {
   margin: 0 auto;
   color: #fff;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article1 {
   width: 380px;
   height: 350px;
-  background-color: #444;
+  background-color: #777;
   padding: 50px 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
@@ -2344,7 +3507,7 @@ body {
   font: 15px/27px "Noto Sans", sans-serif;
 }
 #footer .container .article2 {
-  background-color: #444;
+  background-color: #777;
   width: 380px;
   margin: 0 20px;
   padding: 50px 25px;
@@ -2367,7 +3530,7 @@ body {
 #footer .container .article3 {
   width: 380px;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article3 p {
@@ -2461,27 +3624,32 @@ body {
     top: 40px;
     position: fixed;
   }
-  body #gallery {
+  body #visual {
+    width: 100vw;
+    height: 50vh;
+  }
+  body #visual .inner {
+    height: 100%;
+  }
+  body #v_box {
     width: 100vw;
     height: 100%;
-    position: relative;
   }
-  body #gallery .v_box {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px 15px;
+  body #v_box .container {
+    height: 100vh;
+    padding: 20px 20px;
   }
-  body #gallery .v_box h1 {
+  body #v_box .container h1 {
     font: bold 25px/40px "Noto Sans", sans-serif;
   }
-  body #gallery .v_box h4 {
+  body #v_box .container h4 {
     font: normal 13px/20px "Nanum Gothic", sans-serif;
   }
-  body #gallery .v_box a {
+  body #v_box .container a {
     font-size: 30px;
     cursor: pointer;
   }
-  body #gallery .v_box a span {
+  body #v_box .container a span {
     font: normal 12px/30px "Nanum Gothic", sans-serif;
   }
   body #article .container {
@@ -2592,8 +3760,11 @@ body {
     top: 40px;
     position: fixed;
   }
-  #gallery .v_box {
-    width: 100%;
+  #visaul {
+    width: 100vw;
+  }
+  #v_box {
+    width: 100vw;
     display: block;
   }
   #article {
