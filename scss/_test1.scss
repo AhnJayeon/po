@@ -1,5 +1,5 @@
 //...HEADER_SUB ...
-#header_sub {
+#header_sub {   
     width: 100%;
     // min-width: 1180px;
     height: 100px;
@@ -8,12 +8,15 @@
         width: 1180px;
         height: 100%;
         margin: 0 auto;
-        position: relative;  
-            a {
-                font: bold 3.3vw 'Yanone Kaffeesatz', sans-serif;
+        position: relative; 
+        > h1 {
+            > a {
+                font: bold 3.2rem 'Noto Sans', sans-serif;
                 color: #444;
                 padding: 0 20px;
-            }
+                // display: block;
+        }
+    }
 //...header menu_web
         .menu_web {
             #gnb {
@@ -28,7 +31,7 @@
                     text-align: center;
                     cursor: pointer;
                     &:hover {
-                        background: #8bd1c9;
+                        background: $shade0;
                         border-radius: 5px;
                         .sub_menu1 {
                             display: block;
@@ -40,7 +43,7 @@
                             ul {
                                 li {
                                     width: 120px;
-                                    padding: 10px;
+                                    padding: 10px 10px 10px 25px;
                                     border-bottom: 1px dashed #ddd;
                                     background: transparent;
                                     text-align: left;
@@ -50,7 +53,7 @@
                                         border-bottom: none;
                                     }
                                     a:hover {  
-                                        color: #8bd1c9;
+                                        color: $shade0;
                                     }
                                     .fa-angle-right {
                                         float: right;
@@ -58,7 +61,7 @@
                                     &.isSub:hover .sub_menu2 {
                                         position: absolute;
                                         display: block;
-                                        background: #d0ece9;
+                                        background: $tint60;
                                         margin-top: -25px;
                                         margin-left: 160px;
                                         border-radius: 5px;
@@ -86,7 +89,7 @@
                                 position: absolute;
                                 a {
                             font: bold 13px/1 "arial";
-                            color: #6fa7a0;
+                            color: $shade20;
 
                                 }
                             } //sub_menu2
@@ -132,12 +135,12 @@
                     height: 40px; 
                     padding: 10px;
                     margin-right: -7px;
-                    border: 1px solid #6fa7a0;
+                    border: 1px solid $shade20;
                     border-radius: 25px 0 0 25px;
                     cursor: pointer;
                 }
                 input[type=text]::placeholder {
-                    color: #8bd1c9;
+                    color: $shade0;
                     font-weight: bold;
                 }
                 input[type=submit] {
@@ -145,7 +148,7 @@
                     height: 40px;
                     padding: 10px;
                     border: none;
-                    background-color: #6fa7a0;
+                    background-color: $shade20;
                     border-radius: 0 25px 25px 0;
                     cursor: pointer;    
             }    //input
@@ -231,13 +234,13 @@
                 .menu {
                     margin: 20px auto;
                     padding: 10px 10px;
-                    border-bottom: 3px solid #8bd1c9;
+                    border-bottom: 3px solid $shade0;
                     border-radius: 1.5px;
                     a {
                         font-size: 18px;
                     }
                 &:hover {
-                    background: #8bd1c9;
+                    background: $shade0;
                     border-radius: 5px;
                     .sub_menu1 {
                         display: block;
@@ -261,7 +264,7 @@
                                     border-bottom: none;
                                 }
                                 a:hover {  
-                                    color: #8bd1c9;
+                                    color: $shade0;
                                 }
                                 .fa-angle-right {
                                     float: right;
@@ -271,7 +274,7 @@
                                 &.isSub:hover .sub_menu2 {
                                     position: absolute;
                                     display: block;
-                                    background: #d0ece9;
+                                    background: $tint60;
                                     margin-top: -65px;
                                     margin-left: 160px;
                                     border-radius: 5px;
@@ -312,6 +315,7 @@
 			} //#gnbMo
 		} //menuMo
     } //container
+
 } //HEADER
 //...  Contents 영역 --> 
 #quiz {

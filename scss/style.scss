@@ -2,6 +2,24 @@
 
 $tablet: 1179px;
 $mobile: 539px;
+// font
+$em_font: 2rem 'Fredoka One', cursive;
+$h1_font: 2.8rem 'Fredoka One', cursive;
+$h2_font: 1.4rem 'Noto Sans', sans-serif;
+$h3_font: 1.2rem 'Noto Sans', sans-serif; 
+$h4_font: 1.1rem 'Noto Sans', sans-serif;    
+$p_font: 1rem 'Noto Sans', sans-serif; 
+$d_font: bold 1rem 'Yanone Kaffeesatz', sans-serif;
+$s_font: 1.2rem 'Fredoka One', cursive;
+$ss_font: 1.2rem 'Luckiest Guy', cursive;
+// color
+$tint40: #b9e3de;
+$tint60: #d0ece9; 
+$tint80: #e7f5f4;
+$shade0: #8bd1c9;  
+$shade20: #6fa7a0;
+$shade40: #537d78;
+$shade60: #375350;
 
 @import "sub_layout.scss";
 @import "gallery.scss";
@@ -18,6 +36,12 @@ $mobile: 539px;
 // @import "join.scss";
 // @import "location.scss";
 // @import "youtube.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 
 * {
     margin: 0px;
@@ -42,7 +66,8 @@ a {
 	display: block;
 	clear: both;
 }
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
 
 body {
     width: 100vw;
@@ -61,11 +86,8 @@ body {
         margin: 0 auto;
         position: relative; 
         > h1 {
-            // position: absolute;
-			// left: 0;
-
             > a {
-                font: bold 3.3vw 'Yanone Kaffeesatz', sans-serif;
+                font: bold 3.2rem 'Noto Sans', sans-serif;
                 color: #444;
                 padding: 0 20px;
                 // display: block;
@@ -85,7 +107,7 @@ body {
                     text-align: center;
                     cursor: pointer;
                     &:hover {
-                        background: #8bd1c9;
+                        background: $shade0;
                         border-radius: 5px;
                         .sub_menu1 {
                             display: block;
@@ -101,13 +123,13 @@ body {
                                     border-bottom: 1px dashed #ddd;
                                     background: transparent;
                                     text-align: left;
-                                    font: 14px/1 "arial";
-                                    color: #ccc;
+                                    font: bold 14px/1 "arial";
+                                    color: #fff;
                                     &:last-child {
                                         border-bottom: none;
                                     }
                                     a:hover {  
-                                        color: #8bd1c9;
+                                        color: $shade0;
                                     }
                                     .fa-angle-right {
                                         float: right;
@@ -115,8 +137,8 @@ body {
                                     &.isSub:hover .sub_menu2 {
                                         position: absolute;
                                         display: block;
-                                        background: #d0ece9;
-                                        margin-top: -25px;
+                                        background: $tint60;
+                                        margin-top: -15px;
                                         margin-left: 160px;
                                         border-radius: 5px;
                                     }
@@ -143,8 +165,7 @@ body {
                                 position: absolute;
                                 a {
                             font: bold 13px/1 "arial";
-                            color: #6fa7a0;
-
+                            color: $shade20;
                                 }
                             } //sub_menu2
                         } //sub_menu1
@@ -189,12 +210,12 @@ body {
                     height: 40px; 
                     padding: 10px;
                     margin-right: -7px;
-                    border: 1px solid #6fa7a0;
+                    border: 1px solid $shade20;
                     border-radius: 25px 0 0 25px;
                     cursor: pointer;
                 }
                 input[type=text]::placeholder {
-                    color: #8bd1c9;
+                    color: $shade0;
                     font-weight: bold;
                 }
                 input[type=submit] {
@@ -202,7 +223,7 @@ body {
                     height: 40px;
                     padding: 10px;
                     border: none;
-                    background-color: #6fa7a0;
+                    background-color: $shade20;
                     border-radius: 0 25px 25px 0;
                     cursor: pointer;    
             }    //input
@@ -288,13 +309,13 @@ body {
                 .menu {
                     margin: 20px auto;
                     padding: 10px 10px;
-                    border-bottom: 3px solid #8bd1c9;
+                    border-bottom: 3px solid $shade0;
                     border-radius: 1.5px;
                     a {
                         font-size: 18px;
                     }
                 &:hover {
-                    background: #8bd1c9;
+                    background: $shade0;
                     border-radius: 5px;
                     .sub_menu1 {
                         display: block;
@@ -318,7 +339,7 @@ body {
                                     border-bottom: none;
                                 }
                                 a:hover {  
-                                    color: #8bd1c9;
+                                    color: $shade0;
                                 }
                                 .fa-angle-right {
                                     float: right;
@@ -328,7 +349,7 @@ body {
                                 &.isSub:hover .sub_menu2 {
                                     position: absolute;
                                     display: block;
-                                    background: #d0ece9;
+                                    background: $tint60;
                                     margin-top: -65px;
                                     margin-left: 160px;
                                     border-radius: 5px;
@@ -375,7 +396,7 @@ body {
     width: 1180px;
     height: calc(50vh - 121px);
     overflow: hidden;
-    background: #537d78;  
+    background: $shade40;  
     margin: 0 auto;
     border-radius: 10px;
     video {
@@ -388,26 +409,27 @@ body {
         width: 100%;
         position: relative;
         background-color: #375350;  
- 
-
         .slider_item {
              width: 100%;
              height: 200px;
              display: flex;
              justify-content: center;
              align-items: center;
-             color: #e7f5f4; 
+             color: $tint80; 
              position: absolute;
-             top: 0;
+             top: -60px;
              z-index: 0;
              opacity: 0;
              transition: opacity 0.6s ease-in-out;
              transform: scale(0.99);
+             h1 {
+                font: $em_font;
+             }
              &:nth-child(odd) {
                 background-color: #2b5a55;  
              }
              &:nth-child(even) {
-                background-color: #375350; 
+                background-color: $shade60; 
              }  
         }
         .showing {
@@ -415,17 +437,8 @@ body {
              opacity: 1;
              transform: none;
          }
-     }
-    // .inner {
-    //     width: 1180px;
-	// 	margin: 0 auto;
-	// 	position: absolute;
-	// 	top: 22%;
-	// 	left: 25%;
-    // }
-}       
-
-        
+     } //slider
+}         
     #v_box {
         width: 100%; 
         height: 100%;  
@@ -440,10 +453,10 @@ body {
             padding: 60px 100px 30px;
             position: relative;
             h1 {
-                font: bold 40px/50px 'Noto Sans', sans-serif;
+                font: $em_font;
             }
             h4 {
-                font: normal 14px/24px 'Nanum Gothic', sans-serif;
+                font: $h4_font;
                 margin-top: 10px;
             }
             a {
@@ -458,7 +471,7 @@ body {
             } //a  
         }     
         } //v_box     
-    // } //container         
+         
 
 //...SECTION-ARTICLE ...
 #article {
@@ -474,14 +487,14 @@ body {
         margin: 20px auto;
         border-radius: 10px;
         box-shadow: 0 0 10px (0,0,0,0.1);
-        background-color: #6fa7a0;
+        background-color: $shade20;
         .atc_box {
             width: 380px;
             height: 100%;
-            font: normal 13px/27px 'Noto Sans', sans-serif;
+            font: $p_font;
             color: #fff; 
             border-radius: 10px;
-            background-color: #6fa7a0;
+            background-color: $shade20;
             position: relative;
             padding: 100px 15px;
                 a {
@@ -490,11 +503,11 @@ body {
                     cursor: pointer;   
                 }
                 h4 {
-                    font: normal 14px/24px 'Nanum Gothic', sans-serif;
+                    font: $s_font;
                     margin: 15px 0 20px;
                 }
                 p {
-                    font: 15px/27px 'Noto Sans', sans-serif; 
+                    font: $p_font;
                 }
                 &:nth-of-type(1) {
                     width: 380px;
@@ -528,28 +541,29 @@ body {
             padding: 50px 100px;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
-            background-color: #8bd1c9;
+            background-color: $shade0;
                 h2 {
-                    font: 1.1rem 'Noto Sans', sans-serif;
+                    font: $s_font;
                 }
                 p {
-                    font: 0.8rem 'Nanum Gothic', sans-serif;
+                    font: $p_font;
                     margin: 20px auto;  
                 }
                 a {
                     display: block; 
                     width: 120px;
                     height: 30px;
-                    background-color: #b9e3de;
-                    font: bold 12px/24px 'arial'; color: #537d78;  text-align: center;
-                    border: 1px solid #537d78;  
+                    background-color: $tint40;
+                    font: $p_font; 
+                    color: $shade40;  text-align: center;
+                    border: 1px solid $shade40;  
                     border-radius: 10px;
                     box-shadow: 0 0 15px (0,0,0,0.2);
                     cursor: pointer;
                     &:hover {
-                        background-color: #d0ece9;
-                        color:#8bd1c9;
-                        border: 1px dashed #6fa7a0; 
+                        background-color: $tint60;
+                        color: $shade0;
+                        border: 1px dashed $shade20; 
                     }
                 }
             } //txt_l
@@ -562,25 +576,26 @@ body {
             padding: 30px 60px;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
-            background-color: #d0ece9;
+            background-color: $tint60;
                 p {
-                    font: normal 14px/22px 'Nanum Gothic', sans-serif;
+                    font: $p_font;
                     margin: 20px auto;  
                 }
                 a {
                     display: block; 
                     width: 120px;
                     height: 30px;
-                    background-color: #b9e3de;
-                    font: bold 12px/24px 'arial'; color: #537d78;  text-align: center;
-                    border: 1px solid #6fa7a0;  
+                    background-color: $tint40;
+                    font: $p_font; 
+                    color: $shade40;  text-align: center;
+                    border: 1px solid $shade20;  
                     border-radius: 10px;
                     box-shadow: 0 0 15px (0,0,0,0.2);
                     cursor: pointer;
                     &:hover {
-                        background-color: #d0ece9;
-                        color:#8bd1c9;
-                        border: 1px dashed #6fa7a0; 
+                        background-color: $tint60;
+                        color:$shade0;
+                        border: 1px dashed $shade20; 
                     }
                 }
             } //txt_r1
@@ -594,25 +609,26 @@ body {
             float: right;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
-            background-color: #6fa7a0;
+            background-color: $shade20;
                 p {
-                    font: normal 14px/22px 'Nanum Gothic', sans-serif;
+                    font: $p_font;
                     margin: 20px auto;  
                 }
                 a {
                     display: block; 
                     width: 120px;
                     height: 30px;
-                    background-color: #b9e3de;
-                    font: bold 12px/24px 'arial'; color: #537d78;  text-align: center;
-                    border: 1px solid #537d78;  
+                    background-color: $tint40;
+                    font: $p_font; 
+                    color: $shade40;  text-align: center;
+                    border: 1px solid $shade40;  
                     border-radius: 10px;
                     box-shadow: 0 0 15px (0,0,0,0.2);
                     cursor: pointer;
                     &:hover {
-                        background-color: #d0ece9;
+                        background-color: $tint60;
                         color:#8bd1c9;
-                        border: 1px dashed #6fa7a0; 
+                        border: 1px dashed $shade20; 
                     }
                 }
             } //txt_r2
@@ -636,7 +652,7 @@ body {
         .link{
             a {
             font-size: 60px;
-            color: #375350;
+            color: $shade60;
             margin: 100px 50px;
             cursor: pointer;
             }
@@ -648,6 +664,7 @@ body {
     width: 100%;
     // min-width: 1180px;
     height: 350px;
+    overflow: hidden;
     .container {
         width: 1180px;
         height: 100%; 
@@ -660,6 +677,7 @@ body {
         border-radius: 10px;
         background-color: #777;
         box-shadow: 0 0 10px (0,0,0,0.1);
+
         .article1 {
             width: 380px;
             height: 350px;
@@ -668,17 +686,17 @@ body {
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
                 a {
-                    font: bold 35px/1 'Yanone Kaffeesatz', sans-serif;
+                    font: $em_font;
                     color: #fff;    
                 }
                 li {
                     h3 {
-                        font: normal 15px/24px 'Nanum Gothic', sans-serif;
+                        font: $h3_font;
                         margin-top: 15px;
                         margin-bottom: 20px;
                     }
                     p {
-                        font: 15px/27px 'Noto Sans', sans-serif; 
+                        font: $p_font; 
                     }
                 } //li
             } //article1
@@ -690,18 +708,18 @@ body {
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
             h4 {
-                font: 22px/24px 'Nanum Gothic', sans-serif;
+                font: $h4_font;
                 margin-top: 15px;
                 margin-bottom: 20px; 
             }
             li {
                 h3 {
-                    font: normal 15px/24px 'Nanum Gothic', sans-serif;
+                    font: $h3_font;
                     margin-top: 15px;
                     margin-bottom: 20px;
                 }
                 p {
-                    font: 15px/27px 'Noto Sans', sans-serif; 
+                    font: $p_font; 
                 }
             }
         } //article2
@@ -712,7 +730,7 @@ body {
             background-color: #777;
             box-shadow: 0 0 10px (0,0,0,0.1);
             p {
-                font: normal 10px/26px 'Noto Sans', sans-serif;
+                font: $p_font;
                 padding: 50px 30px;   
             }
             .b_util {
@@ -751,17 +769,17 @@ body {
         background-color: #444;
         box-shadow: 0 0 10px (0,0,0,0.1);
         a {
-            font: bold 20px/1 'Yanone Kaffeesatz', sans-serif;
+            font: $d_font;
             color: #fff;    
         }
         li {
             h3 {
-                font: normal 13px/24px 'Nanum Gothic', sans-serif;
+                font: $h3_font;
                 margin-top: 10px;
                 margin-bottom: 20px;
             }
             p {
-                font: 12px/20px 'Noto Sans', sans-serif; 
+                font: $p_font; 
             }
         } //li
         .b_util {
@@ -838,20 +856,20 @@ body {
         .container {
             height: 100vh;
             padding: 20px 20px;
-            h1 {
-                font: bold 25px/40px 'Noto Sans', sans-serif;  
-            }
-            h4 {
-                font: normal 13px/20px 'Nanum Gothic', sans-serif;
-            }
-            a {
-                font-size: 30px;
-                cursor: pointer;  
-                span {
-                    font: normal 12px/30px 'Nanum Gothic', sans-serif;
-                }
-            } //a      
-        } //v_box
+            // h1 {
+            //     font: bold 25px/40px 'Noto Sans', sans-serif;  
+            // }
+            // h4 {
+            //     font: normal 13px/20px 'Nanum Gothic', sans-serif;
+            // }
+            // a {
+            //     font-size: 30px;
+            //     cursor: pointer;  
+            //     span {
+            //         font: normal 12px/30px 'Nanum Gothic', sans-serif;
+            //     }
+            // } //a      
+        } //container
     
     } //-----tablet -figure-gallery
 //-----tablet -article
@@ -941,7 +959,7 @@ body {
             // height: 300px;
             // width: 100%;
             h1 {
-                font: 20px/30px 'Noto Sans', sans-serif;   
+                // font: 20px/30px 'Noto Sans', sans-serif;   
                 margin-top: 0;
                 padding: 0;
                 }
@@ -959,7 +977,7 @@ body {
 			height: 100vh;
             margin-left: 10px;
             a {
-                font: bold 24px 'Yanone Kaffeesatz', sans-serif; 
+                // font: bold 24px 'Yanone Kaffeesatz', sans-serif; 
                 padding: 0;
             }
 			.menu_web {

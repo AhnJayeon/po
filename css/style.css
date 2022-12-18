@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 #header_sub {
   width: 100%;
@@ -11,8 +15,8 @@
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -43,7 +47,7 @@
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -544,8 +548,8 @@
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -576,7 +580,7 @@
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -1185,8 +1189,8 @@ body #t_footer_sub .container .b_util .f_link a {
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -1217,7 +1221,7 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -1813,8 +1817,8 @@ body #t_footer_sub .container .b_util .f_link a {
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -1845,7 +1849,7 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -2376,8 +2380,8 @@ body #t_footer_sub .container .b_util .f_link a {
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -2408,7 +2412,7 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -2659,6 +2663,7 @@ body #t_footer_sub .container .b_util .f_link a {
 
 #slider {
   width: 100%;
+  margin: 50px auto;
   position: relative;
 }
 #slider .slider_item {
@@ -2674,12 +2679,6 @@ body #t_footer_sub .container .b_util .f_link a {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   transform: scale(0.9);
-}
-#slider .slider_item:nth-child(odd) {
-  background-color: #ddd;
-}
-#slider .slider_item:nth-child(even) {
-  background-color: #aaa;
 }
 #slider .showing {
   z-index: 1;
@@ -2915,8 +2914,8 @@ body #t_footer_sub .container .b_util .f_link a {
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -2947,7 +2946,7 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -3459,8 +3458,8 @@ body #t_footer_sub .container .b_util .f_link a {
   margin: 0 auto;
   position: relative;
 }
-#header_sub .container a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+#header_sub .container > h1 > a {
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -3491,7 +3490,7 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1 ul li {
   width: 120px;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
@@ -4018,7 +4017,7 @@ body {
   position: relative;
 }
 #header .container > h1 > a {
-  font: bold 3.3vw "Yanone Kaffeesatz", sans-serif;
+  font: bold 3.2rem "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -4053,8 +4052,8 @@ body {
   border-bottom: 1px dashed #ddd;
   background: transparent;
   text-align: left;
-  font: 14px/1 "arial";
-  color: #ccc;
+  font: bold 14px/1 "arial";
+  color: #fff;
 }
 #header .container .menu_web #gnb .menu:hover .sub_menu1 ul li:last-child {
   border-bottom: none;
@@ -4069,7 +4068,7 @@ body {
   position: absolute;
   display: block;
   background: #d0ece9;
-  margin-top: -25px;
+  margin-top: -15px;
   margin-left: 160px;
   border-radius: 5px;
 }
@@ -4325,11 +4324,14 @@ body {
   align-items: center;
   color: #e7f5f4;
   position: absolute;
-  top: 0;
+  top: -60px;
   z-index: 0;
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
   transform: scale(0.99);
+}
+#visual #slider .slider_item h1 {
+  font: 2rem "Fredoka One", cursive;
 }
 #visual #slider .slider_item:nth-child(odd) {
   background-color: #2b5a55;
@@ -4358,10 +4360,10 @@ body {
   position: relative;
 }
 #v_box .container h1 {
-  font: bold 40px/50px "Noto Sans", sans-serif;
+  font: 2rem "Fredoka One", cursive;
 }
 #v_box .container h4 {
-  font: normal 14px/24px "Nanum Gothic", sans-serif;
+  font: 1.1rem "Noto Sans", sans-serif;
   margin-top: 10px;
 }
 #v_box .container a {
@@ -4393,7 +4395,7 @@ body {
 #article .container .atc_box {
   width: 380px;
   height: 100%;
-  font: normal 13px/27px "Noto Sans", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
   color: #fff;
   border-radius: 10px;
   background-color: #6fa7a0;
@@ -4406,11 +4408,11 @@ body {
   cursor: pointer;
 }
 #article .container .atc_box h4 {
-  font: normal 14px/24px "Nanum Gothic", sans-serif;
+  font: 1.2rem "Fredoka One", cursive;
   margin: 15px 0 20px;
 }
 #article .container .atc_box p {
-  font: 15px/27px "Noto Sans", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
 }
 #article .container .atc_box:nth-of-type(1) {
   width: 380px;
@@ -4444,10 +4446,10 @@ body {
   background-color: #8bd1c9;
 }
 #brand .container .txt_l h2 {
-  font: 1.1rem "Noto Sans", sans-serif;
+  font: 1.2rem "Fredoka One", cursive;
 }
 #brand .container .txt_l p {
-  font: 0.8rem "Nanum Gothic", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
   margin: 20px auto;
 }
 #brand .container .txt_l a {
@@ -4455,7 +4457,7 @@ body {
   width: 120px;
   height: 30px;
   background-color: #b9e3de;
-  font: bold 12px/24px "arial";
+  font: 1rem "Noto Sans", sans-serif;
   color: #537d78;
   text-align: center;
   border: 1px solid #537d78;
@@ -4480,7 +4482,7 @@ body {
   background-color: #d0ece9;
 }
 #brand .container .txt_r1 p {
-  font: normal 14px/22px "Nanum Gothic", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
   margin: 20px auto;
 }
 #brand .container .txt_r1 a {
@@ -4488,7 +4490,7 @@ body {
   width: 120px;
   height: 30px;
   background-color: #b9e3de;
-  font: bold 12px/24px "arial";
+  font: 1rem "Noto Sans", sans-serif;
   color: #537d78;
   text-align: center;
   border: 1px solid #6fa7a0;
@@ -4513,7 +4515,7 @@ body {
   background-color: #6fa7a0;
 }
 #brand .container .txt_r2 p {
-  font: normal 14px/22px "Nanum Gothic", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
   margin: 20px auto;
 }
 #brand .container .txt_r2 a {
@@ -4521,7 +4523,7 @@ body {
   width: 120px;
   height: 30px;
   background-color: #b9e3de;
-  font: bold 12px/24px "arial";
+  font: 1rem "Noto Sans", sans-serif;
   color: #537d78;
   text-align: center;
   border: 1px solid #537d78;
@@ -4559,6 +4561,7 @@ body {
 #footer {
   width: 100%;
   height: 350px;
+  overflow: hidden;
 }
 #footer .container {
   width: 1180px;
@@ -4582,16 +4585,16 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article1 a {
-  font: bold 35px/1 "Yanone Kaffeesatz", sans-serif;
+  font: 2rem "Fredoka One", cursive;
   color: #fff;
 }
 #footer .container .article1 li h3 {
-  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  font: 1.2rem "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 #footer .container .article1 li p {
-  font: 15px/27px "Noto Sans", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
 }
 #footer .container .article2 {
   background-color: #777;
@@ -4602,17 +4605,17 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article2 h4 {
-  font: 22px/24px "Nanum Gothic", sans-serif;
+  font: 1.1rem "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 #footer .container .article2 li h3 {
-  font: normal 15px/24px "Nanum Gothic", sans-serif;
+  font: 1.2rem "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 #footer .container .article2 li p {
-  font: 15px/27px "Noto Sans", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
 }
 #footer .container .article3 {
   width: 380px;
@@ -4621,7 +4624,7 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article3 p {
-  font: normal 10px/26px "Noto Sans", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
   padding: 50px 30px;
 }
 #footer .container .article3 .b_util {
@@ -4654,16 +4657,16 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #t_footer .container a {
-  font: bold 20px/1 "Yanone Kaffeesatz", sans-serif;
+  font: bold 1rem "Yanone Kaffeesatz", sans-serif;
   color: #fff;
 }
 #t_footer .container li h3 {
-  font: normal 13px/24px "Nanum Gothic", sans-serif;
+  font: 1.2rem "Noto Sans", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 #t_footer .container li p {
-  font: 12px/20px "Noto Sans", sans-serif;
+  font: 1rem "Noto Sans", sans-serif;
 }
 #t_footer .container .b_util {
   width: 60%;
@@ -4728,19 +4731,6 @@ body {
   body #v_box .container {
     height: 100vh;
     padding: 20px 20px;
-  }
-  body #v_box .container h1 {
-    font: bold 25px/40px "Noto Sans", sans-serif;
-  }
-  body #v_box .container h4 {
-    font: normal 13px/20px "Nanum Gothic", sans-serif;
-  }
-  body #v_box .container a {
-    font-size: 30px;
-    cursor: pointer;
-  }
-  body #v_box .container a span {
-    font: normal 12px/30px "Nanum Gothic", sans-serif;
   }
   body #article .container {
     background-color: #fff;
@@ -4813,7 +4803,6 @@ body {
     height: 100%;
   }
   body #t_footer .container h1 {
-    font: 20px/30px "Noto Sans", sans-serif;
     margin-top: 0;
     padding: 0;
   }
@@ -4825,7 +4814,6 @@ body {
     margin-left: 10px;
   }
   #header .container a {
-    font: bold 24px "Yanone Kaffeesatz", sans-serif;
     padding: 0;
   }
   #header .container .menu_web {
