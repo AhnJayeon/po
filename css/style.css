@@ -4017,7 +4017,7 @@ body {
   position: relative;
 }
 #header .container > h1 > a {
-  font: bold 3.2rem "Noto Sans", sans-serif;
+  font: bold 3.3vw "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
 }
@@ -4104,7 +4104,7 @@ body {
   position: absolute;
 }
 #header .container form .wrap label {
-  font: 0.7rem "arial";
+  font: 0.7vw "arial";
   color: #666;
 }
 #header .container form .wrap input[type=text] {
@@ -4232,6 +4232,7 @@ body {
 }
 #header .container .menuMo .menu a {
   font-size: 18px;
+  color: #888;
 }
 #header .container .menuMo .menu:hover {
   background: #8bd1c9;
@@ -4242,7 +4243,7 @@ body {
   position: absolute;
   margin-top: 10px;
   margin-left: 147px;
-  background: #aaa;
+  background: #ccc;
   border-radius: 5px;
 }
 #header .container .menuMo .menu:hover .sub_menu1 ul li {
@@ -4264,6 +4265,7 @@ body {
 #header .container .menuMo .menu:hover .sub_menu1 ul li .fa-angle-right {
   float: right;
   font-size: 20px;
+  color: #999;
 }
 #header .container .menuMo .menu:hover .sub_menu1 ul li.isSub:hover .sub_menu2 {
   position: absolute;
@@ -4331,7 +4333,10 @@ body {
   transform: scale(0.99);
 }
 #visual #slider .slider_item h1 {
-  font: 2rem "Fredoka One", cursive;
+  font: 2vw "Fredoka One", cursive;
+}
+#visual #slider .slider_item p {
+  font: 1vw "Noto Sans", sans-serif;
 }
 #visual #slider .slider_item:nth-child(odd) {
   background-color: #2b5a55;
@@ -4360,10 +4365,10 @@ body {
   position: relative;
 }
 #v_box .container h1 {
-  font: 2rem "Fredoka One", cursive;
+  font: 2vw "Fredoka One", cursive;
 }
 #v_box .container h4 {
-  font: 1.1rem "Noto Sans", sans-serif;
+  font: 1.1vw "Noto Sans", sans-serif;
   margin-top: 10px;
 }
 #v_box .container a {
@@ -4395,7 +4400,7 @@ body {
 #article .container .atc_box {
   width: 380px;
   height: 100%;
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   color: #fff;
   border-radius: 10px;
   background-color: #6fa7a0;
@@ -4408,11 +4413,11 @@ body {
   cursor: pointer;
 }
 #article .container .atc_box h4 {
-  font: 1.2rem "Fredoka One", cursive;
+  font: 1.2vw "Fredoka One", cursive;
   margin: 15px 0 20px;
 }
 #article .container .atc_box p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
 }
 #article .container .atc_box:nth-of-type(1) {
   width: 380px;
@@ -4446,10 +4451,10 @@ body {
   background-color: #8bd1c9;
 }
 #brand .container .txt_l h2 {
-  font: 1.2rem "Fredoka One", cursive;
+  font: 1.2vw "Fredoka One", cursive;
 }
 #brand .container .txt_l p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   margin: 20px auto;
 }
 #brand .container .txt_l a {
@@ -4457,7 +4462,7 @@ body {
   width: 120px;
   height: 30px;
   background-color: #b9e3de;
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   color: #537d78;
   text-align: center;
   border: 1px solid #537d78;
@@ -4482,7 +4487,7 @@ body {
   background-color: #d0ece9;
 }
 #brand .container .txt_r1 p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   margin: 20px auto;
 }
 #brand .container .txt_r1 a {
@@ -4490,7 +4495,7 @@ body {
   width: 120px;
   height: 30px;
   background-color: #b9e3de;
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   color: #537d78;
   text-align: center;
   border: 1px solid #6fa7a0;
@@ -4515,7 +4520,7 @@ body {
   background-color: #6fa7a0;
 }
 #brand .container .txt_r2 p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   margin: 20px auto;
 }
 #brand .container .txt_r2 a {
@@ -4523,7 +4528,7 @@ body {
   width: 120px;
   height: 30px;
   background-color: #b9e3de;
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   color: #537d78;
   text-align: center;
   border: 1px solid #537d78;
@@ -4585,16 +4590,16 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article1 a {
-  font: 2rem "Fredoka One", cursive;
+  font: 2vw "Fredoka One", cursive;
   color: #fff;
 }
 #footer .container .article1 li h3 {
-  font: 1.2rem "Noto Sans", sans-serif;
+  font: 1.2vw "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 #footer .container .article1 li p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
 }
 #footer .container .article2 {
   background-color: #777;
@@ -4605,17 +4610,17 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article2 h4 {
-  font: 1.1rem "Noto Sans", sans-serif;
+  font: 1.1vw "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 #footer .container .article2 li h3 {
-  font: 1.2rem "Noto Sans", sans-serif;
+  font: 1.2vw "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 #footer .container .article2 li p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
 }
 #footer .container .article3 {
   width: 380px;
@@ -4624,7 +4629,7 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #footer .container .article3 p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
   padding: 50px 30px;
 }
 #footer .container .article3 .b_util {
@@ -4657,16 +4662,16 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 #t_footer .container a {
-  font: bold 1rem "Yanone Kaffeesatz", sans-serif;
+  font: bold 1vw "Yanone Kaffeesatz", sans-serif;
   color: #fff;
 }
 #t_footer .container li h3 {
-  font: 1.2rem "Noto Sans", sans-serif;
+  font: 1.2vw "Noto Sans", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 #t_footer .container li p {
-  font: 1rem "Noto Sans", sans-serif;
+  font: 1vw "Noto Sans", sans-serif;
 }
 #t_footer .container .b_util {
   width: 60%;
@@ -4688,7 +4693,7 @@ body {
     margin: 0 auto;
   }
   body #header .container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin-left: 30px;
   }
@@ -4715,43 +4720,48 @@ body {
     position: fixed;
   }
   body #visual {
-    width: 100vw;
+    width: 96%;
     height: 50vh;
+    margin: 1% 2%;
   }
   body #visual #slider {
-    width: 100vw;
+    width: 100%;
+    height: 100px;
   }
   body #visual #slider slider_item {
     width: 100%;
   }
   body #v_box {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: 220px;
+    margin: 10px auto;
   }
   body #v_box .container {
-    height: 100vh;
+    width: 96%;
     padding: 20px 20px;
+  }
+  body #article {
+    width: 96vw;
+    height: 400px;
+    margin-bottom: 10px;
   }
   body #article .container {
     background-color: #fff;
     width: 100%;
     height: 100%;
-  }
-  body #article .container .atc_box {
-    display: block;
+    justify-content: space-around;
+    margin-left: 15px;
   }
   body #article .container .atc_box a {
     font-size: 25px;
   }
   body #article .container .atc_box:nth-of-type(1) {
-    width: 50%;
-    margin: 0;
-    float: left;
+    width: 48%;
+    margin: 0 1%;
   }
   body #article .container .atc_box:nth-of-type(2) {
-    width: 50%;
-    margin: 0;
-    float: right;
+    width: 48%;
+    margin: 0 1%;
   }
   body #article .container .atc_box:nth-of-type(3) {
     display: none;
@@ -4762,26 +4772,41 @@ body {
     margin: 0 auto;
   }
   body #brand .container .txt_l {
-    width: 100%;
+    width: 96%;
     float: center;
-    margin: 10px auto;
+    margin: 1% 2%;
+    height: 200px;
+    padding: 30px 60px;
     padding-bottom: 0;
   }
+  body #brand .container .txt_l a {
+    line-height: 30px;
+  }
   body #brand .container .txt_r1 {
-    width: 100%;
+    width: 96%;
+    margin: 1% 2%;
     float: center;
+  }
+  body #brand .container .txt_r1 a {
+    line-height: 30px;
   }
   body #brand .container .txt_r2 {
-    width: 100%;
+    width: 96%;
+    margin: 1% 2%;
     float: center;
   }
+  body #brand .container .txt_r2 a {
+    line-height: 30px;
+  }
   body #m_util {
-    height: 100%;
+    height: 350px;
     margin: 0;
   }
   body #m_util .container {
     width: 100%;
+    height: 100px;
     margin: 0 auto;
+    overflow: hidden;
   }
   body #m_util .container .link {
     margin: 0;
@@ -4796,11 +4821,14 @@ body {
   }
   body #t_footer {
     display: block;
-    height: 50%;
+    width: 96%;
+    height: 200px;
   }
   body #t_footer .container {
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 2%;
     height: 100%;
+    padding-top: 20px;
   }
   body #t_footer .container h1 {
     margin-top: 0;
@@ -4839,28 +4867,27 @@ body {
     position: fixed;
   }
   #visaul {
-    width: 100vw;
+    width: 96vw;
   }
   #v_box {
-    width: 100vw;
+    width: 96%;
     display: block;
+  }
+  #v_box .container {
+    height: 100%;
+  }
+  #v_box .container a {
+    font-size: 25px;
   }
   #article {
     width: 100vw;
     height: 100vh;
   }
   #article .container {
-    display: block;
+    width: 96%;
+    height: 100%;
     margin: 0 auto;
     padding: 0;
-  }
-  #article .container .atc_box:nth-of-type(1) {
-    width: 100%;
-    margin-right: 0;
-  }
-  #article .container .atc_box:nth-of-type(2) {
-    width: 100%;
-    margin: 0 10px;
   }
   #brand .container {
     height: 100vh;
@@ -4875,7 +4902,7 @@ body {
     margin: 0px auto;
   }
   #m_util .container .link i {
-    font-size: 20px;
+    font-size: 24px;
   }
   #t_footer {
     height: 100%;
