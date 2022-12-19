@@ -592,7 +592,7 @@ body #photos .container .wrap article img {
   border-radius: 10px;
 }
 body #photos .container .wrap article:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   opacity: 1;
 }
 body #photos .container .wrap article:hover p {
@@ -2959,26 +2959,45 @@ body #t_footer_sub .container .b_util .f_link a {
   background: pink;
 }
 .gallery .sub_visual .container {
-  padding: 50px;
+  padding: 10px;
   overflow: hidden;
 }
 .gallery .sub_visual .container h1 {
   font: 2vw "Fredoka One", cursive;
   color: #777;
 }
-.gallery .sub_visual .container #list {
+.gallery .sub_visual .container #wrap {
+  width: 100%;
+  padding: 50px;
+}
+.gallery .sub_visual .container #wrap #list {
+  width: 100%;
   transform: translateY(100px);
   transition: 1s;
 }
-.gallery .sub_visual .container #list::after {
+.gallery .sub_visual .container #wrap #list::after {
   content: "";
   display: block;
   clear: both;
 }
-.gallery .sub_visual .container #list li {
+.gallery .sub_visual .container #wrap #list li {
   width: 25%;
   float: left;
   padding: 10px;
+}
+.gallery .sub_visual .container #wrap #list li div {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.gallery .sub_visual .container #wrap #list li div a img {
+  width: 100%;
+}
+.gallery .sub_visual .container #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 #footer_sub {

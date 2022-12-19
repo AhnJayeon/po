@@ -50,17 +50,15 @@ fetch(url)
             count++;
             if(count == len){
                 frame.classList.add("on");
-                new Isotope("#list",{
-                    itemSelection: ".item",
-                    columnWidth: ".item",
-                    transitionDuration: "0.5s",
-                });
+                Isotope();
             }
         }
     }
 })
 function Isotope() {
     new Isotope("#list", {
-        itemS
-    })
+        itemSelector: ".item",
+        columnWidth: ".item",
+        transitioinDuration: "0.5s",
+    });
 }

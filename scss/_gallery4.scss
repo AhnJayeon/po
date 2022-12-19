@@ -322,16 +322,22 @@
     .sub_visual {
         background : pink;
     .container {
-        padding: 50px;
+        padding: 10px;
         overflow: hidden;
         h1 {
             font: $em_font;
             color: #777;
         }
+        #wrap {
+            width: 100%;
+            padding: 50px;
+        
         #list {
+            width: 100%;
             // opacity: 0;
             transform: translateY(100px);
             transition: 1s;
+            
             &::after {
                 content: '';
                 display: block;
@@ -341,9 +347,26 @@
                 width: calc(100% / 4);
                 float: left;
                 padding: 10px;
+                div {
+                    width: 100%;
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &.on {
+                opacity: 1;
+                transform: translateY(0px);
             }
         }
     }
+}
 }
 }
 //...FOOTER_SUB ...
