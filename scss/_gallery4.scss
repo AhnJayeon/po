@@ -315,17 +315,38 @@
 		} //menuMo
     } //container
 } //HEADER_sub
+
 //...  Contents 영역 --> 
-#quiz {
-
-    
+.gallery {
+    background: #eee;
+    .sub_visual {
+        background : pink;
+    .container {
+        padding: 50px;
+        overflow: hidden;
+        h1 {
+            font: $em_font;
+            color: #777;
+        }
+        #list {
+            // opacity: 0;
+            transform: translateY(100px);
+            transition: 1s;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            li {
+                width: calc(100% / 4);
+                float: left;
+                padding: 10px;
+            }
+        }
+    }
 }
-               
-
-               
-
-
-
+}
+//...FOOTER_SUB ...
 //...FOOTER_SUB ...
 #footer_sub {
     width: 100%;
@@ -503,28 +524,6 @@
     }
 } //-----tablet -header sub
 //-----tablet -tab-wrapper
-.tab-wrapper {
-    width: 100vw;
-    height: 100%;
-    height: 370px;
-}
-#box {
-    .container {
-        width: 100vw;
-        
-        .wrap {
-            height: 100vh;
-            display: block;
-
-            article {
-                width: 48%;
-                float: left;
-                margin: 1% 1%;
-            }
-        }
-    }
-    
-}
 
 
 

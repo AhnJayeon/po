@@ -1,0 +1,54 @@
+@charset 'utf-8';
+
+$tablet: 1179px;
+$mobile: 539px;
+// font
+$em_font: 2vw 'Fredoka One', cursive;
+$h1_font: 2.8vw 'Fredoka One', cursive;
+$h2_font: 1.4vw 'Noto Sans', sans-serif;
+$h3_font: 1.2vw 'Noto Sans', sans-serif; 
+$h4_font: 1.1vw 'Noto Sans', sans-serif;    
+$p_font: 1vw 'Noto Sans', sans-serif; 
+$d_font: bold 1vw 'Yanone Kaffeesatz', sans-serif;
+$s_font: 1.2vw 'Fredoka One', cursive;
+$ss_font: 1.2vw 'Luckiest Guy', cursive;
+
+// color
+$tint40: #b9e3de;
+$tint60: #d0ece9; 
+$tint80: #e7f5f4;
+$shade0: #8bd1c9;  
+$shade20: #6fa7a0;
+$shade40: #537d78;
+$shade60: #375350;
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;     
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrap::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0 auto;
+    }

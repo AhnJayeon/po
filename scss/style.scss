@@ -1,31 +1,18 @@
 @charset 'utf-8';
 
-$tablet: 1179px;
-$mobile: 539px;
-// font
-$em_font: 2vw 'Fredoka One', cursive;
-$h1_font: 2.8vw 'Fredoka One', cursive;
-$h2_font: 1.4vw 'Noto Sans', sans-serif;
-$h3_font: 1.2vw 'Noto Sans', sans-serif; 
-$h4_font: 1.1vw 'Noto Sans', sans-serif;    
-$p_font: 1vw 'Noto Sans', sans-serif; 
-$d_font: bold 1vw 'Yanone Kaffeesatz', sans-serif;
-$s_font: 1.2vw 'Fredoka One', cursive;
-$ss_font: 1.2vw 'Luckiest Guy', cursive;
-// color
-$tint40: #b9e3de;
-$tint60: #d0ece9; 
-$tint80: #e7f5f4;
-$shade0: #8bd1c9;  
-$shade20: #6fa7a0;
-$shade40: #537d78;
-$shade60: #375350;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+@import "reset.scss";
 @import "sub_layout.scss";
 @import "gallery.scss";
 @import "details1.scss";
 @import "gallery2.scss";
 @import "gallery3.scss";
+@import "gallery4.scss";
 @import "faq.scss";
 @import "test1.scss";
 
@@ -36,44 +23,13 @@ $shade60: #375350;
 // @import "join.scss";
 // @import "location.scss";
 // @import "youtube.scss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;     
-}
-ul,ol,li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
-
-.container::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-.wrap::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-
-
-body {
-    width: 100vw;
-    overflow-x: hidden;
-    margin: 0 auto;
-    }
+// body {
+//     width: 100vw;
+//     overflow-x: hidden;
+//     margin: 0 auto;
+//     }
 //...HEADER ...
     #header {
     width: 100%;
@@ -311,7 +267,6 @@ body {
                     padding: 10px 10px;
                     border-bottom: 3px solid $shade0;
                     border-radius: 1.5px;
-                    
                     a {
                         font-size: 18px;
                         color: #888;
@@ -418,17 +373,20 @@ body {
              align-items: center;
              color: $tint80; 
              position: absolute;
-             top: -60px;
+             top: -55px;
              z-index: 0;
              opacity: 0;
-             transition: opacity 0.6s ease-in-out;
+             transition: opacity 0.9s ease-in-out;
              transform: scale(0.99);
              
              h1 {
                 font: $em_font;
+                margin-top: -100px;
              }
              p {
                 font: $p_font;
+                margin-top: -90px;
+
              }
              &:nth-child(odd) {
                 background-color: #2b5a55;  
@@ -469,7 +427,8 @@ body {
                 color: #fff;
                 cursor: pointer;  
                 span {
-                    font: normal 12px/65px 'Nanum Gothic', sans-serif;
+                    font: $p_font;
+                    line-height: 65px;
                     margin-left: 10px;
                     position: absolute;
                 }
@@ -558,7 +517,7 @@ body {
                     display: block; 
                     width: 120px;
                     height: 30px;
-                    background-color: $tint40;
+                    background-color: transparent;
                     font: $p_font; 
                     color: $shade40;  text-align: center;
                     border: 1px solid $shade40;  
@@ -566,8 +525,8 @@ body {
                     box-shadow: 0 0 15px (0,0,0,0.2);
                     cursor: pointer;
                     &:hover {
-                        background-color: $tint60;
-                        color: $shade0;
+                        background-color: $tint40;
+                        color: $shade40;
                         border: 1px dashed $shade20; 
                     }
                 }
@@ -581,7 +540,7 @@ body {
             padding: 30px 60px;
             border-radius: 10px;
             box-shadow: 0 0 10px (0,0,0,0.1);
-            background-color: $tint60;
+            background-color: $tint40;
                 p {
                     font: $p_font;
                     margin: 20px auto;  
@@ -590,7 +549,7 @@ body {
                     display: block; 
                     width: 120px;
                     height: 30px;
-                    background-color: $tint40;
+                    background-color: transparent;
                     font: $p_font; 
                     color: $shade40;  text-align: center;
                     border: 1px solid $shade20;  
@@ -599,7 +558,7 @@ body {
                     cursor: pointer;
                     &:hover {
                         background-color: $tint60;
-                        color:$shade0;
+                        color:$shade40;
                         border: 1px dashed $shade20; 
                     }
                 }
@@ -619,11 +578,11 @@ body {
                     font: $p_font;
                     margin: 20px auto;  
                 }
-                a {
+                .btn {
                     display: block; 
                     width: 120px;
                     height: 30px;
-                    background-color: $tint40;
+                    background-color: transparent;
                     font: $p_font; 
                     color: $shade40;  text-align: center;
                     border: 1px solid $shade40;  
@@ -631,9 +590,9 @@ body {
                     box-shadow: 0 0 15px (0,0,0,0.2);
                     cursor: pointer;
                     &:hover {
-                        background-color: $tint60;
-                        color:#8bd1c9;
-                        border: 1px dashed $shade20; 
+                        background-color: $shade0;
+                        color: $shade40;
+                        border: 1px dashed $shade20;  
                     }
                 }
             } //txt_r2
@@ -994,8 +953,7 @@ body {
 			width: 100%;
 			height: 100vh;
             margin-left: 10px;
-            a {
-                // font: bold 24px 'Yanone Kaffeesatz', sans-serif; 
+            a { 
                 padding: 0;
             }
 			.menu_web {
