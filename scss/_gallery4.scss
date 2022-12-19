@@ -9,29 +9,28 @@
         height: 100%;
         margin: 0 auto;
         position: relative; 
-        > h1 {
-            > a {
+        a {
                 font: bold 3.3vw 'Noto Sans', sans-serif;
                 color: #444;
                 padding: 0 20px;
-                cursor: pointer;
                 // display: block;
         }
-    }
+    
 //...header menu_web
         .menu_web {
             #gnb {
-                top: 0;
+                bottom: 75px;
+                height: 20px;
                 position: absolute;   
                 .menu { 
                     float: left;
-                    width: 120px;
+                    width: 140px;
                     margin-top: 90px;
                     padding: 5px 30px 10px 15px;
                     z-index: 10;
                     text-align: center;
                     cursor: pointer;
-                    &:hover {
+                    &:hover, &:focus {
                         background: $shade0;
                         border-radius: 5px;
                         .sub_menu1 {
@@ -41,9 +40,10 @@
                             margin-left: -15px;
                             background: #aaa;
                             border-radius: 5px;
-                            ul {
+                            cursor: pointer; 
+                            ul { 
                                 li {
-                                    width: 120px;
+                                    width: 140px;
                                     padding: 10px 10px 10px 25px;
                                     border-bottom: 1px dashed #ddd;
                                     background: transparent;
@@ -71,6 +71,7 @@
                             } //ul
                         } //sub_menu_1
                     } //hover
+                    
                     a { 
                         font: bold 15px/1 "arial";
                         color: #777;
@@ -78,7 +79,7 @@
                     .sub_menu1 {
                         display: none;
                         z-index: 9;
-                        cursor: pointer;
+
                         a {
                             font: bold 14px/1 "arial";
                             color: #fff; 
@@ -86,8 +87,11 @@
                             .sub_menu2 {
                                 display: none;
                                 z-index: 10;
-                                left: -40px;
+                                top: 50px;
+                                left: -20px;
                                 position: absolute;
+                    cursor: pointer;
+
                                 a {
                             font: bold 13px/1 "arial";
                             color: $shade20;
@@ -236,7 +240,6 @@
                     padding: 10px 10px;
                     border-bottom: 3px solid $shade0;
                     border-radius: 1.5px;
-                    
                     a {
                         font-size: 18px;
                         color: #888;
@@ -332,7 +335,7 @@
             padding: 50px;
             overflow: hidden;
             #list {
-                // opacity: 0;
+                opacity: 0;
                 transform: translateY(100px);
                 transition: 1s;
                 &::after {
