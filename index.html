@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/4cc160be56.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -35,15 +36,6 @@
                                     </div>
                                 </li>
                                 <li><a href="# ">sub1</a></li>
-                                <li class="isSub"><a href="#">sub1</a>
-                                    <i class="fas fa-angle-right"></i>
-                                        <div class="sub_menu2">
-                                            <ul>
-                                                <li><a href="#">sub2</a></li>
-                                                <li><a href="#">sub2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
                             </ul>
                         </div>
                     </li>
@@ -69,6 +61,8 @@
                         <div class="sub_menu1">
                             <ul>
                                 <li><a href="details1.html">details 1</a></li>
+                                <li><a href="#">details 2</a></li>
+
                                 <li class="isSub"><a href="#">sub1</a>
                                 <i class="fas fa-angle-right"></i>
                                     <div class="sub_menu2">
@@ -79,15 +73,6 @@
                                     </div>
                                 </li>
                                 <li><a href="#">sub1</a></li>
-                                <li class="isSub"><a href="#">sub1</a>
-                                    <i class="fas fa-angle-right"></i>
-                                        <div class="sub_menu2">
-                                            <ul>
-                                                <li><a href="#">sub2</a></li>
-                                                <li><a href="#">sub2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
                             </ul>
                         </div>
                     </li>
@@ -125,12 +110,16 @@
                 <a href="index.html">Pillar.</a>
             </h1>
 <!-- header - form 영역-로그인 -->
-            <form>
+            <form name="login">
                 <div class="wrap">
                     <label for="name">Name</label>
                     <input type="text" name="userName" id="name">
                     <label for="pwd">Password</label>
                     <input type="password" name="password1" id="pwd">
+                    <input type="submit" name="login" value="Login">
+                    <a href="javascript:KakaoLogin();"><img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png"></a>
+                    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+                    
                 </div>
             </form>
 <!-- header - form 영역-검색 -->           
@@ -303,19 +292,19 @@
         <div class="container">
 <!-- article 1-->
             <div class="atc_box">
-                <a href="#"><i class="fa-solid fa-file-pen"></i></a>
+                <i class="fa-solid fa-file-pen"></i>
                 <h4>Titles are here.</h4>
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
             </div>
 <!-- article 2-->
             <div class="atc_box">
-                <a href="#"><i class="fa-solid fa-person-chalkboard"></i></a>
+                <i class="fa-solid fa-person-chalkboard"></i>
                 <h4>Titles are here.</h4>
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
             </div>
 <!-- article 3-->
             <div class="atc_box">
-                <a href="#"><i class="fa-solid fa-people-roof"></i></a>
+                <i class="fa-solid fa-people-roof"></i>
                 <h4>Titles are here.</h4>
                 <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas sapiente sit, amet sint repudiandae?</p>
             </div>   

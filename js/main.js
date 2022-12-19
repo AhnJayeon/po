@@ -15,6 +15,25 @@ close.onclick = function(e){
   menuMo.classList.toggle('on');
 }
 
+//카카오 로그인
+window.Kakao.init("20657c743f4cbb1aaff6dbb2e6e714e3");
+function KakaoLogin(){
+    window.Kakao.Auth.login({
+        scope:'profile, account_email, gender',
+        success: function(authObj){
+            console.log(authObj);
+            window.Kakao.API.request({
+                url:'/v2/user/me',
+                success: res => {
+                    const kakao_account = res.kakao_account;
+                    console.log(kakao_account);
+                }
+            });
+        }
+    })
+}
+
+
 //gallery 문자열 바뀜
 const SHOWING_CLASS = "showing";
 const firstSlide = document.querySelector(".slider_item:first-child");
