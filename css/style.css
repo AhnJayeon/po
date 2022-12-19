@@ -2673,6 +2673,7 @@ body #t_footer_sub .container .b_util .f_link a {
   font: bold 3.3vw "Noto Sans", sans-serif;
   color: #444;
   padding: 0 20px;
+  cursor: pointer;
 }
 #header_sub .container .menu_web #gnb {
   top: 0;
@@ -2954,48 +2955,49 @@ body #t_footer_sub .container .b_util .f_link a {
 
 .gallery {
   background: #eee;
+  height: 100%;
+  z-index: -1;
 }
 .gallery .sub_visual {
   background: pink;
 }
-.gallery .sub_visual .container {
-  padding: 10px;
+.gallery .inner #wrap {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
   overflow: hidden;
 }
-.gallery .sub_visual .container h1 {
-  font: 2vw "Fredoka One", cursive;
-  color: #777;
-}
-.gallery .sub_visual .container #wrap {
-  width: 100%;
-  padding: 50px;
-}
-.gallery .sub_visual .container #wrap #list {
-  width: 100%;
+.gallery .inner #wrap #list {
   transform: translateY(100px);
   transition: 1s;
 }
-.gallery .sub_visual .container #wrap #list::after {
+.gallery .inner #wrap #list::after {
   content: "";
   display: block;
   clear: both;
 }
-.gallery .sub_visual .container #wrap #list li {
+.gallery .inner #wrap #list .item {
   width: 25%;
   float: left;
   padding: 10px;
 }
-.gallery .sub_visual .container #wrap #list li div {
+.gallery .inner #wrap #list .item div {
   width: 100%;
   background: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
-.gallery .sub_visual .container #wrap #list li div a img {
+.gallery .inner #wrap #list .item div a img {
   width: 100%;
 }
-.gallery .sub_visual .container #wrap #list.on {
+.gallery .inner #wrap #list .item div p {
+  font: 1vw "Noto Sans", sans-serif;
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallery .inner #wrap #list.on {
   opacity: 1;
   transform: translateY(0px);
 }

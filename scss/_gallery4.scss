@@ -14,6 +14,7 @@
                 font: bold 3.3vw 'Noto Sans', sans-serif;
                 color: #444;
                 padding: 0 20px;
+                cursor: pointer;
                 // display: block;
         }
     }
@@ -319,47 +320,50 @@
 //...  Contents 영역 --> 
 .gallery {
     background: #eee;
+    height: 100%;
+    z-index: -1;
     .sub_visual {
         background : pink;
-    .container {
-        padding: 10px;
-        overflow: hidden;
-        h1 {
-            font: $em_font;
-            color: #777;
-        }
+    }
+    .inner {
         #wrap {
             width: 100%;
+            height: 100%;
             padding: 50px;
-        
-        #list {
-            width: 100%;
-            // opacity: 0;
-            transform: translateY(100px);
-            transition: 1s;
-            
-            &::after {
-                content: '';
-                display: block;
-                clear: both;
-            }
-            li {
-                width: calc(100% / 4);
-                float: left;
-                padding: 10px;
-                div {
-                    width: 100%;
-                    background: #fff;
-                    padding: 20px;
-                    border-radius: 5px;
-                    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-                    a {
-                        img {
-                            width: 100%;
+            overflow: hidden;
+            #list {
+                // opacity: 0;
+                transform: translateY(100px);
+                transition: 1s;
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+                .item {
+                    width: calc(100% / 4);
+                    float: left;
+                    padding: 10px;
+                    div {
+                        width: 100%;
+                        background: #fff;
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+                        a {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        p {
+                            font: $p_font;
+                            color: #777;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
                         }
                     }
                 }
-            }
+
             &.on {
                 opacity: 1;
                 transform: translateY(0px);
@@ -368,7 +372,7 @@
     }
 }
 }
-}
+
 //...FOOTER_SUB ...
 //...FOOTER_SUB ...
 #footer_sub {
