@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <!-- <meta name="viewport" content="user-scalable=0;"/> -->
-    <title>gallery2</title>
+    <title>join</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="reset" href="css/reset.css">
     <script defer src="js/main.js"></script>
@@ -238,88 +238,93 @@
     </div>
 </header>
 
-
-
 <!-- Contents 영역 -->
-<section id="box1">
-    <div class="container">
-      <h1>TITLE 1</h1>
-      <div class="wrap">
-        <article>
-          <div class="pic"></div>
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-          <a href="#">view more</a>
-        </article>
-        <article>
-          <div class="pic"></div>
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-          <a href="#">view more</a>
-        </article>
-        <article>
-          <div class="pic"></div>
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-          <a href="#">view more</a>
-        </article>
-        <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-          <article>
-            <div class="pic"></div>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, at.</p>
-            <a href="#">view more</a>
-          </article>
-      </div>
+
+<section class="content join">
+    <div class="sub_visual">
+        
     </div>
-  </section>
+<div class="inner">
+    <h1>회원 가입</h1>
+    <form action="#">
+    <fieldset>
+        <legend class="hidden">회원가입양식폼</legend>
+        <h2><label for="terms">Terms & Policy</label></h2>
+        <textarea name="terms" id="terms" cols="30" rows="10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cumque quaerat asperiores libero alias mollitia delectus, quibusdam iste architecto sit consequuntur cum incidunt pariatur. Rem nihil commodi officia vitae dolorum quod incidunt assumenda a! Omnis cum vel libero reprehenderit a dolor, facilis, aperiam saepe culpa, maiores officia itaque maxime vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem porro eaque optio exercitationem, reiciendis numquam beatae quisquam. Vel aspernatur, mollitia veritatis ipsam quis repellendus fugit debitis dolores error voluptas. Recusandae aut necessitatibus architecto maiores molestias perspiciatis, et rem aliquam consequatur laborum repellat sed reiciendis illo, doloremque veniam voluptates. Molestiae, facilis!
+        </textarea>
+        <div class="agreement">
+            <input type="checkbox" name="agreement" id="agree">
+            <label for="agree">약관에 동의합니다</label>
+        </div>
+        <h2>MEMBER INFORMATION</h2>
+        <table>
+            <catption class="hidden">회원정보 입력방식 테이블</catption>
+            <tr>
+                <th scope="row"><label for="id">USER ID</label></th>
+                <td>
+                <input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요." required></td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="pwd">PASSWORD</label></th>
+                <td><input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요." required></td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="pwd">RE PASSWORD</label></th>
+                <td><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력해 주세요." required></td>
+            </tr>
+            <tr>
+                <th scope="row">GENDER</th>
+                <td>
+                    <label for="man">
+                        <input type="radio" name="gender" id="man" value="male">Male
+                    </label>
+                    <label for="woman">
+                        <input type="radio" name="gender" id="woman" value="female">Female
+                    </label>
+                <p class="genderTxt">성별을 선택해 주세요.</p>
+            </td>
+            </tr>
+            <tr>
+                <th scope="row">LEVEL</th>
+                <td>
+                    <label for="beginner"><input type="radio" name="level" id="beginner" value="begin">Beginner</label>
+                    <label for="intermediate"><input type="radio" name="level" id="intermediate" value="inter">Intermediate</label>
+                    <label for="advanced"><input type="radio" name="level" id="advanced" value="advanced">Advanced</label>
+                    <p class="levelTxt">자신의 레벨을 선택해 주세요.</p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="email">E-Mail</label>
+                </th>
+                <td>
+                    <input type="text" name="userEmail" id="email" placeholder="이메일 주소를 입력해 주세요.">
+                    <select name="company" id="company">
+                        <option value="naver">@naver.com</option>
+                        <option value="google">@google.com</option>
+                        <option value="daum">@daum.net</option>
+                        <option value="nate">@nate.com</option>
+                        <option value="hotmail">@hotmail.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="comments">COMMENTS</label></th>
+                <td><textarea name="comments" id="comments" cols="30" rows="10" placeholder="남기고 싶은 말을 입력해 주세요."></textarea></td>
+            </tr>
+            <tr>
+            <th colspan="2">
+                <input type="reset" value="cancel">
+                <input type="submit" value="submit">
+            </th>
+            </tr>
+        </table>
+    </fieldset>
+
+    </form>
+
+</section>
+
 
 <!-- footer 영역 -->
     <footer id="footer_sub">

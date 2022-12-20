@@ -12,6 +12,7 @@ $p_font: 1vw 'Noto Sans', sans-serif;
 $d_font: bold 1vw 'Yanone Kaffeesatz', sans-serif;
 $s_font: 1.2vw 'Fredoka One', cursive;
 $ss_font: 1.2vw 'Luckiest Guy', cursive;
+$k_font: 1.3vw 'Nanum Pen Script', cursive;
 
 // color
 $tint40: #b9e3de;
@@ -36,6 +37,11 @@ ul,ol,li {
 a {
     text-decoration: none;
 }
+.hidden {
+	position: absolute;
+	top: -99999999px;
+	opacity: 0;
+}
 
 .container::after {
 	content: "";
@@ -47,6 +53,14 @@ a {
 	display: block;
 	clear: both;
 }
+
+fieldset {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
