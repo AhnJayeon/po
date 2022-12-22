@@ -367,6 +367,83 @@ body {
 .content {
   width: 100%;
   height: 600px;
+  position: relative;
+}
+.content .sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.content .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.content .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.content .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.content .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
 }
 
 #footer_sub {
@@ -920,27 +997,103 @@ body {
   text-align: center;
 }
 
-body #photos {
+.gallery1 .sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gallery1 .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.gallery1 .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.gallery1 .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.gallery1 .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.gallery1 .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
+}
+.gallery1 #photos {
   width: 100%;
   height: 100%;
 }
-body #photos .container {
+.gallery1 #photos .container {
   width: 1180px;
-  margin: 0 auto;
+  margin: 20px auto;
   border: 2px dashed #ccc;
   border-radius: 10px;
   padding-bottom: 50px;
 }
-body #photos .container h3 {
+.gallery1 #photos .container h3 {
   font: 2vw "Fredoka One", cursive;
   line-height: 80px;
   text-align: center;
   color: #555;
 }
-body #photos .container .wrap {
+.gallery1 #photos .container .wrap {
   width: 100%;
 }
-body #photos .container .wrap article {
+.gallery1 #photos .container .wrap article {
   width: 250px;
   opacity: 0.7;
   object-fit: contain;
@@ -948,59 +1101,59 @@ body #photos .container .wrap article {
   float: left;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #photos .container .wrap article p {
+.gallery1 #photos .container .wrap article p {
   display: none;
   font: 1vw "Noto Sans", sans-serif;
 }
-body #photos .container .wrap article img {
+.gallery1 #photos .container .wrap article img {
   width: 100%;
   object-fit: cover;
   transition: 0.5s;
   border-radius: 10px;
 }
-body #photos .container .wrap article:hover {
+.gallery1 #photos .container .wrap article:hover {
   transform: scale(1.1);
   opacity: 1;
 }
-body #photos .container .wrap article:hover p {
+.gallery1 #photos .container .wrap article:hover p {
   display: block;
 }
-body #photos .container .wrap article::after {
+.gallery1 #photos .container .wrap article::after {
   content: "";
   display: block;
   clear: both;
 }
-body #m_photos {
+.gallery1 #m_photos {
   width: 100%;
 }
-body #m_photos .container {
+.gallery1 #m_photos .container {
   width: 1180px;
-  margin: 50px auto;
+  margin: 0px auto;
   position: relative;
 }
-body #m_photos .container ul {
+.gallery1 #m_photos .container ul {
   width: 90vw;
   height: 100%;
   margin-left: 50px;
 }
-body #m_photos .container ul li {
+.gallery1 #m_photos .container ul li {
   float: left;
   margin: 20px 20px;
 }
-body #m_photos .container ul li a {
+.gallery1 #m_photos .container ul li a {
   position: relative;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #m_photos .container ul li a img {
+.gallery1 #m_photos .container ul li a img {
   border-radius: 10px;
   transition: 0.3s;
 }
-body #m_photos .container ul li a figure {
+.gallery1 #m_photos .container ul li a figure {
   width: 100%;
   height: 100%;
 }
-body #m_photos .container ul li a figcaption {
+.gallery1 #m_photos .container ul li a figcaption {
   width: 100%;
   height: 100%;
   top: 0;
@@ -1012,10 +1165,10 @@ body #m_photos .container ul li a figcaption {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
 }
-body #m_photos .container ul li a figcaption:hover {
+.gallery1 #m_photos .container ul li a figcaption:hover {
   opacity: 1;
 }
-body #m_photos .container ul li a figcaption::after {
+.gallery1 #m_photos .container ul li a figcaption::after {
   content: "";
   display: block;
   width: calc(100% - 40px);
@@ -1030,12 +1183,12 @@ body #m_photos .container ul li a figcaption::after {
   margin: auto;
   border-radius: 10px;
 }
-body #footer_sub {
+.gallery1 #footer_sub {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
-body #footer_sub .container {
+.gallery1 #footer_sub .container {
   width: 1180px;
   height: 100%;
   display: flex;
@@ -1048,7 +1201,7 @@ body #footer_sub .container {
   background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #footer_sub .container .article1 {
+.gallery1 #footer_sub .container .article1 {
   width: 380px;
   height: 350px;
   background-color: #777;
@@ -1056,19 +1209,19 @@ body #footer_sub .container .article1 {
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #footer_sub .container .article1 a {
+.gallery1 #footer_sub .container .article1 a {
   font: 2vw "Fredoka One", cursive;
   color: #fff;
 }
-body #footer_sub .container .article1 li h3 {
+.gallery1 #footer_sub .container .article1 li h3 {
   font: 1.2vw "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-body #footer_sub .container .article1 li p {
+.gallery1 #footer_sub .container .article1 li p {
   font: 1vw "Noto Sans", sans-serif;
 }
-body #footer_sub .container .article2 {
+.gallery1 #footer_sub .container .article2 {
   background-color: #777;
   width: 380px;
   margin: 0 20px;
@@ -1076,46 +1229,46 @@ body #footer_sub .container .article2 {
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #footer_sub .container .article2 h4 {
+.gallery1 #footer_sub .container .article2 h4 {
   font: 1.1vw "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-body #footer_sub .container .article2 li h3 {
+.gallery1 #footer_sub .container .article2 li h3 {
   font: 1.2vw "Noto Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-body #footer_sub .container .article2 li p {
+.gallery1 #footer_sub .container .article2 li p {
   font: 1vw "Noto Sans", sans-serif;
 }
-body #footer_sub .container .article3 {
+.gallery1 #footer_sub .container .article3 {
   width: 380px;
   border-radius: 10px;
   background-color: #777;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #footer_sub .container .article3 p {
+.gallery1 #footer_sub .container .article3 p {
   font: 1vw "Noto Sans", sans-serif;
   padding: 50px 30px;
 }
-body #footer_sub .container .article3 .b_util {
+.gallery1 #footer_sub .container .article3 .b_util {
   width: 380px;
   margin: 30px auto;
   position: relative;
   display: flex;
   justify-content: center;
 }
-body #footer_sub .container .article3 .b_util .f_link a {
+.gallery1 #footer_sub .container .article3 .b_util .f_link a {
   font-size: 25px;
   color: #fff;
   padding: 20px 10px;
 }
-body #t_footer_sub {
+.gallery1 #t_footer_sub {
   display: none;
   height: 250px;
 }
-body #t_footer_sub .container {
+.gallery1 #t_footer_sub .container {
   width: 100vw;
   position: relative;
   text-align: center;
@@ -1127,26 +1280,26 @@ body #t_footer_sub .container {
   background-color: #444;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-body #t_footer_sub .container a {
+.gallery1 #t_footer_sub .container a {
   font: bold 1vw "Yanone Kaffeesatz", sans-serif;
   color: #fff;
 }
-body #t_footer_sub .container li h3 {
+.gallery1 #t_footer_sub .container li h3 {
   font: 1.2vw "Noto Sans", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-body #t_footer_sub .container li p {
+.gallery1 #t_footer_sub .container li p {
   font: 1vw "Noto Sans", sans-serif;
 }
-body #t_footer_sub .container .b_util {
+.gallery1 #t_footer_sub .container .b_util {
   width: 60%;
   margin: 20px auto;
   position: relative;
   display: flex;
   justify-content: center;
 }
-body #t_footer_sub .container .b_util .f_link a {
+.gallery1 #t_footer_sub .container .b_util .f_link a {
   font-size: 20px;
   color: #fff;
   padding: 20px 10px;
@@ -1612,30 +1765,110 @@ body #t_footer_sub .container .b_util .f_link a {
   text-align: center;
 }
 
-.tab-wrapper {
+.details1 {
+  width: 100%;
+  height: 100%;
+}
+.details1 .sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.details1 .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.details1 .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.details1 .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.details1 .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.details1 .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
+}
+.details1 .tab-wrapper {
   width: 1180px;
   height: 100%;
   border: 2px solid #ccc;
   position: relative;
   margin: 50px auto;
 }
-.tab-wrapper .tab-menu {
+.details1 .tab-wrapper .tab-menu {
   display: flex;
   border-bottom: 1px solid #8bd1c9;
   height: 60px;
   font: bold 15px/30px "Noto Sans", sans-serif;
 }
-.tab-wrapper .tab-menu::after {
+.details1 .tab-wrapper .tab-menu::after {
   content: "";
   display: block;
   clear: both;
 }
-.tab-wrapper .tab-menu li {
+.details1 .tab-wrapper .tab-menu li {
   flex: 1;
   border: 1px solid #ddd;
   border-left: none;
 }
-.tab-wrapper .tab-menu li a {
+.details1 .tab-wrapper .tab-menu li a {
   display: block;
   height: 60px;
   font-size: 14px;
@@ -1644,53 +1877,51 @@ body #t_footer_sub .container .b_util .f_link a {
   line-height: 60px;
   border: 1px solid #ddd;
 }
-.tab-wrapper .tab-menu li a.active {
+.details1 .tab-wrapper .tab-menu li a.active {
   background: #8bd1c9;
   color: #fff;
 }
-
-#tab-content {
+.details1 #tab-content {
   min-height: 300px;
   padding: 20px 30px;
   background-color: #e7f5f4;
 }
-#tab-content div {
+.details1 #tab-content div {
   display: none;
 }
-#tab-content div h3 {
+.details1 #tab-content div h3 {
   font: 1.4vw "Noto Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
 }
-#tab-content div p {
+.details1 #tab-content div p {
   font: 1vw "Noto Sans", sans-serif;
   color: #444;
 }
-#tab-content div:first-child {
+.details1 #tab-content div:first-child {
   display: block;
 }
-
-#box {
+.details1 #box {
   width: 100%;
   height: 100%;
   padding: 100px 0;
 }
-#box .container {
+.details1 #box .container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
-#box .container .wrap {
+.details1 #box .container .wrap {
   width: 100%;
 }
-#box .container .wrap::after {
+.details1 #box .container .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-#box .container .wrap article {
+.details1 #box .container .wrap article {
   width: 24%;
   height: 250px;
   float: left;
@@ -1701,27 +1932,27 @@ body #t_footer_sub .container .b_util .f_link a {
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-#box .container .wrap article h2 {
+.details1 #box .container .wrap article h2 {
   font: 1.2vw "Fredoka One", cursive;
   color: #444;
   margin-bottom: 15px;
 }
-#box .container .wrap article p {
+.details1 #box .container .wrap article p {
   font: 1vw "Noto Sans", sans-serif;
 }
-#box .container .wrap article p a {
+.details1 #box .container .wrap article p a {
   font: bold 14px "arial";
   color: #555;
   letter-spacing: 2px;
 }
-#box .container .wrap article .btnMore {
+.details1 #box .container .wrap article .btnMore {
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 1;
   color: #8bd1c9;
 }
-#box .container .wrap:last-of-type {
+.details1 #box .container .wrap:last-of-type {
   margin-right: 0px;
 }
 
@@ -2293,44 +2524,124 @@ body #t_footer_sub .container .b_util .f_link a {
   text-align: center;
 }
 
-#box1 {
+.gallery2 {
+  width: 100%;
+  height: 100%;
+}
+.gallery2 .sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gallery2 .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.gallery2 .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.gallery2 .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.gallery2 .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.gallery2 .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
+}
+.gallery2 #box1 {
   width: 100%;
 }
-#box1 .container {
+.gallery2 #box1 .container {
   width: 1180px;
   margin: 50px auto;
   position: relative;
 }
-#box1 .container h1 {
+.gallery2 #box1 .container h1 {
   font: 2.8vw "Fredoka One", cursive;
   text-align: center;
   margin-bottom: 40px;
 }
-#box1 .container .wrap {
+.gallery2 #box1 .container .wrap {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#box1 .container .wrap article {
+.gallery2 #box1 .container .wrap article {
   width: 23%;
   border: 1px solid #999;
   margin: 1% 1%;
   padding: 20px;
 }
-#box1 .container .wrap .pic {
+.gallery2 #box1 .container .wrap .pic {
   width: 100%;
   height: 200px;
   background-color: #444;
   margin-bottom: 20px;
 }
-#box1 .container .wrap h2 {
+.gallery2 #box1 .container .wrap h2 {
   font: 1.4vw "Noto Sans", sans-serif;
 }
-#box1 .container .wrap p {
+.gallery2 #box1 .container .wrap p {
   font: bold 1vw "Yanone Kaffeesatz", sans-serif;
 }
-#box1 .container .wrap a {
+.gallery2 #box1 .container .wrap a {
   font: 1vw "Noto Sans", sans-serif;
   color: #333;
 }
@@ -2898,6 +3209,83 @@ body #t_footer_sub .container .b_util .f_link a {
   text-align: center;
 }
 
+.sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
+}
+
 #slider {
   width: 100%;
   height: 500px;
@@ -2928,6 +3316,8 @@ body #t_footer_sub .container .b_util .f_link a {
   width: 100%;
   height: 350px;
   overflow: hidden;
+  position: absolute;
+  bottom: -500px;
 }
 #footer_sub .container {
   width: 1180px;
@@ -3476,12 +3866,87 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 
 .gallery {
-  background: #eee;
+  width: 100%;
   height: 100%;
+  position: relative;
   z-index: -1;
+  overflow: hidden;
 }
 .gallery .sub_visual {
-  background: pink;
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gallery .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.gallery .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.gallery .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.gallery .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.gallery .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
 }
 .gallery .inner #wrap {
   width: 100%;
@@ -3527,12 +3992,11 @@ body #t_footer_sub .container .b_util .f_link a {
 
 #footer_sub {
   width: 100%;
-  height: 350px;
-  overflow: hidden;
+  height: 100%;
 }
 #footer_sub .container {
   width: 1180px;
-  height: 100%;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -4076,31 +4540,105 @@ body #t_footer_sub .container .b_util .f_link a {
   text-align: center;
 }
 
-.faq-container {
+.faq {
+  width: 100%;
+  height: 100%;
+}
+.faq .sub_visual {
   width: 1180px;
-  margin: 50px auto;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.faq .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.faq .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.faq .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.faq .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
+}
+.faq .faq-container {
+  width: 1180px;
+  margin: 20px auto;
   padding: 10px;
 }
-.faq-container h2 {
-  font: 2vw "Fredoka One", cursive;
-  color: #6fa7a0;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.faq-container #question {
+.faq .faq-container #question {
   cursor: pointer;
 }
-.faq-container #question.active .q-heading {
+.faq .faq-container #question.active .q-heading {
   background-color: #8bd1c9;
   color: #fff;
 }
-.faq-container #question.active .q-heading::after {
+.faq .faq-container #question.active .q-heading::after {
   content: "-";
 }
-.faq-container #question.active .q-answer {
+.faq .faq-container #question.active .q-answer {
   display: block;
 }
-.faq-container #question .q-heading {
+.faq .faq-container #question .q-heading {
   background-color: #999;
   font: 1.2vw "Fredoka One", cursive;
   line-height: 2.2rem;
@@ -4108,7 +4646,7 @@ body #t_footer_sub .container .b_util .f_link a {
   color: #eee;
   position: relative;
 }
-.faq-container #question .q-heading::after {
+.faq .faq-container #question .q-heading::after {
   content: "+";
   position: absolute;
   top: 50%;
@@ -4116,12 +4654,12 @@ body #t_footer_sub .container .b_util .f_link a {
   transform: translateY(-50%);
   font-size: 2vw;
 }
-.faq-container #question .q-answer {
+.faq .faq-container #question .q-answer {
   padding: 20px;
   display: none;
   background-color: #e7f5f4;
 }
-.faq-container #question .q-answer p {
+.faq .faq-container #question .q-answer p {
   font: 1vw "Noto Sans", sans-serif;
 }
 
@@ -4679,6 +5217,83 @@ body #t_footer_sub .container .b_util .f_link a {
   text-align: center;
 }
 
+.sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
+}
+
 #footer_sub {
   width: 100%;
   height: 350px;
@@ -4940,10 +5555,79 @@ body #t_footer_sub .container .b_util .f_link a {
 }
 .location .sub_visual {
   width: 1180px;
-  height: 50px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
   border-radius: 5px;
+  overflow: hidden;
+}
+.location .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.location .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.location .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.location .sub_visual::after {
+  content: "";
+  display: block;
   background: #b9e3de;
-  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.location .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
 }
 .location .inner {
   margin: 0 auto;
@@ -5277,6 +5961,82 @@ body #t_footer_sub .container .b_util .f_link a {
   width: 100%;
   height: 100%;
   margin: 50px auto;
+}
+.join .sub_visual {
+  width: 1180px;
+  height: 100px;
+  background: #e7f5f4;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.join .sub_visual h1 {
+  font: 2vw "Fredoka One", cursive;
+  color: #375350;
+  line-height: 100px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 3;
+}
+.join .sub_visual::before {
+  content: "";
+  display: block;
+  background: #d0ece9;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  transform: rotate(45deg);
+  transition: 3s;
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.join .sub_visual::before:hover {
+  animation-play-state: paused;
+}
+.join .sub_visual::after {
+  content: "";
+  display: block;
+  background: #b9e3de;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 55px;
+  margin-right: 1020px;
+  transform: rotate(45deg);
+  animation-name: box1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.join .sub_visual::after:hover {
+  animation-play-state: paused;
+}
+@keyframes box1 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(90deg);
+  }
+  75% {
+    opacity: 0.4;
+    transform: rotate(110deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: rotate(180deg);
+  }
 }
 .join .inner {
   width: 1180px;
