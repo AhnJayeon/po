@@ -420,7 +420,7 @@
     // min-width: 1180px;
     height: 350px;
     position: relative;
-    transform: translateY(800px);
+    // transform: translateY(800px);
     // overflow: hidden;
     .container {
         width: 1180px;
@@ -512,6 +512,7 @@
 #t_footer_sub {
     display: none;
     // width: 90%;
+    margin-top: 100px;
     height: 250px;
     .container {
         width: 100vw;
@@ -566,6 +567,7 @@
     .container {
         width: 100vw;
         height: 100%;
+        margin-top: 10px;
         margin-left: 30px;
         .menu_web {
             display: none;

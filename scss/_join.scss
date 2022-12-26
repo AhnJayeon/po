@@ -73,6 +73,7 @@
         position: relative;
         h2 {
             font: $h2_font;
+            font-weight: bolder;
             color: #555;
             margin-top: 30px;
             margin-bottom: 20px;
@@ -96,17 +97,17 @@
         table {
             width: 100%;
             height: 100%;
-            border-top: 3px solid #999;
-            border-bottom: 3px solid #999;
+            border-top: 3px solid #ccc;
+            border-bottom: 3px solid #ccc;
             th {
                 width: 20%;
                 text-align: left;
                 font: $h3_font;
-                color: #666;
+                color: #fff;
                 padding: 20px 30px;
-                border-right: 1px solid #bbb;
-                border-bottom: 1px solid #bbb;
-                background: #eee;
+                border-right: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+                background: $shade0;
                 &:last-child {
                     background: #fff;
                     text-align: center;
@@ -114,11 +115,12 @@
                 }
                 input[type="submit"], input[type="reset"]{
                     width: 150px;
-                    height: 40px;
+                    height: 50px;
                     border: none;
-                    background: #444;
+                    background: $shade20;
                     font: $d_font;
                     color: #fff;
+                    border-radius: 5px;
                     margin-right: 10px;  
                 }
             }
