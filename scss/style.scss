@@ -18,6 +18,8 @@
 @import "test1.scss";
 @import "location.scss";
 @import "join.scss";
+@import "profile.scss";
+
 
 // @import "community.scss";
 
@@ -64,7 +66,13 @@
                     &:hover, &:focus {
                         background: $shade0;
                         border-radius: 5px;
+                        
                         transition: all 0.5s;
+                        >a {
+                            font: bold 17px/1 "arial";
+                            color: #222;
+                            
+                        }
                         .sub_menu1 {
                             display: block;
                             position: absolute;
@@ -169,7 +177,7 @@
                     width: 9.5vw;
                     height: 4.2vh;
                     position: absolute;
-                    top: 30px;
+                    top: 35px;
                     right: 10px;
                 }
             } //form.wrap
@@ -410,10 +418,12 @@
 
              }
              &:nth-child(odd) {
-                background-color: #2b5a55;  
+                background-color: #2b5a55;
+                color: #222;  
              }
              &:nth-child(even) {
                 background-color: $shade60; 
+                color: #ccc;
              }  
         }
         .showing {
@@ -661,7 +671,6 @@
         border-radius: 10px;
         background-color: #777;
         box-shadow: 0 0 10px (0,0,0,0.1);
-
         .article1 {
             width: 380px;
             height: 350px;
