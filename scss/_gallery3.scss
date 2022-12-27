@@ -1,10 +1,10 @@
 
 
 //...  Contents 영역 --> 
-// .gallery3 {
-//     width: 100%;
-//     height: 100%;
-//     position: relative;
+.gallery3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
 .sub_visual {
     width: 1180px;
     height: 100px; 
@@ -69,12 +69,12 @@
     } //sub_visual   
 #slider {
    width: 100%;
-   height: 500px;
+   height: 100%;
    margin: 50px auto;
    position: relative;
    .slider_item {
         width: 100vw;
-        height: 100%;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -93,7 +93,7 @@
         transform: none;
     }
 }
-
+}
 
 //-----FOR TABLET
 @media screen and (max-width: $tablet) {

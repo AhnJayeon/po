@@ -173,19 +173,25 @@
         }
     }
 } 
-@media screen and (max-width: $mobile) {
+
+@media screen and (max-width: $tablet) {
+    .contact {
+        .inner {
+            width: 100vw;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
 .container {
     width: 100%;
     .contact-box {
         max-width: 500px;
         width: 100%;
         grid-template-columns: 1fr;
+        .left {
+            height: 200px;
+        }
     }
-    .left {
-        height: 200px;
-    }
-    .right {
-        
-    }
+    
 }
 }
