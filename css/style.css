@@ -2783,7 +2783,7 @@ body {
 }
 .contact {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .contact .sub_visual {
   width: 1180px;
@@ -2951,7 +2951,7 @@ body {
   background-color: #375350;
 }
 .contact .inner {
-  margin: 0 auto;
+  margin: 50px auto;
   height: 100%;
   width: 100%;
 }
@@ -2963,7 +2963,7 @@ body {
 .contact .inner #map {
   width: 1000px;
   height: 500px;
-  border: 1px solid #000;
+  border: 1px solid #999;
   margin: 40px auto;
 }
 
