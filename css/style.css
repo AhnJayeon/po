@@ -2781,7 +2781,11 @@ body {
     padding: 20px 10px;
   }
 }
-.location .sub_visual {
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+.contact .sub_visual {
   width: 1180px;
   height: 100px;
   background: #e7f5f4;
@@ -2789,7 +2793,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
-.location .sub_visual h1 {
+.contact .sub_visual h1 {
   font: 2vw "Fredoka One", cursive;
   color: #375350;
   line-height: 100px;
@@ -2797,7 +2801,7 @@ body {
   margin-left: 20px;
   z-index: 3;
 }
-.location .sub_visual::before {
+.contact .sub_visual::before {
   content: "";
   display: block;
   background: #d0ece9;
@@ -2813,10 +2817,10 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.location .sub_visual::before:hover {
+.contact .sub_visual::before:hover {
   animation-play-state: paused;
 }
-.location .sub_visual::after {
+.contact .sub_visual::after {
   content: "";
   display: block;
   background: #b9e3de;
@@ -2832,7 +2836,7 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.location .sub_visual::after:hover {
+.contact .sub_visual::after:hover {
   animation-play-state: paused;
 }
 @keyframes box1 {
@@ -2857,21 +2861,125 @@ body {
     transform: rotate(180deg);
   }
 }
-.location .inner {
-  margin: 0 auto;
+.contact .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
 }
-.location .inner h1 {
+.contact .container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.1;
+}
+.contact .container .contact-box {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.contact .container .contact-box .left {
+  height: 100%;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+  transform: scale(0.8);
+}
+.contact .container .contact-box .right {
+  padding: 25px 40px;
+}
+.contact .container .contact-box .right h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+.contact .container .contact-box .right h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #8bd1c9;
+}
+.contact .container .contact-box .right .field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+.contact .container .contact-box .right .field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.contact .container .contact-box .right .field:focus {
+  background-color: #fff;
+  border: 2px solid #6fa7a0;
+}
+.contact .container .contact-box .right textarea {
+  min-height: 180px;
+}
+.contact .container .contact-box .right .btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #537d78;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.contact .container .contact-box .right .btn:hover {
+  background-color: #375350;
+}
+.contact .inner {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.contact .inner h1 {
   font: 2vw "Fredoka One", cursive;
   text-align: center;
   margin-top: 40px;
 }
-.location .inner #map {
+.contact .inner #map {
   width: 1000px;
   height: 500px;
   border: 1px solid #000;
   margin: 40px auto;
 }
 
+@media screen and (max-width: 539px) {
+  .container {
+    width: 100%;
+  }
+  .container .contact-box {
+    max-width: 500px;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .container .left {
+    height: 200px;
+  }
+}
 .join .sub_visual {
   width: 1180px;
   height: 100px;
