@@ -560,53 +560,7 @@
          
 
 //...SECTION-ARTICLE ...
-#article {
-    width: 100%;
-    // min-width: 1180px;
-    height: 400px;
-    .container {
-        width: 1180px;
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 20px auto;
-        border-radius: 10px;
-        box-shadow: 0 0 10px (0,0,0,0.1);
-        background-color: $shade20;
-        .atc_box {
-            width: 380px;
-            height: 100%;
-            font: $p_font;
-            color: #fff; 
-            border-radius: 10px;
-            background-color: $shade20;
-            position: relative;
-            padding: 100px 15px;
-                i {
-                    font-size: 50px;
-                    color: #fff;   
-                }
-                h4 {
-                    font: $s_font;
-                    margin: 15px 0 20px;
-                }
-                p {
-                    font: $p_font;
-                }
-                &:nth-of-type(1) {
-                    width: 380px;
-                    height: 100%;
-                    margin: 0 20px;
-                }
-                
-                &:nth-of-type(3) {
-                    width: 380px;
-                    height: 100%;    
-                }
-            } //article
-        } //container
-} //...SECTION-ARTICLE ...
+
 //...SECTION-BRAND ...
 #brand {
     width: 100%;
