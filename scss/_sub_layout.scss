@@ -2,7 +2,6 @@
     width: 100%;
     // min-width: 1180px;
     height: 100px;
-    margin-bottom: 25px;
     .container {
         width: 1180px;
         height: 100%;
@@ -10,7 +9,7 @@
         position: relative; 
         a {
                 font: bold 3.3vw 'Noto Sans', sans-serif;
-                color: #444;
+                color: #222;
                 padding: 0 20px;
                 // display: block;
         }
@@ -20,7 +19,7 @@
             #gnb {
                 bottom: 75px;
                 height: 20px;
-                position: absolute;   
+                position: absolute; 
                 .menu { 
                     float: left;
                     width: 140px;
@@ -33,7 +32,11 @@
                         background: $shade0;
                         border-radius: 5px;
                         transition: all 0.5s;
-                        
+                        >a {
+                            font: bold 16px/1 "arial";
+                            color: $shade60;
+                            
+                        }
                         .sub_menu1 {
                             display: block;
                             position: absolute;
@@ -43,6 +46,7 @@
                             border-radius: 5px;
                             cursor: pointer;
                             ul { 
+                                
                                 li {
                                     width: 140px;
                                     padding: 10px 10px 10px 25px;
@@ -50,6 +54,8 @@
                                     text-align: left;
                                     font: bold 14px/1 "arial";
                                     color: #fff;
+                                    
+
                                     &:last-child {
                                         border-bottom: none;
                                     }
@@ -79,7 +85,6 @@
                     .sub_menu1 {
                         display: none;
                         z-index: 9;
-
                         cursor: pointer;
                         a {
                             font: bold 14px/1 "arial";
@@ -91,6 +96,7 @@
                                 top: 50px;
                                 left: -20px;
                                 position: absolute;
+                                cursor: pointer;
                                 a {
                             font: bold 13px/1 "arial";
                             color: $shade20;
@@ -100,49 +106,114 @@
                 } //menu
             } //gnb    
         } //menu_web
-        form {
+
+        .login {
             // position: relative;
-            .wrap{
-                top: -20px;
-                right: 0;
-                height: 25px;
-                width: 60%;
-                margin-right: 0;                   
-                display: block;
-                // justify-content: center;
+            // transform: translate(-50%, -50%);
+            #show-login {
                 position: absolute;
-                // font-size: 1rem;
-                label {
-                    font: 0.7vw 'arial';
-                    color: #666;
+                width: 60px;
+                height: 32px;
+                top: 0;
+                right: 0;
+                margin: 15px 20px;
+                padding: 5px 10px;
+                font-size: 1vw;
+                font-weight: 600;
+                color: $shade60;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15); 
+                cursor: pointer;  
+                &:hover {
+                    background: $tint40;
+                } 
+            }
+            .popup {
+                // display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                transform: scale(1.25);
+                width: 400px;
+                padding: 20px 30px;
+                margin-left: -200px;
+                margin-top: 150px;
+                background: #eee;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15); 
+                transition: opacity 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+                z-index: 7;
+                &.on {
+                    // display: block;
+                    opacity: 1;
+                    transform: scale(1);    
                 }
-                input[type=text] {
-                    border-radius: 5px;
-                    border: 1px solid #aaa;
-                    cursor: pointer; 
-                    width: 10.5vw;
-                    height: 3vh;
-                }
-                input[type=password] {
-                    border-radius: 5px;
-                    border: 1px solid #aaa;
-                    cursor: pointer; 
-                    width: 10.5vw;
-                    height: 3vh;
-                }
-                input[type=submit] {
-                    width: 4.3vw;
-                    height: 3.5vh;
-                }
-                img {
-                    width: 9.5vw;
-                    height: 4.2vh;
+                .close-btn {
                     position: absolute;
-                    top: 35px;
+                    top: 10px;
                     right: 10px;
+                    width: 20px;
+                    height: 20px;
+                    color: #666;
+                    background: #ccc;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 20px;
+                    cursor: pointer;
                 }
-            } //form.wrap
-        } //form
+                .form {
+                    h2 {
+                    text-align: center;
+                    color: #222;
+                    margin: 10px 0 20px;
+                    font: $em_font;
+                    }
+                    .form-element {
+                        margin: 15px auto;
+                        label {
+                            font: $p_font;
+                        }
+                        input[type="text"], input[type="password"] {
+                            margin-top: 5px;
+                            display: block;
+                            width: 100%;
+                            padding: 10px;
+                            outline: none;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+                        input[type="checkbox"] {
+                            margin-left: 5px;
+                        }
+                        button {
+                            width: 100%;
+                            height: 50px;
+                            font-size: 18px;
+                            color: $shade40;
+                            font-weight: 600;
+                            background: $tint40;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                        .kakao {
+                            width: 100%;
+                            
+                        }                          
+                            
+                    
+                        > a {
+                            font-size: 16px;
+                            display: block;
+                            text-align: right;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        } //login
         .f_box {
                 width: 300px;
                 height: 100px;
@@ -284,7 +355,7 @@
                                 &:last-child {
                                     border-bottom: none;
                                 }
-                                a:hover {  
+                                &:hover {  
                                     color: $shade0;
                                 }
                                 .fa-angle-right {
@@ -335,7 +406,7 @@
 			} //#gnbMo
 		} //menuMo
     } //container
-} //HEADER_sub
+    }
 
 //...  Contents 영역 -->       
 .content {

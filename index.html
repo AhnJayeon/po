@@ -54,7 +54,7 @@
                         <div class="sub_menu1">
                             <ul>
                                 <li><a href="details1.html">details 1</a></li>
-                                <li><a href="#">details 2</a></li>
+                                <li><a href="details2.html">details 2</a></li>
 
                                 <li class="isSub"><a href="#">sub1</a>
                                 <i class="fas fa-angle-right"></i>
@@ -103,7 +103,7 @@
                 <a href="index.html">NANCY.</a>
             </h1>
 <!-- header - form 영역-로그인 -->
-<form name="login">
+<!-- <form name="login">
     <div class="wrap">
         <label for="name">Name</label>
         <input type="text" name="userName" id="name">
@@ -116,8 +116,38 @@
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         
     </div>
-</form>      
-               
+</form>       -->
+<div class="login">
+    <button id="show-login">Login</button>
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <label for="remember-me">Remember me</label>
+                <input type="checkbox" id="remember-me">
+            </div>
+            <div class="form-element">
+                <button>Sign in</button>
+            </div>
+            <div class="form-element">
+            <a href="javascript:KakaoLogin();"><img class="kakao" src="img/kakao_login340.png"></a>
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    </div>
+            <div class="form-element">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+</div>               
 <!-- header - form 영역-검색 -->           
             <form class="f_box">
                 <input type="text" placeholder="Type...">
@@ -226,14 +256,17 @@
         </div>
     </header>
 
-<!-- figure 영역     -->
-
-
+<!-- main 영역     -->
 <section class="content main">   
     <div class="row">
         <div class="col-1">
-            <h2>LET'S<br>STUDY MORE!</h2>
-            <h3>with Nancy</h3>
+            <h2><span>L</span>
+                <span>E</span>
+                <span>T</span>
+                <span>'</span>
+                <span>S</span></h2><br>
+            <h3>STUDY MORE!</h3>
+            <h4>with Nancy</h4>
             <p>“Nothing in this world can take the place of persistence.”</p>
             <button><a href="join.html">Join Now
                 <img src="img/check-solid 50.png"></a></button>
@@ -275,40 +308,6 @@
     </div>
      </section>
 </figure>
-<!-- v_box 영역     -->
-<section id="v_box">
-    <div class="container">
-        <h1>Build smart,<br>effective<br>websites in no<br>time.</h1>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus quaerat atque doloribus Lorem ipsum dolo  voluptatibus</h4>
-        <a href="#"><i class="fa-regular fa-circle-play"></i><span>view more lists.</span></a>
-    </div>
-</section>  
-            
-<!-- article 영역 -->
-
-
-<!-- brand 영역 -->
-    <section id="brand">
-        <div class="container"> 
-<!-- brand - txt_l -->  
-            <div class="txt_l">
-                <h2>Assemble pages with over 150 unique content blocks.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut molestias neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">VIEW MORE</a>
-            </div>
-<!-- brand - txt_r -->
-            <div class="txt_r1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">VIEW MORE</a>
-            </div>
-<!-- brand - txt_r2 -->
-            <div class="txt_r2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">VIEW MORE</a>
-            </div>
-        </div>
-    </section>   
-        
 <!-- m_util 영역 -->
     <section id="m_util">
         <div class="container">

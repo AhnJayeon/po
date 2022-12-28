@@ -1,0 +1,151 @@
+#v_box {
+    width: 100%; 
+    height: 100%;  
+        .container {  
+        width: 1180px;
+        margin: 20px auto;
+        background-color:#666;
+        color: #fff;
+        border-radius: 10px;
+        // overflow: hidden;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        padding: 60px 100px 30px;
+        position: relative;
+        h1 {
+            font: $em_font;
+        }
+        h4 {
+            font: $h4_font;
+            margin-top: 10px;
+        }
+        a {
+            font-size: 50px;
+            color: #fff;
+            cursor: pointer;  
+            span {
+                font: $p_font;
+                line-height: 65px;
+                margin-left: 10px;
+                position: absolute;
+            }
+        } //a  
+    }     
+    } //v_box     
+     
+
+//...SECTION-ARTICLE ...
+
+//...SECTION-BRAND ...
+#brand {
+width: 100%;
+// min-width: 1180px;
+height: 500px;
+margin-bottom: 20px;
+.container {
+    width: 1180px;
+    height: 100%;
+    margin: 20px auto; 
+    position: relative;
+    display: block;
+    .txt_l {
+        width: 580px;
+        height: 500px;
+        float: left;
+        margin-right: 10px;
+        padding: 50px 100px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        background-color: $shade0;
+            h2 {
+                font: $s_font;
+            }
+            p {
+                font: $p_font;
+                margin: 20px auto;  
+            }
+            a {
+                display: block; 
+                width: 120px;
+                height: 30px;
+                background-color: transparent;
+                font: $p_font; 
+                color: $shade40;  text-align: center;
+                border: 1px solid $shade40;  
+                border-radius: 10px;
+                box-shadow: 0 0 15px (0,0,0,0.2);
+                cursor: pointer;
+                &:hover {
+                    background-color: $tint40;
+                    color: $shade40;
+                    border: 1px dashed $shade20; 
+                }
+            }
+        } //txt_l
+    .txt_r1 {
+        width: 580px;
+        height: 240px;
+        float: right;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 30px 60px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        background-color: $tint40;
+            p {
+                font: $p_font;
+                margin: 20px auto;  
+            }
+            a {
+                display: block; 
+                width: 120px;
+                height: 30px;
+                background-color: transparent;
+                font: $p_font; 
+                color: $shade40;  text-align: center;
+                border: 1px solid $shade20;  
+                border-radius: 10px;
+                box-shadow: 0 0 15px (0,0,0,0.2);
+                cursor: pointer;
+                &:hover {
+                    background-color: $tint60;
+                    color:$shade40;
+                    border: 1px dashed $shade20; 
+                }
+            }
+        } //txt_r1
+    
+    .txt_r2 {
+        width: 580px;
+        height: 240px;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 30px 60px;
+        float: right;
+        border-radius: 10px;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        background-color: $shade20;
+            p {
+                font: $p_font;
+                margin: 20px auto;  
+            }
+            .btn {
+                display: block; 
+                width: 120px;
+                height: 30px;
+                background-color: transparent;
+                font: $p_font; 
+                color: $shade40;  text-align: center;
+                border: 1px solid $shade40;  
+                border-radius: 10px;
+                box-shadow: 0 0 15px (0,0,0,0.2);
+                cursor: pointer;
+                &:hover {
+                    background-color: $shade0;
+                    color: $shade40;
+                    border: 1px dashed $shade20;  
+                }
+            }
+        } //txt_r2
+    
+} //container
+} //...SECTION-BRAND ...

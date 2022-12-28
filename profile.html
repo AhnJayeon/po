@@ -53,7 +53,7 @@
                     <div class="sub_menu1">
                         <ul>
                             <li><a href="details1.html">details 1</a></li>
-                            <li><a href="#">details 2</a></li>
+                            <li><a href="details2.html">details 2</a></li>
 
                             <li class="isSub"><a href="#">sub1</a>
                             <i class="fas fa-angle-right"></i>
@@ -101,22 +101,38 @@
         <h1>
             <a href="index.html">NANCY.</a>
         </h1>
-<!-- header - form 영역-로그인 -->
-<form name="login">
-<div class="wrap">
-    <label for="name">Name</label>
-    <input type="text" name="userName" id="name">
-    <label for="pwd">Password</label>
-    <input type="password" name="password1" id="pwd">
-    <input type="submit" name="login" value="Login">
-    
 
-    <a href="javascript:KakaoLogin();"><img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png"></a>
+<div class="login">
+<button id="show-login">Login</button>
+<div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+        <div class="form-element">
+            <label for="remember-me">Remember me</label>
+            <input type="checkbox" id="remember-me">
+        </div>
+        <div class="form-element">
+            <button>Sign in</button>
+        </div>
+        <div class="form-element">
+        <a href="javascript:KakaoLogin();"><img class="kakao" src="img/kakao_login340.png"></a>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    
 </div>
-</form>      
-           
+        <div class="form-element">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</div>
+</div>               
 <!-- header - form 영역-검색 -->           
         <form class="f_box">
             <input type="text" placeholder="Type...">
@@ -126,7 +142,7 @@
         <form action="index.html" method="get">
         <a href="#" class="btnCall">
             <span>메뉴호출</span>
-        </a>
+        </a></
 <!-- header - nav.menuMo -->        
         <nav class="menuMo">
             <ul id="gnb">
@@ -135,7 +151,7 @@
                 <a href="#">Nancy</a>
                     <div class="sub_menu1">
                         <ul>
-                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="#">Profile</a></li>
                             <li><a href="#">Review</a></li>
                             <li><a href="location.html">Contact</a></li>
                         </ul>  <!-- sub_menu1 ul --> 
@@ -166,16 +182,8 @@
                     <div class="sub_menu1">
                         <ul>
                             <li><a href="details1.html">details 1</a></li>
-                            <li class="isSub"><a href="#">sub1</a>
-                            <i class="fas fa-angle-right"></i>
-                                <div class="sub_menu2">
-                                    <ul>
-                                        <li><a href="#">sub2</a></li>
-                                        <li><a href="#">sub2</a></li>
-                                    </ul> <!-- ul...sub_menu2-->
-                                </div>
-                            </li>
-                            <li><a href="#">sub1</a></li>
+                            
+                            <li><a href="details2.html">details 2</a></li>
                             <li class="isSub"><a href="#">sub1</a>
                                 <i class="fas fa-angle-right"></i>
                                     <div class="sub_menu2">

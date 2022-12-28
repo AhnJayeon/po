@@ -54,7 +54,6 @@ body {
 #header_sub {
   width: 100%;
   height: 100px;
-  margin-bottom: 25px;
 }
 #header_sub .container {
   width: 1180px;
@@ -64,7 +63,7 @@ body {
 }
 #header_sub .container a {
   font: bold 3.3vw "Noto Sans", sans-serif;
-  color: #444;
+  color: #222;
   padding: 0 20px;
 }
 #header_sub .container .menu_web #gnb {
@@ -85,6 +84,10 @@ body {
   background: #8bd1c9;
   border-radius: 5px;
   transition: all 0.5s;
+}
+#header_sub .container .menu_web #gnb .menu:hover > a, #header_sub .container .menu_web #gnb .menu:focus > a {
+  font: bold 16px/1 "arial";
+  color: #375350;
 }
 #header_sub .container .menu_web #gnb .menu:hover .sub_menu1, #header_sub .container .menu_web #gnb .menu:focus .sub_menu1 {
   display: block;
@@ -139,48 +142,107 @@ body {
   top: 50px;
   left: -20px;
   position: absolute;
+  cursor: pointer;
 }
 #header_sub .container .menu_web #gnb .menu .sub_menu1 .sub_menu2 a {
   font: bold 13px/1 "arial";
   color: #6fa7a0;
 }
-#header_sub .container form .wrap {
-  top: -20px;
+#header_sub .container .login #show-login {
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  top: 0;
   right: 0;
-  height: 25px;
-  width: 60%;
-  margin-right: 0;
-  display: block;
-  position: absolute;
-}
-#header_sub .container form .wrap label {
-  font: 0.7vw "arial";
-  color: #666;
-}
-#header_sub .container form .wrap input[type=text] {
+  margin: 15px 20px;
+  padding: 5px 10px;
+  font-size: 1vw;
+  font-weight: 600;
+  color: #375350;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #aaa;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  width: 10.5vw;
-  height: 3vh;
 }
-#header_sub .container form .wrap input[type=password] {
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  cursor: pointer;
-  width: 10.5vw;
-  height: 3vh;
+#header_sub .container .login #show-login:hover {
+  background: #b9e3de;
 }
-#header_sub .container form .wrap input[type=submit] {
-  width: 4.3vw;
-  height: 3.5vh;
-}
-#header_sub .container form .wrap img {
-  width: 9.5vw;
-  height: 4.2vh;
+#header_sub .container .login .popup {
   position: absolute;
-  top: 35px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: scale(1.25);
+  width: 400px;
+  padding: 20px 30px;
+  margin-left: -200px;
+  margin-top: 150px;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  z-index: 7;
+}
+#header_sub .container .login .popup.on {
+  opacity: 1;
+  transform: scale(1);
+}
+#header_sub .container .login .popup .close-btn {
+  position: absolute;
+  top: 10px;
   right: 10px;
+  width: 20px;
+  height: 20px;
+  color: #666;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+#header_sub .container .login .popup .form h2 {
+  text-align: center;
+  color: #222;
+  margin: 10px 0 20px;
+  font: 2vw "Fredoka One", cursive;
+}
+#header_sub .container .login .popup .form .form-element {
+  margin: 15px auto;
+}
+#header_sub .container .login .popup .form .form-element label {
+  font: 1vw "Noto Sans", sans-serif;
+}
+#header_sub .container .login .popup .form .form-element input[type=text], #header_sub .container .login .popup .form .form-element input[type=password] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#header_sub .container .login .popup .form .form-element input[type=checkbox] {
+  margin-left: 5px;
+}
+#header_sub .container .login .popup .form .form-element button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: #537d78;
+  font-weight: 600;
+  background: #b9e3de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#header_sub .container .login .popup .form .form-element .kakao {
+  width: 100%;
+}
+#header_sub .container .login .popup .form .form-element > a {
+  font-size: 16px;
+  display: block;
+  text-align: right;
+  font-weight: 600;
 }
 #header_sub .container .f_box {
   width: 300px;
@@ -324,7 +386,7 @@ body {
 #header_sub .container .menuMo .menu:hover .sub_menu1 ul li:last-child {
   border-bottom: none;
 }
-#header_sub .container .menuMo .menu:hover .sub_menu1 ul li a:hover {
+#header_sub .container .menuMo .menu:hover .sub_menu1 ul li:hover {
   color: #8bd1c9;
 }
 #header_sub .container .menuMo .menu:hover .sub_menu1 ul li .fa-angle-right {
@@ -1180,6 +1242,153 @@ body {
     padding: 20px 10px;
   }
 }
+#v_box {
+  width: 100%;
+  height: 100%;
+}
+#v_box .container {
+  width: 1180px;
+  margin: 20px auto;
+  background-color: #666;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  padding: 60px 100px 30px;
+  position: relative;
+}
+#v_box .container h1 {
+  font: 2vw "Fredoka One", cursive;
+}
+#v_box .container h4 {
+  font: 1.1vw "Noto Sans", sans-serif;
+  margin-top: 10px;
+}
+#v_box .container a {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+#v_box .container a span {
+  font: 1vw "Noto Sans", sans-serif;
+  line-height: 65px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+#brand {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+#brand .container {
+  width: 1180px;
+  height: 100%;
+  margin: 20px auto;
+  position: relative;
+  display: block;
+}
+#brand .container .txt_l {
+  width: 580px;
+  height: 500px;
+  float: left;
+  margin-right: 10px;
+  padding: 50px 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  background-color: #8bd1c9;
+}
+#brand .container .txt_l h2 {
+  font: 1.2vw "Fredoka One", cursive;
+}
+#brand .container .txt_l p {
+  font: 1vw "Noto Sans", sans-serif;
+  margin: 20px auto;
+}
+#brand .container .txt_l a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  font: 1vw "Noto Sans", sans-serif;
+  color: #537d78;
+  text-align: center;
+  border: 1px solid #537d78;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0, 0, 0, 0.2;
+  cursor: pointer;
+}
+#brand .container .txt_l a:hover {
+  background-color: #b9e3de;
+  color: #537d78;
+  border: 1px dashed #6fa7a0;
+}
+#brand .container .txt_r1 {
+  width: 580px;
+  height: 240px;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 30px 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  background-color: #b9e3de;
+}
+#brand .container .txt_r1 p {
+  font: 1vw "Noto Sans", sans-serif;
+  margin: 20px auto;
+}
+#brand .container .txt_r1 a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  font: 1vw "Noto Sans", sans-serif;
+  color: #537d78;
+  text-align: center;
+  border: 1px solid #6fa7a0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0, 0, 0, 0.2;
+  cursor: pointer;
+}
+#brand .container .txt_r1 a:hover {
+  background-color: #d0ece9;
+  color: #537d78;
+  border: 1px dashed #6fa7a0;
+}
+#brand .container .txt_r2 {
+  width: 580px;
+  height: 240px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 30px 60px;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0, 0, 0, 0.1;
+  background-color: #6fa7a0;
+}
+#brand .container .txt_r2 p {
+  font: 1vw "Noto Sans", sans-serif;
+  margin: 20px auto;
+}
+#brand .container .txt_r2 .btn {
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  font: 1vw "Noto Sans", sans-serif;
+  color: #537d78;
+  text-align: center;
+  border: 1px solid #537d78;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0, 0, 0, 0.2;
+  cursor: pointer;
+}
+#brand .container .txt_r2 .btn:hover {
+  background-color: #8bd1c9;
+  color: #537d78;
+  border: 1px dashed #6fa7a0;
+}
+
 .gallery2 .sub_visual {
   width: 1180px;
   height: 100px;
@@ -3483,7 +3692,7 @@ body {
 }
 #header .container a {
   font: bold 3.3vw "Noto Sans", sans-serif;
-  color: #444;
+  color: #222;
   padding: 0 20px;
 }
 #header .container .menu_web #gnb {
@@ -3562,48 +3771,107 @@ body {
   top: 50px;
   left: -20px;
   position: absolute;
+  cursor: pointer;
 }
 #header .container .menu_web #gnb .menu .sub_menu1 .sub_menu2 a {
   font: bold 13px/1 "arial";
   color: #6fa7a0;
 }
-#header .container form .wrap {
-  top: -20px;
+#header .container .login #show-login {
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  top: 0;
   right: 0;
-  height: 25px;
-  width: 60%;
-  margin-right: 0;
-  display: block;
-  position: absolute;
-}
-#header .container form .wrap label {
-  font: 0.7vw "arial";
-  color: #666;
-}
-#header .container form .wrap input[type=text] {
+  margin: 15px 20px;
+  padding: 5px 10px;
+  font-size: 1vw;
+  font-weight: 600;
+  color: #375350;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #aaa;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  width: 10.5vw;
-  height: 3vh;
 }
-#header .container form .wrap input[type=password] {
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  cursor: pointer;
-  width: 10.5vw;
-  height: 3vh;
+#header .container .login #show-login:hover {
+  background: #b9e3de;
 }
-#header .container form .wrap input[type=submit] {
-  width: 4.3vw;
-  height: 3.5vh;
-}
-#header .container form .wrap img {
-  width: 9.5vw;
-  height: 4.2vh;
+#header .container .login .popup {
   position: absolute;
-  top: 35px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: scale(1.25);
+  width: 400px;
+  padding: 20px 30px;
+  margin-left: -200px;
+  margin-top: 150px;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+  z-index: 7;
+}
+#header .container .login .popup.on {
+  opacity: 1;
+  transform: scale(1);
+}
+#header .container .login .popup .close-btn {
+  position: absolute;
+  top: 10px;
   right: 10px;
+  width: 20px;
+  height: 20px;
+  color: #666;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+#header .container .login .popup .form h2 {
+  text-align: center;
+  color: #222;
+  margin: 10px 0 20px;
+  font: 2vw "Fredoka One", cursive;
+}
+#header .container .login .popup .form .form-element {
+  margin: 15px auto;
+}
+#header .container .login .popup .form .form-element label {
+  font: 1vw "Noto Sans", sans-serif;
+}
+#header .container .login .popup .form .form-element input[type=text], #header .container .login .popup .form .form-element input[type=password] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#header .container .login .popup .form .form-element input[type=checkbox] {
+  margin-left: 5px;
+}
+#header .container .login .popup .form .form-element button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: #537d78;
+  font-weight: 600;
+  background: #b9e3de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#header .container .login .popup .form .form-element .kakao {
+  width: 100%;
+}
+#header .container .login .popup .form .form-element > a {
+  font-size: 16px;
+  display: block;
+  text-align: right;
+  font-weight: 600;
 }
 #header .container .f_box {
   width: 300px;
@@ -3747,7 +4015,7 @@ body {
 #header .container .menuMo .menu:hover .sub_menu1 ul li:last-child {
   border-bottom: none;
 }
-#header .container .menuMo .menu:hover .sub_menu1 ul li a:hover {
+#header .container .menuMo .menu:hover .sub_menu1 ul li:hover {
   color: #8bd1c9;
 }
 #header .container .menuMo .menu:hover .sub_menu1 ul li .fa-angle-right {
@@ -3804,23 +4072,52 @@ body {
 .main .row .col-1::after {
   content: "";
   width: 10px;
-  height: 57%;
+  height: 65%;
   background: linear-gradient(#8bd1c9, #6fa7a0);
   position: absolute;
   left: -40px;
   top: 8px;
 }
 .main .row .col-1 h2 {
-  font-size: 54px;
+  font-size: 3.5vw;
+  transition: 0.5s;
+}
+.main .row .col-1 h2 span {
+  display: inline-block;
+}
+.main .row .col-1 h2 span:nth-of-type(1) {
+  color: #8bd1c9;
+  transform: translateY(0px) scale(1.4);
+}
+.main .row .col-1 h2 span:nth-of-type(2) {
+  color: #6fa7a0;
+  transform: translateY(10px) scale(1.2);
+}
+.main .row .col-1 h2 span:nth-of-type(3) {
+  color: #537d78;
+  transform: translateY(15px) scale(1.2);
+}
+.main .row .col-1 h2 span:nth-of-type(4) {
+  color: #b9e3de;
+  transform: translateY(-5px) scale(1.2);
+}
+.main .row .col-1 h2 span:nth-of-type(5) {
+  color: #8bd1c9;
+  transform: translateY(5px) scale(1.2);
 }
 .main .row .col-1 h3 {
-  font-size: 30px;
+  font-size: 3.2vw;
+  color: #555;
+}
+.main .row .col-1 h4 {
+  font-size: 2.5vw;
   font-weight: 100;
   color: #bbb;
   margin: 20px 0 10px;
 }
 .main .row .col-1 p {
   font: bold 1vw "Yanone Kaffeesatz", sans-serif;
+  color: #8bd1c9;
   margin: 30px 0;
 }
 .main .row .col-1 button {
@@ -3927,152 +4224,6 @@ body {
   z-index: 1;
   opacity: 1;
   transform: none;
-}
-
-#v_box {
-  width: 100%;
-  height: 100%;
-}
-#v_box .container {
-  width: 1180px;
-  margin: 20px auto;
-  background-color: #666;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0, 0, 0, 0.1;
-  padding: 60px 100px 30px;
-  position: relative;
-}
-#v_box .container h1 {
-  font: 2vw "Fredoka One", cursive;
-}
-#v_box .container h4 {
-  font: 1.1vw "Noto Sans", sans-serif;
-  margin-top: 10px;
-}
-#v_box .container a {
-  font-size: 50px;
-  color: #fff;
-  cursor: pointer;
-}
-#v_box .container a span {
-  font: 1vw "Noto Sans", sans-serif;
-  line-height: 65px;
-  margin-left: 10px;
-  position: absolute;
-}
-
-#brand {
-  width: 100%;
-  height: 500px;
-}
-#brand .container {
-  width: 1180px;
-  height: 100%;
-  margin: 20px auto;
-  position: relative;
-  display: block;
-}
-#brand .container .txt_l {
-  width: 580px;
-  height: 500px;
-  float: left;
-  margin-right: 10px;
-  padding: 50px 100px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0, 0, 0, 0.1;
-  background-color: #8bd1c9;
-}
-#brand .container .txt_l h2 {
-  font: 1.2vw "Fredoka One", cursive;
-}
-#brand .container .txt_l p {
-  font: 1vw "Noto Sans", sans-serif;
-  margin: 20px auto;
-}
-#brand .container .txt_l a {
-  display: block;
-  width: 120px;
-  height: 30px;
-  background-color: transparent;
-  font: 1vw "Noto Sans", sans-serif;
-  color: #537d78;
-  text-align: center;
-  border: 1px solid #537d78;
-  border-radius: 10px;
-  box-shadow: 0 0 15px 0, 0, 0, 0.2;
-  cursor: pointer;
-}
-#brand .container .txt_l a:hover {
-  background-color: #b9e3de;
-  color: #537d78;
-  border: 1px dashed #6fa7a0;
-}
-#brand .container .txt_r1 {
-  width: 580px;
-  height: 240px;
-  float: right;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  padding: 30px 60px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0, 0, 0, 0.1;
-  background-color: #b9e3de;
-}
-#brand .container .txt_r1 p {
-  font: 1vw "Noto Sans", sans-serif;
-  margin: 20px auto;
-}
-#brand .container .txt_r1 a {
-  display: block;
-  width: 120px;
-  height: 30px;
-  background-color: transparent;
-  font: 1vw "Noto Sans", sans-serif;
-  color: #537d78;
-  text-align: center;
-  border: 1px solid #6fa7a0;
-  border-radius: 10px;
-  box-shadow: 0 0 15px 0, 0, 0, 0.2;
-  cursor: pointer;
-}
-#brand .container .txt_r1 a:hover {
-  background-color: #d0ece9;
-  color: #537d78;
-  border: 1px dashed #6fa7a0;
-}
-#brand .container .txt_r2 {
-  width: 580px;
-  height: 240px;
-  margin-left: 10px;
-  margin-top: 10px;
-  padding: 30px 60px;
-  float: right;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0, 0, 0, 0.1;
-  background-color: #6fa7a0;
-}
-#brand .container .txt_r2 p {
-  font: 1vw "Noto Sans", sans-serif;
-  margin: 20px auto;
-}
-#brand .container .txt_r2 .btn {
-  display: block;
-  width: 120px;
-  height: 30px;
-  background-color: transparent;
-  font: 1vw "Noto Sans", sans-serif;
-  color: #537d78;
-  text-align: center;
-  border: 1px solid #537d78;
-  border-radius: 10px;
-  box-shadow: 0 0 15px 0, 0, 0, 0.2;
-  cursor: pointer;
-}
-#brand .container .txt_r2 .btn:hover {
-  background-color: #8bd1c9;
-  color: #537d78;
-  border: 1px dashed #6fa7a0;
 }
 
 #m_util {
@@ -4233,15 +4384,11 @@ body {
   body #header .container .menu_web {
     display: none;
   }
-  body #header .container form .wrap {
-    width: 80%;
-    margin: 12px auto;
-    position: absolute;
+  body #header .container .login #show-login {
+    margin-right: 150px;
   }
-  body #header .container form .wrap img {
-    position: absolute;
-    top: 15px;
-    right: 140px;
+  body #header .container .login .popup {
+    margin-top: -150px;
   }
   body #header .container .f_box {
     display: none;
@@ -4251,11 +4398,16 @@ body {
   }
   body #header .container .btnCall {
     display: block;
-    background-color: #ccc;
     padding: 20px 20px;
     border-radius: 10px;
     top: 40px;
     position: fixed;
+  }
+  body .main {
+    width: 100%;
+  }
+  body .main .col-2 .color-box {
+    border: none;
   }
   body #visual {
     width: 96%;
@@ -4385,26 +4537,6 @@ body {
   #header .container .menu_web {
     display: none;
   }
-  #header .container form .wrap {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  #header .container form .wrap input[type=text] {
-    width: 80px;
-  }
-  #header .container form .wrap input[type=password] {
-    width: 80px;
-  }
-  #header .container form .wrap input[type=submit] {
-    width: 11%;
-  }
-  #header .container form .wrap img {
-    position: absolute;
-    margin-top: 15px;
-    margin-right: -60px;
-    width: 90px;
-  }
   #header .container .f_box {
     display: none;
   }
@@ -4418,6 +4550,20 @@ body {
     border-radius: 10px;
     top: 40px;
     position: fixed;
+  }
+  .main {
+    width: 100%;
+  }
+  .main .col-1 {
+    flex-basis: 100%;
+    margin-left: 10px;
+  }
+  .main .col-2 {
+    flex-basis: 100%;
+    transform: translateX(-50px);
+  }
+  .main .col-2 .color-box {
+    border: none;
   }
   #visaul {
     width: 96vw;
