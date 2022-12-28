@@ -1,0 +1,164 @@
+//...SECTION-M_UTIL ...
+#m_util {
+    width: 100%;
+    // min-width: 1180px;
+    height: 100%;
+    .container {
+        width: 1180px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .link{
+            a {
+            font-size: 60px;
+            color: $shade60;
+            margin: 100px 50px;
+            cursor: pointer;
+            }
+        } //link
+    } //container
+} //...SECTION-M_UTIL ...
+
+//...FOOTER ...
+#footer {
+    width: 100%;
+    // min-width: 1180px;
+    height: 350px;
+    overflow: hidden;
+    .container {
+        width: 1180px;
+        height: 100%; 
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+        margin: 0 auto; 
+        color: #fff;
+        border-radius: 10px;
+        background-color: #777;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        .article1 {
+            width: 380px;
+            height: 350px;
+            background-color: #777;               
+            padding: 50px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px (0,0,0,0.1);
+                a {
+                    font: $em_font;
+                    color: #fff;    
+                }
+                li {
+                    h3 {
+                        font: $h3_font;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font: $p_font; 
+                    }
+                } //li
+            } //article1
+        .article2 {
+            background-color: #777;
+            width: 380px;
+            margin: 0 20px;
+            padding: 50px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px (0,0,0,0.1);
+            h4 {
+                font: $h4_font;
+                margin-top: 15px;
+                margin-bottom: 20px; 
+            }
+            li {
+                h3 {
+                    font: $h3_font;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font: $p_font; 
+                }
+            }
+        } //article2
+        .article3 {
+            width: 380px;
+            
+            border-radius: 10px;
+            background-color: #777;
+            box-shadow: 0 0 10px (0,0,0,0.1);
+            p {
+                font: $p_font;
+                padding: 50px 30px;   
+            }
+            .b_util {
+                width: 380px;
+                margin: 30px auto;
+                position: relative;
+                display: flex;
+                justify-content: center;
+               
+                .f_link {
+                    a {
+                        font-size: 25px;
+                        color: #fff;
+                        padding: 20px 10px;
+                    }
+                }
+                    
+            } //b_util
+            } //f_box
+        } //article3
+        } //...FOOTER ...
+//tablet,mobile -T_FOOTER
+#t_footer {
+    display: none;
+    // width: 90%;
+    height: 250px;
+    .container {
+        width: 100vw;
+        position: relative;
+        text-align: center;
+        margin: 0 auto; 
+        display: block;
+        float: center;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #444;
+        box-shadow: 0 0 10px (0,0,0,0.1);
+        a {
+            font: $d_font;
+            color: #fff;    
+        }
+        li {
+            h3 {
+                font: $h3_font;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            p {
+                font: $p_font; 
+            }
+        } //li
+        .b_util {
+            width: 60%;
+            margin: 20px auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .f_link {
+                a {
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 20px 10px;
+                }
+            }
+                
+        } //b_util
+    }
+} //...-T_FOOTER ...
