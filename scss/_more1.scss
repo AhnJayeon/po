@@ -162,3 +162,98 @@
         } //b_util
     }
 } //...-T_FOOTER ...
+@media screen and (max-width: $tablet) {
+    body {
+       
+
+
+	#m_util {
+        // display: none;
+        height: 350px;
+        margin : 0;
+        // z-index: 8;
+		.container {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            overflow: hidden;
+            .link {
+                margin: 0;
+                a {
+                    font-size: 30px;
+                    margin: 0px 20px;
+                    padding: 0px 10px;
+                }
+            }     
+		}
+// 	} //---mobile-m_util
+	
+// 	// tablet- footer
+
+	#footer {		
+        .b_util {
+            width: 100%;
+            p {
+                
+                transform: translateX(-100px) translateY(5px);
+            } 
+        }
+}// ---mobile-footer
+// 	// tablet- t_footer
+    // #t_footer {
+    //     display: block;
+    //     width: 96%;
+    //     height: 200px;
+    //     .container {
+    //         width: 100%;
+    //         margin: 0 2%;
+    //         height: 100%;
+    //         padding-top: 20px;
+    //         // height: 300px;
+    //         // width: 100%;
+    //         h1 {
+    //             // font: 20px/30px 'Noto Sans', sans-serif;   
+    //             margin-top: 0;
+    //             padding: 0;
+    //             }
+    //         }   
+    //     } //---mobile-t-footer
+    } //--tablet -body
+    } //media-TABLET
+}
+@media screen and (max-width: $mobile) {
+    //------mobile-HEADER-------
+
+    //------mobile-visual-------
+    #visaul {
+        width: 96vw;
+    }
+    #v_box {
+        width: 96%;
+        display: block;
+        .container {
+            height: 100%;
+           
+            a {
+            font-size: 25px;
+        }  
+        }
+    }
+    //------mobile-ARTICLE-------
+        #article {
+            width: 100vw;
+            height: 100vh;
+            .container {
+                width: 96%;
+                height: 100%;
+                // display: block;
+                margin: 0 auto;
+                padding: 0;
+                // overflow: hidden;
+                
+            }
+        } //---mobile-article
+    
+        //------mobile-FOOTER-------
+    
+    }  //media-MOBILE

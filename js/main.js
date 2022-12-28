@@ -17,6 +17,7 @@ close.onclick = function(e){
 //로그인 창
 document.querySelector("#show-login").addEventListener("click", function(){
     document.querySelector(".popup").classList.add("on");
+    
 });
 document.querySelector(".popup .close-btn").addEventListener("click", function(){
     document.querySelector(".popup").classList.remove("on");

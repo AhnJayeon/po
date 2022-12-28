@@ -175,21 +175,22 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                opacity: 0;
+                // opacity: 0;
                 transform: scale(1.25);
                 width: 400px;
                 padding: 20px 30px;
                 margin-left: -200px;
-                margin-top: 150px;
+                transform: translateY(-850px);
                 background: #eee;
                 border-radius: 10px;
                 box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15); 
-                transition: opacity 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
-                z-index: 7;
+                transition: opacity 0.2s ease-in-out 0s, transform 0.3s ease-in-out 0s;
+                z-index: 5;
                 &.on {
                     // display: block;
+                    
                     opacity: 1;
-                    transform: scale(1);    
+                    transform: scale(1) translateY(0px);    
                 }
                 .close-btn {
                     position: absolute;
@@ -243,8 +244,6 @@
                             width: 100%;
                             
                         }                          
-                            
-                    
                         > a {
                             font-size: 16px;
                             display: block;
@@ -551,7 +550,7 @@
             align-items: center;
             .logo {
                 width: 50%;
-                transform: translateX(250px);
+                transform: translateX(200px) translateY(-50px);
             }
             .color-box {
                 height: 140%;
@@ -559,11 +558,12 @@
                 position: absolute;
                 top: 0;
                 right: 20px;
-                border: 151px dotted $tint80;
+                border: 300px dotted $tint80;
+                opacity: 0.5;
                 // background: #eee; 
                 border-radius: 15%;
                 z-index: -1;
-                transform: translateY(-50px);
+                transform: translateY(-250px);
             }   
         } //col-2
         
@@ -704,6 +704,7 @@
             .logo {
                 position: absolute;
                 right: 300px;
+                // transform: translateY(500px);
             }
             .color-box {
                 display: none;
@@ -867,6 +868,7 @@
 
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
+    
 //------mobile-HEADER-------
     #header {
 		.container {
@@ -938,25 +940,7 @@
             
         }
     } //---mobile-article
-//------mobile-BRAND-------
-    #brand {
-        .container {
-            height: 100vh;    
-        }   
-    } //---mobile-brand
-//------mobile-UTIL-------
-    #m_util {
-        display: block;
-        .container {
-            width: 100%;
-            .link {
-                margin: 0px auto;
-                i {
-                    font-size: 24px;
-                }    
-            }   
-        }  
-    } //---mobile-m_util
+
     //------mobile-FOOTER-------
 
 }  //media-MOBILE
