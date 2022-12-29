@@ -24,16 +24,6 @@
 @import "more1.scss";
 
 
-
-// @import "community.scss";
-
-// @import "department.scss";
-
-// @import "join.scss";
-// @import "location.scss";
-// @import "youtube.scss";
-
-
 .body {
     width: 100%;
     height: 100vh;
@@ -149,8 +139,6 @@
         } //menu_web
 
         .login {
-            // position: relative;
-            // transform: translate(-50%, -50%);
             #show-login {
                 position: absolute;
                 width: 60px;
@@ -187,8 +175,6 @@
                 transition: opacity 0.2s ease-in-out 0s, transform 0.3s ease-in-out 0s;
                 z-index: 5;
                 &.on {
-                    // display: block;
-                    
                     opacity: 1;
                     transform: scale(1) translateY(0px);    
                 }
@@ -447,9 +433,7 @@
 		} //menuMo
     } //container
     }
-//...GALLERY ...   
-
-
+  
 .main {
     width: 1180px;
     .row {
@@ -560,7 +544,6 @@
                 right: 20px;
                 border: 300px dotted $tint80;
                 opacity: 0.5;
-                // background: #eee; 
                 border-radius: 15%;
                 z-index: -1;
                 transform: translateY(-250px);
@@ -581,7 +564,7 @@
         width: 100%;
         height: 50%;
         object-fit: cover;
-        opacity: 0.2;
+        opacity: 0.4;
   
     }
     #slider {
