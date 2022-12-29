@@ -435,7 +435,6 @@ body {
 .content .sub_visual {
   width: 1180px;
   height: 100px;
-  background: #e7f5f4;
   margin: 10px auto;
   border-radius: 5px;
   overflow: hidden;
@@ -447,6 +446,15 @@ body {
   position: absolute;
   margin-left: 20px;
   z-index: 3;
+}
+.content .sub_visual h1::after {
+  content: "";
+  width: 10px;
+  height: 80%;
+  background: linear-gradient(#8bd1c9, #6fa7a0);
+  position: absolute;
+  left: -40px;
+  top: 8px;
 }
 .content .sub_visual::before {
   content: "";
@@ -527,7 +535,7 @@ body {
 #footer_sub .b_util p {
   font: 1.2vw "Fredoka One", cursive;
   color: #8bd1c9;
-  transform: translateX(-600px) translateY(5px);
+  transform: translateX(-550px) translateY(5px);
 }
 #footer_sub .b_util .f_link a {
   font-size: 20px;
@@ -573,18 +581,31 @@ body {
   }
   body .content .sub_visual {
     width: 96%;
-    margin: 0 auto;
+    margin-left: 35px;
+  }
+  body .content .sub_visual::before {
+    width: 50px;
+    height: 50px;
+  }
+  body .content .sub_visual::after {
+    width: 30px;
+    height: 30px;
+    margin-right: 930px;
   }
   body .content .inner {
     width: 96%;
     margin: 0 auto;
   }
   body #footer_sub {
+    height: 50px;
+  }
+  body #footer_sub .b_util {
     width: 100%;
-    height: 100%;
+    height: 50px;
+    transform: translateX(-20px);
   }
   body #footer_sub .b_util p {
-    transform: translateX(100px) translateY(5px);
+    transform: translateX(-100px) translateY(5px);
   }
 }
 @media screen and (max-width: 539px) {
@@ -633,86 +654,28 @@ body {
     top: 40px;
     position: fixed;
   }
+  .content {
+    width: 96%;
+    margin-left: 10px;
+  }
+  .content .sub_visual h1 {
+    font-size: 20px;
+    line-height: 60px;
+  }
+  .content .sub_visual h1::after {
+    width: 7px;
+    height: 70%;
+  }
+  #footer_sub {
+    height: 50px;
+  }
+  #footer_sub p {
+    display: none;
+  }
 }
 .gallery1 {
   width: 100%;
   height: 100%;
-}
-.gallery1 .sub_visual {
-  width: 1180px;
-  height: 100px;
-  background: #e7f5f4;
-  margin: 10px auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.gallery1 .sub_visual h1 {
-  font: 2vw "Fredoka One", cursive;
-  color: #375350;
-  line-height: 100px;
-  position: absolute;
-  margin-left: 20px;
-  z-index: 3;
-}
-.gallery1 .sub_visual::before {
-  content: "";
-  display: block;
-  background: #d0ece9;
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin-left: 30px;
-  transform: rotate(45deg);
-  transition: 3s;
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.gallery1 .sub_visual::before:hover {
-  animation-play-state: paused;
-}
-.gallery1 .sub_visual::after {
-  content: "";
-  display: block;
-  background: #b9e3de;
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: 55px;
-  margin-right: 1020px;
-  transform: rotate(45deg);
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.gallery1 .sub_visual::after:hover {
-  animation-play-state: paused;
-}
-@keyframes box1 {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  25% {
-    opacity: 0.5;
-    transform: rotate(30deg);
-  }
-  50% {
-    opacity: 0.7;
-    transform: rotate(90deg);
-  }
-  75% {
-    opacity: 0.4;
-    transform: rotate(110deg);
-  }
-  100% {
-    opacity: 0.8;
-    transform: rotate(180deg);
-  }
 }
 .gallery1 #photos {
   width: 100%;
@@ -797,82 +760,6 @@ body {
   }
   .gallery1 #photos .wrap .article p {
     margin-top: 0px;
-  }
-}
-.details1 .sub_visual {
-  width: 1180px;
-  height: 100px;
-  background: #e7f5f4;
-  margin: 10px auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.details1 .sub_visual h1 {
-  font: 2vw "Fredoka One", cursive;
-  color: #375350;
-  line-height: 100px;
-  position: absolute;
-  margin-left: 20px;
-  z-index: 3;
-}
-.details1 .sub_visual::before {
-  content: "";
-  display: block;
-  background: #d0ece9;
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin-left: 30px;
-  transform: rotate(45deg);
-  transition: 3s;
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.details1 .sub_visual::before:hover {
-  animation-play-state: paused;
-}
-.details1 .sub_visual::after {
-  content: "";
-  display: block;
-  background: #b9e3de;
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: 55px;
-  margin-right: 1020px;
-  transform: rotate(45deg);
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.details1 .sub_visual::after:hover {
-  animation-play-state: paused;
-}
-@keyframes box1 {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  25% {
-    opacity: 0.5;
-    transform: rotate(30deg);
-  }
-  50% {
-    opacity: 0.7;
-    transform: rotate(90deg);
-  }
-  75% {
-    opacity: 0.4;
-    transform: rotate(110deg);
-  }
-  100% {
-    opacity: 0.8;
-    transform: rotate(180deg);
   }
 }
 .details1 .tab-wrapper {
@@ -1267,82 +1154,6 @@ body {
   border: 1px dashed #6fa7a0;
 }
 
-.gallery2 .sub_visual {
-  width: 1180px;
-  height: 100px;
-  background: #e7f5f4;
-  margin: 10px auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.gallery2 .sub_visual h1 {
-  font: 2vw "Fredoka One", cursive;
-  color: #375350;
-  line-height: 100px;
-  position: absolute;
-  margin-left: 20px;
-  z-index: 3;
-}
-.gallery2 .sub_visual::before {
-  content: "";
-  display: block;
-  background: #d0ece9;
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin-left: 30px;
-  transform: rotate(45deg);
-  transition: 3s;
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.gallery2 .sub_visual::before:hover {
-  animation-play-state: paused;
-}
-.gallery2 .sub_visual::after {
-  content: "";
-  display: block;
-  background: #b9e3de;
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: 55px;
-  margin-right: 1020px;
-  transform: rotate(45deg);
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.gallery2 .sub_visual::after:hover {
-  animation-play-state: paused;
-}
-@keyframes box1 {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  25% {
-    opacity: 0.5;
-    transform: rotate(30deg);
-  }
-  50% {
-    opacity: 0.7;
-    transform: rotate(90deg);
-  }
-  75% {
-    opacity: 0.4;
-    transform: rotate(110deg);
-  }
-  100% {
-    opacity: 0.8;
-    transform: rotate(180deg);
-  }
-}
 .gallery2 #box1 {
   width: 100%;
 }
@@ -1838,82 +1649,6 @@ body {
     font-size: 16px;
     color: #fff;
     padding: 20px 10px;
-  }
-}
-.faq .sub_visual {
-  width: 1180px;
-  height: 100px;
-  background: #e7f5f4;
-  margin: 10px auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.faq .sub_visual h1 {
-  font: 2vw "Fredoka One", cursive;
-  color: #375350;
-  line-height: 100px;
-  position: absolute;
-  margin-left: 20px;
-  z-index: 3;
-}
-.faq .sub_visual::before {
-  content: "";
-  display: block;
-  background: #d0ece9;
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin-left: 30px;
-  transform: rotate(45deg);
-  transition: 3s;
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.faq .sub_visual::before:hover {
-  animation-play-state: paused;
-}
-.faq .sub_visual::after {
-  content: "";
-  display: block;
-  background: #b9e3de;
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: 55px;
-  margin-right: 1020px;
-  transform: rotate(45deg);
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.faq .sub_visual::after:hover {
-  animation-play-state: paused;
-}
-@keyframes box1 {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  25% {
-    opacity: 0.5;
-    transform: rotate(30deg);
-  }
-  50% {
-    opacity: 0.7;
-    transform: rotate(90deg);
-  }
-  75% {
-    opacity: 0.4;
-    transform: rotate(110deg);
-  }
-  100% {
-    opacity: 0.8;
-    transform: rotate(180deg);
   }
 }
 .faq .faq-container {
@@ -3169,7 +2904,7 @@ body {
   top: 8px;
 }
 .main .row .col-1 h2 {
-  font-size: 3.5vw;
+  font-size: 3.6vw;
   transition: 0.5s;
 }
 .main .row .col-1 h2 span {
@@ -3200,7 +2935,7 @@ body {
   color: #555;
 }
 .main .row .col-1 h4 {
-  font-size: 2.5vw;
+  font-size: 2.6vw;
   font-weight: 100;
   color: #bbb;
   margin: 20px 0 10px;
@@ -3371,7 +3106,7 @@ body {
   body .main {
     width: 100%;
     height: 100%;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: 20px;
   }
   body .main .col-2 .logo {
@@ -3383,20 +3118,32 @@ body {
   }
   body #visual {
     width: 96%;
-    height: 30%;
+    height: 20vw;
     margin: 1% 2%;
-    margin-top: -380px;
+    margin-top: -100px;
+  }
+  body #visual video {
+    height: 60%;
   }
   body #visual #slider {
     width: 100%;
-    height: 100px;
   }
   body #visual #slider slider_item {
     width: 100%;
     padding: 0 20px;
   }
+  body #visual #slider slider_item .showing {
+    z-index: 1;
+    opacity: 1;
+    transform: none;
+  }
+  body #footer {
+    height: 50px;
+  }
   body #footer .b_util {
     width: 100%;
+    height: 50px;
+    transform: translateX(-20px);
   }
   body #footer .b_util p {
     transform: translateX(-100px) translateY(5px);
@@ -3408,21 +3155,19 @@ body {
     height: 100%;
   }
   #header .container a {
-    padding: 0;
-    margin-left: 15px;
+    font: bold 30px "Noto Sans", sans-serif;
   }
   #header .container .menu_web {
     display: none;
   }
-  #header .container .f_box {
-    display: none;
+  #header .container .login #show-login {
+    height: 22px;
   }
   #header .container .menuMo {
     display: block;
   }
   #header .container .btnCall {
     display: block;
-    background-color: #ccc;
     padding: 10px 10px;
     border-radius: 10px;
     top: 40px;
@@ -3435,6 +3180,18 @@ body {
   }
   .main .col-1 {
     margin-left: 10px;
+  }
+  .main .col-1 h2 {
+    font-size: 10px;
+  }
+  .main .col-1 h3 {
+    font-size: 100px;
+  }
+  .main .col-1 h4 {
+    font-size: 2.5vw;
+  }
+  .main .col-1 p {
+    font: bold 1vw "Yanone Kaffeesatz", sans-serif;
   }
   .main .col-2 {
     transform: translateX(20px);
