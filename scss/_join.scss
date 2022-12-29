@@ -1,72 +1,6 @@
 //...  Contents 영역 -->       
 .join {
-    // width: 100%;
-    // height: 100%;
-    // margin: 0 auto;
-    // position: relative;
     margin-bottom: 30px;
-//     .sub_visual {
-//         width: 1180px;
-//         height: 100px; 
-//         background : $tint80;
-//         margin: 10px auto;
-//         border-radius: 5px;
-//         overflow: hidden;
-//         h1 {
-//             font: $em_font;
-//             color: $shade60;
-//             line-height: 100px;
-//             position: absolute;
-//             margin-left: 20px;
-//             z-index: 3;
-//         }
-//         &::before {
-//             content: '';
-//             display: block;
-//             background: $tint60;
-//             width: 80px;
-//             height: 80px;
-//             float: left;
-//             margin-left: 30px;
-//             transform: rotate(45deg);
-//             transition: 3s;
-//             animation-name: box1;
-//             animation-duration: 3s;
-//             animation-timing-function: linear;
-//             animation-iteration-count: infinite;
-//             animation-direction: alternate;
-//             &:hover {
-//                 animation-play-state: paused;
-//             }
-//         }
-//         &::after {
-//             content: '';
-//             display: block;
-//             background: $tint40;
-//             width: 50px;
-//             height: 50px;
-//             float: right;
-//             margin-top: 55px;
-//             margin-right: 1020px;
-//             transform: rotate(45deg);
-//             animation-name: box1;
-//             animation-duration: 3s;
-//             animation-timing-function: linear;
-//             animation-iteration-count: infinite;
-//             animation-direction: alternate;
-//             &:hover {
-//                 animation-play-state: paused;
-//             }
-//         }
-//        @keyframes box1{
-//   0%{ opacity: 1; transform: rotate(0deg); }
-//   25%{ opacity: 0.5; transform: rotate(30deg); }
-//   50%{ opacity: 0.7; transform: rotate(90deg); }
-//   75%{ opacity: 0.4; transform: rotate(110deg); }
-//   100%{ opacity: 0.8; transform: rotate(180deg); }
-//     } 
-       
-//     } //sub_visual
     .inner {
         width: 1180px;
         height: 100%;
@@ -184,151 +118,91 @@
         width: 100%;
         height: 100vh;
 //----tablet - header_sub
-#header_sub {
-    .container {
-        width: 100vw;
-        height: 100vh;
-        margin-left: 30px;
-        .menu_web {
-            display: none;
-        }
-        form {
-            .wrap {
-            width: 80%;
-            margin: 12px auto;
-            position: absolute; 
-            img {
-                position: absolute;
-                top: 15px;
-                right: 140px;
-            }  
-        }
-    }
-        .f_box {
-            display: none;
-        }
-        .menuMo {
-            display: block;
-        }  
-        .btnCall {
-            display: block;
-            background-color: #ccc;
-            padding: 20px 20px;
-            border-radius: 10px;
-            top : 40px;
-            position: fixed;
-        }
-    }
-} //-----tablet -header-sub
-//-----tablet -
+
 .join {
     width: 100vw;
     height: 100%;
     .inner {
-        width: 100%;
+        width: 95%;
         height: 100%;
     }
 }
 // 	// tablet- footer_sub
+    }
+}
 
-#footer_sub {		
-    display: none;
-}// ---mobile-footer sub
-// 	// tablet- t_footer 
-#t_footer_sub {
-    // display: block;
-    width: 96%;
-    height: 200px;
-    margin-top: 400px;
-    .container {
-        width: 100%;
-        margin: 0 2%;
-        height: 100%;
-        padding-top: 20px;
-        // height: 300px;
-        // width: 100%;
-        h1 {
-            // font: 20px/30px 'Noto Sans', sans-serif;   
-            margin-top: 0;
-            padding: 0;
-            }
-        }   
-    } //---mobile-t-footer sub
-    } //--tablet -body
-    } //media-TABLET
 
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
-//------mobile- HEADER_SUB-------
-#header_sub {
-    .container {
-        width: 100%;
-        height: 100vh;
-        margin-left: 10px;
-        a { 
-            padding: 0;
-        }
-        .menu_web {
-            display: none;
-        }
-        form {
-            .wrap {
-            position: absolute;
-            top: 10px;
-            left: 10px;  
-            input[type=text] {
-                width: 80px;
+    .join {
+        width: 100vw;
+        .inner {
+            width: 94%;
+            h2 {
+                font-size: 17px;
+                margin-bottom: 10px;
             }
-            input[type=password] {
-                width: 80px;
-            }
-            input[type=submit] {
-                width: 11%;
-            }
-            img {
-                position: absolute;
-                margin-top: 15px;
-                margin-right: -60px;
-                width: 90px;
-            }
-            }
-        }
-        .f_box {
-            display: none;
-        }
-        .menuMo {
-            display: block;
-        }  
-        .btnCall {
-            display: block;
-            background-color: #ccc;
-            padding: 10px 10px;
-            border-radius: 10px;
-            top : 40px;
-            position: fixed;
-        }
-    }
-} //---mobile-header_sub
-//------mobile-
+            #terms {
+                margin-right: 20px;
+                margin-bottom: 5px;
 
-
-
-
-    //------mobile- FOOTER_SUB-------
-    #t_footer_sub {
-        height: 100%;
-        width: 100%;
-        .container {
-            padding: 20px 10px;
-            .b_util {
-                .f_link {
-                    a {
-                        font-size: 16px;
-                        color: #fff;
-                        padding: 20px 10px;
+            }
+            .agreement {
+                margin-bottom: 30px;
+            }
+            table {
+                width: 94%;
+                th {
+                    width: 10%;
+                    padding: 5px 10px;
+                    input[type="submit"], input[type="reset"]{
+                        margin-right: 10px;  
+                        width: 80px;
+                        height: 25px;
+                        font-size: 15px;
+                    }
+                }
+                td {
+                    input[type="text"], input[type="password"]{
+                        width: 30%;
+                        padding-left: 10px;
+                        margin-left: 5px;
+                    }
+                    input[type="text"], input[type="password"]::placeholder {
+                        font-size: 10px;
+                    }
+                    input[type="radio"]{
+                        margin-right: 2px;
+                    }
+                    label {
+                        margin-right: 10px;
+                        margin-left: 5px;
+                    }
+                    .genderTxt, .levelTxt {
+                        font-size: 15px;
+                        color: $shade20;
+                        margin-top: 5px;
+                        margin-left: 5px;
+                    }
+                    select#company {
+                        width: 40%;
+                        padding-left: 5px;
+                        margin-left: 5px;
+                    }
+                    textarea#comments {
+                        width: 100%;
+                        padding: 10px;
+                        margin: 5px;
+                        resize: none;
                     }
                 }
             }
         }
-    }  //---mobile-t_footer
-}  //media-MOBILE
+       
+    }
+}
+
+
+
+
+
