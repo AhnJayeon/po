@@ -1,13 +1,9 @@
 //...  Contents 영역 -->   
 .gallery1 {
-    width: 100%;
+    width: 1180px;
     height: 100%;
-  
-#photos {
-    width: 100%;
-    height: 100%;
-    .container {
-        width: 1180px;
+    .inner {
+        width: 100%;
         margin: 20px auto;
         border: 5px dashed $tint80;
         border-radius: 10px;
@@ -21,7 +17,7 @@
         .wrap {
             width: 100%;
             article {
-                width: 48%;
+                width: 36vw;
                 opacity: 0.7;
                 object-fit: contain;
                 margin: 1% 1%;
@@ -56,194 +52,54 @@
             }
         } //article
     } //wrap
-} //container
+} //inner
 }
         
 
-} //body
+
 //-----FOR TABLET
 @media screen and (max-width: $tablet) {
-    // body {
-    //     width: 100%;
-    //     height: 100vh;
-//----tablet - header_sub
-// #header_sub {
-//     .container {
-//         width: 100vw;
-//         height: 100vh;
-//         margin-left: 30px;
-//         .menu_web {
-//             display: none;
-//         }
-//         form {
-//             .wrap {
-//             width: 80%;
-//             margin: 12px auto;
-//             position: absolute; 
-//             img {
-//                 position: absolute;
-//                 top: 15px;
-//                 right: 140px;
-//             }  
-//         }
-//     }
-//         .f_box {
-//             display: none;
-//         }
-//         .menuMo {
-//             display: block;
-//         }  
-//         .btnCall {
-//             display: block;
-//             background-color: #ccc;
-//             padding: 20px 20px;
-//             border-radius: 10px;
-//             top : 40px;
-//             position: fixed;
-//         }
-//     }
-// } //-----tablet -header-sub
-//-----tablet -photos
-.gallery1 {
-    width: 100%;
-    height: 100%;
-    #photos {
-        .container {
-            width: 100%;
-            height: 100%;
+    .gallery1 {
+        width: 100%;
+        height: 100%;
+        .inner {
+            margin: 10px auto;
             border: none;
-            // display: block;
+            h3 {
+                font-size: 16px;
+                line-height: 30px;
+            }
             .wrap {
                 article {
-                    width: 48%;
-                    margin: 1% 1%;
-                    p {
-                        margin-top: -120px; 
-                    }
-                }
-            }
-        } //container
+                    width: 45vw;
+                    
+            } //article
+        } //wrap
+    } //inner
     }
-
-
-}
-
-    
-
-// }
-// 	// tablet- footer_sub
-
-// #footer_sub {		
-//     display: none;
-// }// ---mobile-footer sub
-// 	// tablet- t_footer 
-// #t_footer_sub {
-//     display: block;
-//     width: 96%;
-//     height: 200px;
-//     .container {
-//         width: 100%;
-//         margin: 0 2%;
-//         height: 100%;
-//         padding-top: 20px;
-//         // height: 300px;
-//         // width: 100%;
-//         h1 {
-//             // font: 20px/30px 'Noto Sans', sans-serif;   
-//             margin-top: 0;
-//             padding: 0;
-//             }
-//         }   
-//     } //---mobile-t-footer sub
-    } //--tablet -body
+    } //--tablet
 
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
-//------mobile- HEADER_SUB-------
-// #header_sub {
-//     .container {
-//         width: 100%;
-//         height: 100vh;
-//         margin-left: 10px;
-//         a { 
-//             padding: 0;
-//         }
-//         .menu_web {
-//             display: none;
-//         }
-//         form {
-//             .wrap {
-//             position: absolute;
-//             top: 10px;
-//             left: 10px;  
-//             input[type=text] {
-//                 width: 80px;
-//             }
-//             input[type=password] {
-//                 width: 80px;
-//             }
-//             input[type=submit] {
-//                 width: 11%;
-//             }
-//             img {
-//                 position: absolute;
-//                 margin-top: 15px;
-//                 margin-right: -60px;
-//                 width: 90px;
-//             }
-//             }
-//         }
-//         .f_box {
-//             display: none;
-//         }
-//         .menuMo {
-//             display: block;
-//         }  
-//         .btnCall {
-//             display: block;
-//             background-color: #ccc;
-//             padding: 10px 10px;
-//             border-radius: 10px;
-//             top : 40px;
-//             position: fixed;
-//         }
-//     }
-// } //---mobile-header_sub
-//------mobile-
-
-.gallery1 {
-    width: 100%;
-    height: 100%;
-    #photos{
-        .wrap {
-        .article{
-            width: 100%;
-            p {
-                margin-top: 0px;
+    .gallery1 {
+        width: 100%;
+        .inner {
+            h3 {
+                font-size: 14px;
+                line-height: 25px;
             }
-        }
-        }  
+            .wrap {
+                article {
+                    width: 97vw;
+                    p {
+                        display: none;
+                        font: 16px 'Nanum Pen Script', cursive;
+                        margin-top: -90px;
+                    }
+            } //article
+        } //wrap
+    } //inner
     }
-}
-
-
-    //------mobile- FOOTER_SUB-------
-    // #t_footer_sub {
-    //     height: 100%;
-    //     width: 100%;
-    //     .container {
-    //         padding: 20px 10px;
-    //         .b_util {
-    //             .f_link {
-    //                 a {
-    //                     font-size: 16px;
-    //                     color: #fff;
-    //                     padding: 20px 10px;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }  //---mobile-t_footer
 }  //media-MOBILE
 
 

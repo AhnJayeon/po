@@ -181,7 +181,7 @@ body {
   border-radius: 10px;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
   transition: opacity 0.2s ease-in-out 0s, transform 0.3s ease-in-out 0s;
-  z-index: 5;
+  z-index: 4;
 }
 #header_sub .container .login .popup.on {
   opacity: 1;
@@ -280,6 +280,7 @@ body {
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
+  background: #fff;
   display: none;
   width: 30px;
   height: 30px;
@@ -546,7 +547,7 @@ body {
 @media screen and (max-width: 1179px) {
   body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   body #header_sub .container {
     width: 100vw;
@@ -609,6 +610,9 @@ body {
   }
 }
 @media screen and (max-width: 539px) {
+  #header_sub {
+    overflow: hidden;
+  }
   #header_sub .container {
     width: 100%;
     height: 100%;
@@ -629,10 +633,12 @@ body {
     display: block;
     padding: 10px 10px;
     border-radius: 10px;
-    top: 40px;
+    top: 30px;
+    left: 290px;
     position: fixed;
   }
   .content {
+    overflow: hidden;
     width: 96%;
     margin-left: 10px;
   }
@@ -645,6 +651,7 @@ body {
     height: 70%;
   }
   #footer_sub {
+    width: 100%;
     height: 50px;
   }
   #footer_sub p {
@@ -1044,31 +1051,27 @@ body {
 }
 
 .gallery1 {
-  width: 100%;
-  height: 100%;
-}
-.gallery1 #photos {
-  width: 100%;
-  height: 100%;
-}
-.gallery1 #photos .container {
   width: 1180px;
+  height: 100%;
+}
+.gallery1 .inner {
+  width: 100%;
   margin: 20px auto;
   border: 5px dashed #e7f5f4;
   border-radius: 10px;
   padding-bottom: 50px;
 }
-.gallery1 #photos .container h3 {
+.gallery1 .inner h3 {
   font: 1.2vw "Fredoka One", cursive;
   line-height: 80px;
   text-align: center;
   color: #8bd1c9;
 }
-.gallery1 #photos .container .wrap {
+.gallery1 .inner .wrap {
   width: 100%;
 }
-.gallery1 #photos .container .wrap article {
-  width: 48%;
+.gallery1 .inner .wrap article {
+  width: 36vw;
   opacity: 0.7;
   object-fit: contain;
   margin: 1% 1%;
@@ -1076,27 +1079,27 @@ body {
   transform: scale(0.9);
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-.gallery1 #photos .container .wrap article p {
+.gallery1 .inner .wrap article p {
   display: none;
   font: 1.7vw "Nanum Pen Script", cursive;
   margin-left: 60px;
   color: #8bd1c9;
   margin-top: -140px;
 }
-.gallery1 #photos .container .wrap article img {
+.gallery1 .inner .wrap article img {
   width: 100%;
   object-fit: cover;
   transition: 0.5s;
   border-radius: 10px;
 }
-.gallery1 #photos .container .wrap article:hover {
+.gallery1 .inner .wrap article:hover {
   transform: scale(1);
   opacity: 1;
 }
-.gallery1 #photos .container .wrap article:hover p {
+.gallery1 .inner .wrap article:hover p {
   display: block;
 }
-.gallery1 #photos .container .wrap article::after {
+.gallery1 .inner .wrap article::after {
   content: "";
   display: block;
   clear: both;
@@ -1107,29 +1110,33 @@ body {
     width: 100%;
     height: 100%;
   }
-  .gallery1 #photos .container {
-    width: 100%;
-    height: 100%;
+  .gallery1 .inner {
+    margin: 10px auto;
     border: none;
   }
-  .gallery1 #photos .container .wrap article {
-    width: 48%;
-    margin: 1% 1%;
+  .gallery1 .inner h3 {
+    font-size: 16px;
+    line-height: 30px;
   }
-  .gallery1 #photos .container .wrap article p {
-    margin-top: -120px;
+  .gallery1 .inner .wrap article {
+    width: 45vw;
   }
 }
 @media screen and (max-width: 539px) {
   .gallery1 {
     width: 100%;
-    height: 100%;
   }
-  .gallery1 #photos .wrap .article {
-    width: 100%;
+  .gallery1 .inner h3 {
+    font-size: 14px;
+    line-height: 25px;
   }
-  .gallery1 #photos .wrap .article p {
-    margin-top: 0px;
+  .gallery1 .inner .wrap article {
+    width: 97vw;
+  }
+  .gallery1 .inner .wrap article p {
+    display: none;
+    font: 16px "Nanum Pen Script", cursive;
+    margin-top: -90px;
   }
 }
 .gallery2 #box1 {
@@ -1842,119 +1849,23 @@ body {
 @media screen and (max-width: 1179px) {
   body {
     width: 100%;
-    height: 100vh;
-  }
-  body #header_sub .container {
-    width: 100vw;
-    height: 100vh;
-    margin-left: 30px;
-  }
-  body #header_sub .container .menu_web {
-    display: none;
-  }
-  body #header_sub .container form .wrap {
-    width: 80%;
-    margin: 12px auto;
-    position: absolute;
-  }
-  body #header_sub .container form .wrap img {
-    position: absolute;
-    top: 15px;
-    right: 140px;
-  }
-  body #header_sub .container .f_box {
-    display: none;
-  }
-  body #header_sub .container .menuMo {
-    display: block;
-  }
-  body #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 20px 20px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
-  }
-  body .faq-container {
-    width: 90vw;
-  }
-  body #footer_sub {
-    display: none;
-  }
-  body #t_footer_sub {
-    display: block;
-    width: 96%;
-    height: 200px;
-  }
-  body #t_footer_sub .container {
-    width: 100%;
-    margin: 0 2%;
     height: 100%;
-    padding-top: 20px;
   }
-  body #t_footer_sub .container h1 {
-    margin-top: 0;
-    padding: 0;
+  body .review {
+    height: 100%;
+  }
+  body .review .inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  body .review .inner #question {
+    width: 95%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 539px) {
-  #header_sub .container {
-    width: 100%;
-    height: 100vh;
-    margin-left: 10px;
-  }
-  #header_sub .container a {
-    padding: 0;
-  }
-  #header_sub .container .menu_web {
-    display: none;
-  }
-  #header_sub .container form .wrap {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  #header_sub .container form .wrap input[type=text] {
-    width: 80px;
-  }
-  #header_sub .container form .wrap input[type=password] {
-    width: 80px;
-  }
-  #header_sub .container form .wrap input[type=submit] {
-    width: 11%;
-  }
-  #header_sub .container form .wrap img {
-    position: absolute;
-    margin-top: 15px;
-    margin-right: -60px;
-    width: 90px;
-  }
-  #header_sub .container .f_box {
-    display: none;
-  }
-  #header_sub .container .menuMo {
-    display: block;
-  }
-  #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 10px 10px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
-  }
-  #t_footer_sub {
+  .review {
     height: 100%;
-    width: 100%;
-  }
-  #t_footer_sub .container {
-    padding: 20px 10px;
-  }
-  #t_footer_sub .container .b_util .f_link a {
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 10px;
   }
 }
 .contact {
@@ -1971,18 +1882,6 @@ body {
   padding: 20px 100px;
   margin-top: 50px;
 }
-.contact .inner::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../img/logo.png") no-repeat center;
-  background-size: contain;
-  z-index: -1;
-  opacity: 0.15;
-}
 .contact .inner .contact-box {
   max-width: 1000px;
   display: grid;
@@ -1993,6 +1892,17 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   margin: 0 auto;
+}
+.contact .inner .contact-box::after {
+  content: "";
+  position: absolute;
+  left: 170px;
+  top: 0;
+  width: 15%;
+  height: 15%;
+  background: url("../img/paperclip-solid 60.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
 }
 .contact .inner .contact-box .left {
   height: 100%;
@@ -2056,18 +1966,18 @@ body {
 .contact .inner .contact-box .right .btn:hover {
   background-color: #375350;
 }
-.contact > .inner {
+.contact .location {
   margin: 50px auto;
   height: 100%;
   width: 100%;
   display: block;
 }
-.contact > .inner h1 {
+.contact .location h1 {
   font: 2vw "Fredoka One", cursive;
   text-align: center;
   margin-top: 40px;
 }
-.contact > .inner #map {
+.contact .location #map {
   width: 1000px;
   height: 500px;
   border: 1px solid #999;
@@ -2077,7 +1987,7 @@ body {
 
 @media screen and (max-width: 1179px) {
   .contact .inner {
-    width: 100vw;
+    width: 100%;
     margin-top: 0px;
   }
   .contact .inner::after {
@@ -2087,33 +1997,58 @@ body {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
+  .contact .inner .contact-box::after {
+    display: none;
+  }
   .contact .inner .contact-box .left {
     display: none;
   }
   .contact .inner .contact-box .right {
     width: 100%;
   }
-  .contact .inner {
-    margin: 0 auto;
+  .contact .location {
+    height: 100%;
+    margin: 150px auto;
   }
-  .contact .inner #map {
-    width: 100%;
+  .contact .location #map {
+    width: 90%;
   }
 }
-@media screen and (max-width: 600px) {
-  .container {
+@media screen and (max-width: 539px) {
+  .contact {
     width: 100%;
   }
-  .container .contact-box {
-    max-width: 500px;
-    width: 100%;
-    grid-template-columns: 1fr;
+  .contact .inner {
+    display: block;
+    padding: 0;
   }
-  .container .contact-box .left {
-    height: 200px;
+  .contact .inner .contact-box {
+    width: 100vw;
+    margin: 0;
+  }
+  .contact .inner .contact-box::after {
+    transform: translateX(-140px) translateY(-50px);
+  }
+  .contact .inner .contact-box .left {
+    display: none;
+  }
+  .contact .inner .contact-box .right {
+    width: 90%;
+    margin-left: 0;
+  }
+  .contact .inner .contact-box .right .field {
+    width: 100%;
+  }
+  .contact .inner .location {
+    height: 100%;
+    margin: 0 auto;
+  }
+  .contact .inner .location #map {
+    width: 90%;
   }
 }
 .join {
+  height: 100%;
   margin-bottom: 30px;
 }
 .join .inner {
@@ -2301,106 +2236,80 @@ body {
     resize: none;
   }
 }
-.profile .inner {
-  width: 100vw;
-  min-width: 1180px;
-  height: 100%;
-}
-.profile .inner #profile_a {
-  width: 100%;
-  height: 100%;
-}
-.profile .inner #profile_a .container {
+.profile {
   width: 1180px;
-  height: 100%;
-  position: relative;
+}
+.profile .inner {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  height: 100%;
+  margin-bottom: 120px;
+  position: relative;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
-.profile .inner #profile_a .container .atc_box {
+.profile .inner .atc_box {
   color: #fff;
   border-radius: 10px;
   background-color: #6fa7a0;
-  position: relative;
-  padding: 50px 15px;
+  padding: 2em 1em;
   cursor: pointer;
-  width: 31%;
+  width: 32%;
   height: 100%;
   margin: 0 1%;
 }
-.profile .inner #profile_a .container .atc_box:hover > p {
+.profile .inner .atc_box:hover > p {
   display: block;
 }
-.profile .inner #profile_a .container .atc_box strong {
+.profile .inner .atc_box strong {
   font: 1.2vw "Fredoka One", cursive;
   color: #537d78;
 }
-.profile .inner #profile_a .container .atc_box i {
+.profile .inner .atc_box i {
   font-size: 50px;
   color: #fff;
 }
-.profile .inner #profile_a .container .atc_box h4 {
-  font: 1.2vw "Fredoka One", cursive;
+.profile .inner .atc_box h4 {
+  font-size: clamp(1.5rem, 0.7rem + 10vw, 2.2rem);
+  font-family: "Fredoka One", cursive;
   margin: 15px 0 20px;
 }
-.profile .inner #profile_a .container .atc_box h5 {
-  font: 1vw "Noto Sans", sans-serif;
+.profile .inner .atc_box h5 {
+  font-size: 0.8rem;
+  font-family: "Noto Sans", sans-serif;
   color: #b9e3de;
 }
-.profile .inner #profile_a .container .atc_box > p {
+.profile .inner .atc_box > p {
   display: none;
-  font: 0.9vw/1.8vw "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  font-family: "Noto Sans", sans-serif;
   color: #537d78;
 }
-.profile .inner #profile_a .container .atc_box:nth-of-type(3) p {
-  font: 14px/20px "Noto Sans", sans-serif;
-  color: #537d78;
+.profile .inner .atc_box:nth-of-type(3) {
+  min-height: 20vw;
+}
+.profile .inner .atc_box:nth-of-type(3) p {
+  font-size: 0.7rem;
+  font-family: "Noto Sans", sans-serif;
 }
 
-@media screen and (max-width: 1179px) {
-  .profile #profile_a {
+@media screen and (min-width: 1179px) {
+  .profile .inner {
     width: 100%;
+  }
+  .profile .inner .atc_box {
     height: 100%;
-  }
-  .profile #profile_a .container {
-    width: 100%;
-  }
-  .profile #profile_a .container .atc_box {
-    height: 100vh;
-  }
-  .profile #profile_a .container .atc_box:nth-of-type(1), .profile #profile_a .container .atc_box:nth-of-type(2) {
-    flex-basis: 44%;
-    height: 50%;
-  }
-  .profile #profile_a .container .atc_box:nth-of-type(3) {
-    margin-top: 20px;
-    flex-basis: 90%;
-    height: 120%;
   }
 }
 @media screen and (max-width: 539px) {
-  .profile #profile_a {
+  .profile .inner {
+    display: block;
     width: 100%;
-    height: 100%;
   }
-  .profile #profile_a .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .profile #profile_a .container .atc_box {
+  .profile .inner .atc_box {
+    height: 50%;
     width: 90%;
-  }
-  .profile #profile_a .container .atc_box:nth-of-type(1), .profile #profile_a .container .atc_box:nth-of-type(2) {
-    flex-basis: 70%;
-  }
-  .profile #profile_a .container .atc_box:nth-of-type(2) {
-    margin-top: 20px;
-  }
-  .profile #profile_a .container .atc_box:nth-of-type(3) {
-    height: 100%;
   }
 }
 #m_util {
@@ -2598,6 +2507,74 @@ body {
     padding: 0;
   }
 }
+.inner {
+  width: 100%;
+}
+.inner .vidList {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.inner .vidList article {
+  width: 48%;
+  height: 400px;
+  border: 8px solid #e7f5f4;
+  margin-bottom: 40px;
+}
+.inner .vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+}
+.inner .vidList article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.inner .vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+}
+.inner .vidList article .con h2 {
+  font: bold 1.4vw "Noto Sans", sans-serif;
+  color: #8bd1c9;
+  margin-bottom: 15px;
+}
+.inner .vidList article .con p {
+  font: 1.4vw "Nanum Pen Script", cursive;
+  color: #6fa7a0;
+  margin-bottom: 20px;
+}
+.inner .vidList article .con span {
+  font: bold 1vw "Yanone Kaffeesatz", sans-serif;
+  color: #ddd;
+}
+.inner .vidList figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner .vidList figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .body {
   width: 100%;
   height: 100vh;
