@@ -658,9 +658,14 @@ body {
     display: none;
   }
 }
-.details1 .tab-wrapper {
-  width: 1180px;
+.details1 {
+  width: 100%;
   height: 100%;
+}
+.details1 .tab-wrapper {
+  max-width: 1180px;
+  width: 100vw;
+  height: 30%;
   border: 2px solid #ccc;
   position: relative;
   margin: 50px auto;
@@ -689,7 +694,7 @@ body {
   text-align: center;
   line-height: 60px;
   border: 1px solid #ddd;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .details1 .tab-wrapper .tab-menu li a.active {
   background: #8bd1c9;
@@ -697,7 +702,7 @@ body {
   font-size: 16px;
 }
 .details1 #tab-content {
-  min-height: 300px;
+  height: 25vw;
   padding: 20px 30px;
   background-color: #e7f5f4;
 }
@@ -723,7 +728,8 @@ body {
   padding: 100px 0;
 }
 .details1 #box .container {
-  width: 1180px;
+  max-width: 1180px;
+  width: 100vw;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -772,135 +778,50 @@ body {
 }
 
 @media screen and (max-width: 1179px) {
-  body {
+  .tab-wrapper {
+    width: 100vw;
+    height: 100%;
+  }
+  #box .container {
+    width: 100vw;
+  }
+  #box .container .wrap {
     width: 100%;
     height: 100vh;
   }
-  body #header_sub .container {
-    width: 100vw;
-    height: 100vh;
-    margin-left: 30px;
-  }
-  body #header_sub .container .menu_web {
-    display: none;
-  }
-  body #header_sub .container form .wrap {
-    width: 80%;
-    margin: 12px auto;
-    position: absolute;
-  }
-  body #header_sub .container form .wrap img {
-    position: absolute;
-    top: 15px;
-    right: 140px;
-  }
-  body #header_sub .container .f_box {
-    display: none;
-  }
-  body #header_sub .container .menuMo {
-    display: block;
-  }
-  body #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 20px 20px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
-  }
-  body .tab-wrapper {
-    width: 100vw;
-    height: 100%;
-    height: 370px;
-  }
-  body #box .container {
-    width: 100vw;
-  }
-  body #box .container .wrap {
-    height: 100vh;
-    display: block;
-  }
-  body #box .container .wrap article {
+  #box .container .wrap article {
     width: 48%;
-    float: left;
-    margin: 1% 1%;
-  }
-  body #footer_sub {
-    display: none;
-  }
-  body #t_footer_sub {
-    display: block;
-    width: 96%;
-    height: 200px;
-  }
-  body #t_footer_sub .container {
-    width: 100%;
-    margin: 0 2%;
     height: 100%;
-    padding-top: 20px;
-  }
-  body #t_footer_sub .container h1 {
-    margin-top: 0;
-    padding: 0;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 539px) {
-  #header_sub .container {
-    width: 100%;
-    height: 100vh;
-    margin-left: 10px;
+  .tab-wrapper {
+    margin: 20px auto;
   }
-  #header_sub .container a {
-    padding: 0;
+  .tab-wrapper .tab-menu {
+    height: 30px;
+    font: bold 10px/30px "Noto Sans", sans-serif;
   }
-  #header_sub .container .menu_web {
-    display: none;
+  .tab-wrapper a {
+    height: 30px;
+    font-size: 10px;
+    line-height: 30px;
   }
-  #header_sub .container form .wrap {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  .tab-wrapper a.active {
+    font-size: 12px;
   }
-  #header_sub .container form .wrap input[type=text] {
-    width: 80px;
-  }
-  #header_sub .container form .wrap input[type=password] {
-    width: 80px;
-  }
-  #header_sub .container form .wrap input[type=submit] {
-    width: 11%;
-  }
-  #header_sub .container form .wrap img {
-    position: absolute;
-    margin-top: 15px;
-    margin-right: -60px;
-    width: 90px;
-  }
-  #header_sub .container .f_box {
-    display: none;
-  }
-  #header_sub .container .menuMo {
-    display: block;
-  }
-  #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 10px 10px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
-  }
-  #t_footer_sub {
+  #tab-content {
     height: 100%;
+    padding: 10px 15px;
+  }
+  #box article {
     width: 100%;
+    height: 100%;
   }
-  #t_footer_sub .container {
-    padding: 20px 10px;
-  }
-  #t_footer_sub .container .b_util .f_link a {
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 10px;
+  #box article .btnMore {
+    top: 5px;
+    right: 5px;
   }
 }
 #v_box {
@@ -2243,6 +2164,7 @@ body {
   width: 100%;
   display: flex;
   height: 100%;
+  min-height: 450px;
   margin-bottom: 120px;
   position: relative;
   margin: 20px auto;
@@ -2250,7 +2172,7 @@ body {
   box-shadow: 0 0 10px 0, 0, 0, 0.1;
 }
 .profile .inner .atc_box {
-  color: #fff;
+  color: #eee;
   border-radius: 10px;
   background-color: #6fa7a0;
   padding: 2em 1em;
@@ -2511,24 +2433,26 @@ body {
   width: 100%;
 }
 .inner .vidList {
-  width: 1180px;
+  max-width: 1180px;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: flex-start;
 }
 .inner .vidList article {
   width: 48%;
-  height: 400px;
-  border: 8px solid #e7f5f4;
-  margin-bottom: 40px;
+  height: 26vw;
+  border: 0.8vw solid #e7f5f4;
+  margin-right: 1%;
+  margin-bottom: 1%;
 }
 .inner .vidList article .pic {
   display: block;
   width: 100%;
   height: 60%;
-  padding: 10px;
+  padding: 2%;
 }
 .inner .vidList article .pic img {
   width: 100%;
@@ -2537,35 +2461,36 @@ body {
 }
 .inner .vidList article .con {
   width: 100%;
-  height: 40%;
-  padding: 20px;
+  height: 34%;
+  padding: 2%;
 }
 .inner .vidList article .con h2 {
   font: bold 1.4vw "Noto Sans", sans-serif;
   color: #8bd1c9;
-  margin-bottom: 15px;
+  margin-bottom: 1%;
 }
 .inner .vidList article .con p {
   font: 1.4vw "Nanum Pen Script", cursive;
   color: #6fa7a0;
-  margin-bottom: 20px;
+  margin-bottom: 1.2%;
 }
 .inner .vidList article .con span {
   font: bold 1vw "Yanone Kaffeesatz", sans-serif;
   color: #ddd;
 }
 .inner .vidList figure.pop {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  padding: 5vw;
+  padding: 5vw 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 .inner .vidList figure.pop .btnClose {
   position: absolute;
@@ -2575,6 +2500,21 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1179px) {
+  .vidList {
+    width: 90vw;
+    height: 100%;
+  }
+  .vidList article {
+    width: 40%;
+    border: 2px solid #e7f5f4;
+  }
+}
+@media screen and (max-width: 539px) {
+  span {
+    display: none;
+  }
+}
 .body {
   width: 100%;
   height: 100vh;

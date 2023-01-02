@@ -1,11 +1,12 @@
 //...  Contents 영역 --> 
 .details1 {
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
+    height: 100%;
 
 .tab-wrapper {
-    width: 1180px;
-    height: 100%;
+    max-width: 1180px;
+    width: 100vw;
+    height: 30%;
     border: 2px solid #ccc;
     position: relative;
     margin: 50px auto;
@@ -32,7 +33,7 @@
                     text-align: center;
                     line-height: 60px;
                     border: 1px solid #ddd;
-                    transition: 0.2s;
+                    transition: 0.3s;
                    &.active {
                     background : $shade0;
                     color: #fff;
@@ -44,11 +45,12 @@
         } //tab-menu
     }
     #tab-content {
-        min-height: 300px;
+        height: 25vw;
         padding: 20px 30px;
         background-color: $tint80; 
+
         div {
-            display: none;
+            display: none;            
             h3 {
                 font: $h2_font;
                 font-weight: bold;
@@ -64,13 +66,13 @@
             }
         }
     } //tab-content
-
 #box {
     width: 100%;
     height: 100%;
     padding: 100px 0;
     .container {
-        width: 1180px;
+        max-width: 1180px;
+        width: 100vw;
         height: 100%;
         margin: 0 auto;
         position: relative;
@@ -104,7 +106,6 @@
                             letter-spacing: 2px;
                         }
                     }
-                
                 .btnMore{
                     position: absolute;
                     top: 20px;
@@ -116,10 +117,6 @@
                 &:last-of-type {
                     margin-right: 0px;
                 } 
-               
-
-               
-
     } //wrap
 } //container
 } //box
@@ -127,173 +124,63 @@
 
 
 //-----FOR TABLET
-@media screen and (max-width: $tablet) {
-    body {
-        width: 100%;
-        height: 100vh;
-//----tablet - header_sub
-#header_sub {
-    .container {
-        width: 100vw;
-        height: 100vh;
-        margin-left: 30px;
-        .menu_web {
-            display: none;
-        }
-        form {
-            .wrap {
-            width: 80%;
-            margin: 12px auto;
-            position: absolute; 
-            img {
-                position: absolute;
-                top: 15px;
-                right: 140px;
-            }  
-        }
-    }
-        .f_box {
-            display: none;
-        }
-        .menuMo {
-            display: block;
-        }  
-        .btnCall {
-            display: block;
-            background-color: #ccc;
-            padding: 20px 20px;
-            border-radius: 10px;
-            top : 40px;
-            position: fixed;
-        }
-    }
-} //-----tablet -header-sub
-//-----tablet -tab-wrapper
+@media screen and (max-width: $tablet) {    
 .tab-wrapper {
     width: 100vw;
     height: 100%;
-    height: 370px;
 }
 #box {
     .container {
         width: 100vw;
-        
         .wrap {
+            width: 100%;
             height: 100vh;
-            display: block;
-
             article {
                 width: 48%;
-                float: left;
-                margin: 1% 1%;
+                height: 100%;
+                margin: 0 auto;
             }
         }
     }
-    
+}  
 }
 
 
-
-
-// 	// tablet- footer_sub
-
-#footer_sub {		
-    display: none;
-}// ---mobile-footer sub
-// 	// tablet- t_footer 
-#t_footer_sub {
-    display: block;
-    width: 96%;
-    height: 200px;
-    .container {
-        width: 100%;
-        margin: 0 2%;
-        height: 100%;
-        padding-top: 20px;
-        // height: 300px;
-        // width: 100%;
-        h1 {
-            // font: 20px/30px 'Noto Sans', sans-serif;   
-            margin-top: 0;
-            padding: 0;
-            }
-        }   
-    } //---mobile-t-footer sub
-    } //--tablet -body
-    } //media-TABLET
-
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
-//------mobile- HEADER_SUB-------
-#header_sub {
-    .container {
-        width: 100%;
-        height: 100vh;
-        margin-left: 10px;
-        a { 
-            padding: 0;
-        }
-        .menu_web {
-            display: none;
-        }
-        form {
-            .wrap {
-            position: absolute;
-            top: 10px;
-            left: 10px;  
-            input[type=text] {
-                width: 80px;
-            }
-            input[type=password] {
-                width: 80px;
-            }
-            input[type=submit] {
-                width: 11%;
-            }
-            img {
-                position: absolute;
-                margin-top: 15px;
-                margin-right: -60px;
-                width: 90px;
-            }
-            }
-        }
-        .f_box {
-            display: none;
-        }
-        .menuMo {
-            display: block;
-        }  
-        .btnCall {
-            display: block;
-            background-color: #ccc;
-            padding: 10px 10px;
-            border-radius: 10px;
-            top : 40px;
-            position: fixed;
-        }
-    }
-} //---mobile-header_sub
-//------mobile-
-
-
-
-
-    //------mobile- FOOTER_SUB-------
-    #t_footer_sub {
-        height: 100%;
-        width: 100%;
-        .container {
-            padding: 20px 10px;
-            .b_util {
-                .f_link {
-                    a {
-                        font-size: 16px;
-                        color: #fff;
-                        padding: 20px 10px;
-                    }
+    .tab-wrapper {
+        margin: 20px auto;
+            .tab-menu {
+                height: 30px;
+                font: bold 10px/30px 'Noto Sans', sans-serif;
                 }
-            }
-        }
-    }  //---mobile-t_footer
+                 a {
+                        height: 30px;
+                        font-size: 10px;
+
+                        line-height: 30px;
+
+                       &.active {
+                        font-size: 12px;
+                       }  
+                    }
+                } //li
+                
+            
+        
+        #tab-content {
+            height: 100%;
+            padding: 10px 15px;
+            
+        } 
+        #box {
+                    article {
+                        width: 100%; 
+                        height: 100%;
+                        .btnMore{ 
+                            top: 5px;
+                            right: 5px;
+                          }
+                    }
+        } 
 }  //media-MOBILE
