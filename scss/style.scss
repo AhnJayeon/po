@@ -549,7 +549,8 @@
 }  //main
     
 #visual {
-    width: 1180px;
+    max-width: 1180px;
+    width: 100%;
     height: 250px;
     overflow: hidden;
     // background: $shade40;  
@@ -571,8 +572,8 @@
              justify-content: center;
              align-items: center;
              position: absolute;
-             top: -60px;
-             left: 60px;
+             top: -4vw;
+             left: 3vw;
              z-index: 0;
              opacity: 0;
              transition: all 0.9s ease-in-out;
@@ -635,9 +636,9 @@
         margin: 0 auto;
 //----tablet -header
 	#header {
+        height: 3vw;
 		.container {
 			width: 100vw;
-			height: 5vh;
             margin-left: 10px;
 			.menu_web {
 				display: none;
@@ -668,8 +669,11 @@
     .main {
         width: 100%;
         height: 100%;
-        margin-top: -50px;
+        margin-top: -150px;
         margin-left: 20px;
+        .row {
+            height: 100%;
+        
         .col-2 {
             .logo {
                 position: absolute;
@@ -679,7 +683,8 @@
             .color-box {
                 display: none;
             }
-        }    
+        } 
+    }   
     }
 //-----tablet -figure-gallery
 #visual {
@@ -724,6 +729,7 @@
 }
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
+
 #header {
 		.container {
 			width: 100%;
@@ -754,9 +760,11 @@
 	} //---mobile-header
     .main {
         width: 100%;
-        height: 100%;
+        height: 80%;
         overflow: hidden;
         .row {
+        height: 10vw;
+        z-index: 1;
         margin: 0;
         .col-1 {
             margin-top: 30px;
@@ -788,7 +796,7 @@
             // flex-basis: 100%;
             transform: translateX(20px);
             .logo {
-                width: 80%;
+                width: 75%;
                 transform: translateX(250px) translateY(-20px);
             }
             .color-box {
@@ -798,15 +806,35 @@
         }
     }
 }
-//------mobile-visual-------
-#visaul {
-    display: none; 
+#visual {
+    background: linear-gradient(to right, #f7f9f9, #daf1ef);
     video {
-        display: none;
+        height: 200px;
+    }
+    #slider {
+        width: 100%;
+        
+        
+        .slider_item {
+            
+           > p {
+                display: none;
+             }
+             h1 {
+                font: 16px 'Fredoka One', cursive;
+                transform: translateX(110px) translateY(40px);
+                opacity: 0.8;
+                
+                
+             }
+
+        }
     }
 }
+
 #footer {		
 height: 50px;
+margin: 20px auto;
         p {
             display: none;
         } 
