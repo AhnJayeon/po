@@ -709,13 +709,15 @@
 }
 	#footer {	
         height: 50px;
+        position: relative;
         .b_util {
             width: 100%;
             height: 50px;
-            transform: translateX(-20px);
+            position: absolute;
             p {
                 transform: translateX(-100px) translateY(5px);
             } 
+           
     } //--tablet -body
     } //media-TABLET
 }

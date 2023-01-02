@@ -522,28 +522,6 @@ body {
   height: 100%;
 }
 
-#footer_sub {
-  width: 100%;
-  height: 100%;
-}
-#footer_sub .b_util {
-  width: 60%;
-  margin: 20px auto;
-  position: relative;
-  display: flex;
-  justify-content: right;
-}
-#footer_sub .b_util p {
-  font: 1.2vw "Fredoka One", cursive;
-  color: #8bd1c9;
-  transform: translateX(-550px) translateY(5px);
-}
-#footer_sub .b_util .f_link a {
-  font-size: 20px;
-  color: #6fa7a0;
-  padding: 20px 15px;
-}
-
 @media screen and (max-width: 1179px) {
   body {
     width: 100%;
@@ -1244,7 +1222,7 @@ body {
 }
 .gallery3 .inner #slider .slider_item {
   width: 100vw;
-  height: 500px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1262,119 +1240,15 @@ body {
   transform: none;
 }
 
-@media screen and (max-width: 1179px) {
-  body {
-    width: 100%;
-    height: 100vh;
-  }
-  body #header_sub .container {
-    width: 100vw;
-    height: 100vh;
-    margin-left: 30px;
-  }
-  body #header_sub .container .menu_web {
-    display: none;
-  }
-  body #header_sub .container form .wrap {
-    width: 80%;
-    margin: 12px auto;
-    position: absolute;
-  }
-  body #header_sub .container form .wrap img {
-    position: absolute;
-    top: 15px;
-    right: 140px;
-  }
-  body #header_sub .container .f_box {
-    display: none;
-  }
-  body #header_sub .container .menuMo {
-    display: block;
-  }
-  body #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 20px 20px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
-  }
-  body #footer_sub {
-    display: none;
-  }
-  body #t_footer_sub {
-    display: block;
-    width: 96%;
-    height: 200px;
-  }
-  body #t_footer_sub .container {
-    width: 100%;
-    margin: 0 2%;
-    height: 100%;
-    padding-top: 20px;
-  }
-  body #t_footer_sub .container h1 {
-    margin-top: 0;
-    padding: 0;
-  }
-}
 @media screen and (max-width: 539px) {
-  #header_sub .container {
-    width: 100%;
-    height: 100vh;
-    margin-left: 10px;
+  #slider {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    transform: translateX(-133px);
   }
-  #header_sub .container a {
-    padding: 0;
-  }
-  #header_sub .container .menu_web {
-    display: none;
-  }
-  #header_sub .container form .wrap {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  #header_sub .container form .wrap input[type=text] {
-    width: 80px;
-  }
-  #header_sub .container form .wrap input[type=password] {
-    width: 80px;
-  }
-  #header_sub .container form .wrap input[type=submit] {
-    width: 11%;
-  }
-  #header_sub .container form .wrap img {
-    position: absolute;
-    margin-top: 15px;
-    margin-right: -60px;
-    width: 90px;
-  }
-  #header_sub .container .f_box {
-    display: none;
-  }
-  #header_sub .container .menuMo {
-    display: block;
-  }
-  #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 10px 10px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
-  }
-  #t_footer_sub {
-    height: 100%;
-    width: 100%;
-  }
-  #t_footer_sub .container {
-    padding: 20px 10px;
-  }
-  #t_footer_sub .container .b_util .f_link a {
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 10px;
+  #slider .slider_item img {
+    transform: scale(0.7);
   }
 }
 .gallery .inner {
@@ -3156,11 +3030,12 @@ body {
   }
   body #footer {
     height: 50px;
+    position: relative;
   }
   body #footer .b_util {
     width: 100%;
     height: 50px;
-    transform: translateX(-20px);
+    position: absolute;
   }
   body #footer .b_util p {
     transform: translateX(-100px) translateY(5px);
