@@ -6,7 +6,7 @@
 .tab-wrapper {
     max-width: 1180px;
     width: 100vw;
-    height: 30%;
+    height: 100%;
     border: 2px solid #ccc;
     position: relative;
     margin: 50px auto;
@@ -45,7 +45,7 @@
         } //tab-menu
     }
     #tab-content {
-        height: 25vw;
+        height: 100%;
         padding: 20px 30px;
         background-color: $tint80; 
 
@@ -60,6 +60,7 @@
             p {
                 font: $p_font;
                 color: #444;
+                line-height: 35px;
             }
             &:first-child {
                 display: block;
