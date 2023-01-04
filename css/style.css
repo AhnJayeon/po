@@ -1876,13 +1876,13 @@ body {
 .join .inner .agreement label[for=agree] {
   font-size: 1vw;
 }
-.join .inner table {
+.join .inner .join_form {
   width: 100%;
   height: 100%;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
 }
-.join .inner table th {
+.join .inner .join_form th {
   width: 20%;
   text-align: left;
   font: 1.2vw "Noto Sans", sans-serif;
@@ -1892,12 +1892,12 @@ body {
   border-bottom: 1px solid #eee;
   background: #8bd1c9;
 }
-.join .inner table th:last-child {
+.join .inner .join_form th:last-child {
   background: #fff;
   text-align: center;
   border-right: none;
 }
-.join .inner table th input[type=submit], .join .inner table th input[type=reset] {
+.join .inner .join_form th input[type=submit], .join .inner .join_form th input[type=reset] {
   width: 150px;
   height: 50px;
   border: none;
@@ -1907,36 +1907,37 @@ body {
   border-radius: 5px;
   margin-right: 10px;
 }
-.join .inner table td {
+.join .inner .join_form td {
   border-bottom: 1px solid #bbb;
   font-size: 0;
+  text-align: left;
 }
-.join .inner table td input[type=text], .join .inner table td input[type=password] {
+.join .inner .join_form td input[type=text], .join .inner .join_form td input[type=password] {
   width: 30%;
   height: 30px;
   border: 1px solid #bbb;
-  background: #e7f5f4;
+  background: #efefef;
   padding-left: 20px;
   margin-left: 20px;
 }
-.join .inner table td input[type=text], .join .inner table td input[type=password]::placeholder {
+.join .inner .join_form td input[type=text], .join .inner .join_form td input[type=password]::placeholder {
   font-size: 1vw;
 }
-.join .inner table td input[type=radio] {
+.join .inner .join_form td input[type=radio] {
   margin-right: 5px;
 }
-.join .inner table td label {
+.join .inner .join_form td label {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 1.2vw;
 }
-.join .inner table td .genderTxt, .join .inner table td .levelTxt {
+.join .inner .join_form td .genderTxt, .join .inner .join_form td .levelTxt {
   font: 1.3vw "Nanum Pen Script", cursive;
   color: #6fa7a0;
   margin-top: 10px;
   margin-left: 10px;
 }
-.join .inner table td select#company {
+.join .inner .join_form td select#company {
   width: 20%;
   height: 30px;
   border: 1px solid #bbb;
@@ -1944,7 +1945,7 @@ body {
   padding-left: 20px;
   margin-left: 10px;
 }
-.join .inner table td textarea#comments {
+.join .inner .join_form td textarea#comments {
   width: 95%;
   height: 150px;
   border: 1px solid #bbb;
@@ -1957,7 +1958,7 @@ body {
 @media screen and (max-width: 1179px) {
   body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   body .join {
     width: 100vw;
@@ -1967,69 +1968,53 @@ body {
     width: 95%;
     height: 100%;
   }
+  body .join .inner .join_form th {
+    font: bold 14px "Noto Sans", sans-serif;
+  }
+  body .join .inner .join_form th input[type=submit], body .join .inner .join_form th input[type=reset] {
+    font: bold 15px "Yanone Kaffeesatz", sans-serif;
+  }
+  body .join .inner .join_form td input[type=text], body .join .inner .join_form td input[type=password] {
+    width: 50%;
+    margin-left: 5px;
+  }
+  body .join .inner .join_form td input[type=text], body .join .inner .join_form td input[type=password]::placeholder {
+    font-size: 1vw;
+  }
+  body .join .inner .join_form td input[type=radio] {
+    margin-right: 5px;
+  }
+  body .join .inner .join_form td select#company {
+    width: 40%;
+  }
+  body .join .inner .join_form td textarea#comments {
+    margin-left: 5px;
+  }
 }
 @media screen and (max-width: 539px) {
-  .join {
-    width: 100vw;
+  .join .inner fieldset {
+    width: 90%;
+    height: 100%;
   }
-  .join .inner {
-    width: 94%;
-  }
-  .join .inner h2 {
+  .join .inner fieldset h2 {
     font-size: 17px;
     margin-bottom: 10px;
   }
-  .join .inner #terms {
+  .join .inner fieldset #terms {
     margin-right: 20px;
     margin-bottom: 5px;
   }
-  .join .inner .agreement {
+  .join .inner fieldset .agreement {
     margin-bottom: 30px;
   }
-  .join .inner table {
-    width: 94%;
+  .join .inner fieldset .join_form th {
+    font: bold 12px "Noto Sans", sans-serif;
   }
-  .join .inner table th {
-    width: 10%;
-    padding: 5px 10px;
+  .join .inner fieldset .join_form th input[type=submit], .join .inner fieldset .join_form th input[type=reset] {
+    font: bold 14px "Yanone Kaffeesatz", sans-serif;
   }
-  .join .inner table th input[type=submit], .join .inner table th input[type=reset] {
-    margin-right: 10px;
-    width: 80px;
-    height: 25px;
-    font-size: 15px;
-  }
-  .join .inner table td input[type=text], .join .inner table td input[type=password] {
-    width: 30%;
-    padding-left: 10px;
-    margin-left: 5px;
-  }
-  .join .inner table td input[type=text], .join .inner table td input[type=password]::placeholder {
-    font-size: 10px;
-  }
-  .join .inner table td input[type=radio] {
-    margin-right: 2px;
-  }
-  .join .inner table td label {
-    margin-right: 10px;
-    margin-left: 5px;
-  }
-  .join .inner table td .genderTxt, .join .inner table td .levelTxt {
-    font-size: 15px;
-    color: #6fa7a0;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  .join .inner table td select#company {
-    width: 40%;
-    padding-left: 5px;
-    margin-left: 5px;
-  }
-  .join .inner table td textarea#comments {
-    width: 100%;
-    padding: 10px;
-    margin: 5px;
-    resize: none;
+  .join .inner fieldset .join_form td input[type=text], .join .inner fieldset .join_form td input[type=password] {
+    width: 80%;
   }
 }
 .profile {
@@ -2135,45 +2120,45 @@ body {
   width: 100vw;
   height: 100%;
 }
-.inner table {
+.inner .bulletin {
   width: 1180px;
   border-bottom: 3px solid #6fa7a0;
   border-collapse: collapse;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.inner table tr:nth-of-type(even) {
+.inner .bulletin tr:nth-of-type(even) {
   background: #e7f5f4;
 }
-.inner table tr:hover {
+.inner .bulletin tr:hover {
   background: #b9e3de;
 }
-.inner table tr th {
+.inner .bulletin tr th {
   padding: 15px;
   background: #6fa7a0;
   color: #fff;
 }
-.inner table tr th:nth-of-type(1) {
+.inner .bulletin tr th:nth-of-type(1) {
   width: 5vw;
 }
-.inner table tr th:nth-of-type(3) {
+.inner .bulletin tr th:nth-of-type(3) {
   width: 10vw;
 }
-.inner table tr th:nth-of-type(4) {
+.inner .bulletin tr th:nth-of-type(4) {
   width: 10vw;
 }
-.inner table tr td {
+.inner .bulletin tr td {
   padding: 13px;
   border-bottom: 1px solid #d0ece9;
   text-align: center;
 }
-.inner table tr td:nth-of-type(2) {
+.inner .bulletin tr td:nth-of-type(2) {
   text-align: left;
 }
-.inner table tr td:nth-of-type(3) {
+.inner .bulletin tr td:nth-of-type(3) {
   font: 1vw "Noto Sans", sans-serif;
 }
-.inner table tr td a {
+.inner .bulletin tr td a {
   color: #333;
   line-height: 1.4;
 }
@@ -2248,15 +2233,15 @@ body {
     margin: 0px 20px;
     padding: 0px 10px;
   }
-  .inner table {
+  .inner .bulletin {
     width: 100vw;
     height: 100%;
   }
-  .inner table tr th:nth-of-type(4) {
+  .inner .bulletin tr th:nth-of-type(4) {
     width: 0%;
     display: none;
   }
-  .inner table tr td:nth-of-type(4) {
+  .inner .bulletin tr td:nth-of-type(4) {
     display: none;
   }
   .inner .pagination .numbers a:nth-of-type(6) {
@@ -2276,20 +2261,20 @@ body {
   }
 }
 @media screen and (max-width: 539px) {
-  table {
+  .bulletin {
     width: 80vw;
   }
-  table tr th {
+  .bulletin tr th {
     font-size: 13px;
   }
-  table tr th:nth-of-type(1) {
+  .bulletin tr th:nth-of-type(1) {
     width: 0%;
     display: none;
   }
-  table tr th:nth-of-type(3) {
+  .bulletin tr th:nth-of-type(3) {
     width: 29%;
   }
-  table tr td:nth-of-type(1) {
+  .bulletin tr td:nth-of-type(1) {
     display: none;
   }
   .pagination .numbers {
@@ -2382,6 +2367,58 @@ body {
     display: none;
   }
 }
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.quiz-container {
+  background-color: #efefef;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.2);
+  width: 60vw;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.quiz-container .quiz-header {
+  padding: 4rem;
+}
+.quiz-container .quiz-header h2 {
+  font: 1.4vw "Noto Sans", sans-serif;
+  padding: 1rem;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+}
+.quiz-container .quiz-header ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.quiz-container .quiz-header ul li label {
+  cursor: pointer;
+}
+.quiz-container #submit {
+  background-color: #6fa7a0;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font: 1.2vw "Fredoka One", cursive;
+  padding: 1.3rem;
+}
+.quiz-container #submit:hover {
+  background-color: #8bd1c9;
+}
+.quiz-container #submit:focus {
+  outline: none;
+  background-color: #b9e3de;
+}
+
 .body {
   width: 100%;
   height: 100vh;
@@ -2937,19 +2974,23 @@ body {
   width: 100%;
   height: 100%;
 }
-#footer .b_util {
+#footer .inner {
+  position: relative;
+}
+#footer .inner p {
+  position: absolute;
+  margin-left: 180px;
+  font: 1.2vw "Fredoka One", cursive;
+  color: #8bd1c9;
+}
+#footer .inner .b_util {
   width: 60%;
   margin: 20px auto;
   position: relative;
   display: flex;
   justify-content: right;
 }
-#footer .b_util p {
-  font: 1.2vw "Fredoka One", cursive;
-  color: #8bd1c9;
-  transform: translateX(-550px) translateY(5px);
-}
-#footer .b_util .f_link a {
+#footer .inner .b_util .f_link a {
   font-size: 20px;
   color: #6fa7a0;
   padding: 20px 15px;
@@ -3029,15 +3070,10 @@ body {
   }
   body #footer {
     height: 50px;
-    position: relative;
   }
   body #footer .b_util {
     width: 100%;
     height: 50px;
-    position: absolute;
-  }
-  body #footer .b_util p {
-    transform: translateX(-100px) translateY(5px);
   }
 }
 @media screen and (max-width: 539px) {
@@ -3130,7 +3166,6 @@ body {
   }
   #footer {
     height: 50px;
-    margin: 20px auto;
   }
   #footer p {
     display: none;
