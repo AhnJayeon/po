@@ -536,7 +536,7 @@
                 position: absolute;
                 top: 0;
                 right: 20px;
-                border: 255px dotted $tint80;
+                border: 17vw dotted $tint80;
                 opacity: 0.35;
                 border-radius: 15%;
                 z-index: -1;
@@ -608,9 +608,10 @@
         position: relative;
     p {
         position: absolute;
-        margin-left: 180px;
+        margin-left: 100px;
         font: $s_font;
         color: $shade0;
+        margin-right: 30px;
     }
     .b_util {
         width: 60%;

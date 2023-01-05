@@ -961,17 +961,19 @@ body {
   border-radius: 10px;
   padding-bottom: 50px;
 }
-.gallery1 .inner h3 {
+.gallery1 .inner .wrap {
+  width: 100%;
+}
+.gallery1 .inner .wrap::before {
+  content: "Can you guess what this means? You can check the meaning by hovering the image.";
+  display: block;
   font: 1.2vw "Fredoka One", cursive;
   line-height: 80px;
   text-align: center;
   color: #8bd1c9;
 }
-.gallery1 .inner .wrap {
-  width: 100%;
-}
 .gallery1 .inner .wrap article {
-  width: 36vw;
+  width: 48%;
   opacity: 0.7;
   object-fit: contain;
   margin: 1% 1%;
@@ -2120,99 +2122,6 @@ body {
   width: 100vw;
   height: 100%;
 }
-.inner .bulletin {
-  width: 1180px;
-  border-bottom: 3px solid #6fa7a0;
-  border-collapse: collapse;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-.inner .bulletin tr:nth-of-type(even) {
-  background: #e7f5f4;
-}
-.inner .bulletin tr:hover {
-  background: #b9e3de;
-}
-.inner .bulletin tr th {
-  padding: 15px;
-  background: #6fa7a0;
-  color: #fff;
-}
-.inner .bulletin tr th:nth-of-type(1) {
-  width: 5vw;
-}
-.inner .bulletin tr th:nth-of-type(3) {
-  width: 10vw;
-}
-.inner .bulletin tr th:nth-of-type(4) {
-  width: 10vw;
-}
-.inner .bulletin tr td {
-  padding: 13px;
-  border-bottom: 1px solid #d0ece9;
-  text-align: center;
-}
-.inner .bulletin tr td:nth-of-type(2) {
-  text-align: left;
-}
-.inner .bulletin tr td:nth-of-type(3) {
-  font: 1vw "Noto Sans", sans-serif;
-}
-.inner .bulletin tr td a {
-  color: #333;
-  line-height: 1.4;
-}
-.inner .pagination {
-  width: 100vw;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.inner .pagination::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.inner .pagination .prev {
-  float: left;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-left: 180px;
-  background: #8bd1c9;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-}
-.inner .pagination .next {
-  float: right;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-right: 180px;
-  background: #8bd1c9;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-}
-.inner .pagination .numbers {
-  display: inline-block;
-  text-align: center;
-  font-size: 0;
-}
-.inner .pagination .numbers a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #8bd1c9;
-  font: bold 12px/30px "arial";
-  color: #8bd1c9;
-  margin: 0 5px;
-  transition: 0.5s;
-}
-.inner .pagination .numbers a:hover {
-  background: #6fa7a0;
-  color: #fff;
-}
 
 @media screen and (max-width: 1179px) {
   #m_util {
@@ -2911,7 +2820,7 @@ body {
   position: absolute;
   top: 0;
   right: 20px;
-  border: 255px dotted #e7f5f4;
+  border: 17vw dotted #e7f5f4;
   opacity: 0.35;
   border-radius: 15%;
   z-index: -1;
@@ -2979,9 +2888,10 @@ body {
 }
 #footer .inner p {
   position: absolute;
-  margin-left: 180px;
+  margin-left: 100px;
   font: 1.2vw "Fredoka One", cursive;
   color: #8bd1c9;
+  margin-right: 30px;
 }
 #footer .inner .b_util {
   width: 60%;

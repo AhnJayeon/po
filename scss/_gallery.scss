@@ -8,16 +8,18 @@
         border: 5px dashed $tint80;
         border-radius: 10px;
         padding-bottom: 50px;
-        h3 {
-            font: $s_font;
-            line-height: 80px;
-            text-align: center;
-            color: $shade0;
-        }
         .wrap {
             width: 100%;
+            &::before {
+                content: 'Can you guess what this means? You can check the meaning by hovering the image.';
+                display: block;
+                font: $s_font;
+                line-height: 80px;
+                text-align: center;
+                color: $shade0;
+            }
             article {
-                width: 36vw;
+                width: 48%;
                 opacity: 0.7;
                 object-fit: contain;
                 margin: 1% 1%;
