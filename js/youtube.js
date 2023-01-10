@@ -81,13 +81,13 @@ vidList.addEventListener("click", (e) => {
 
 
 // const frame1 = document.querySelector('.vidList');
-// const playlistId1 = 'PLHtvRFLN5v-W5bQjvyH8QTdQQhgflJ3nu';
+// const playlistId1 = 'PL6IEOLxx7x4hMvmn8f119TodmRLCTZmRk';
 
 // const frame2 = document.querySelector('.vidList0');
-// const playlistId2 = 'PLGOVj4gmzJyDDR7lMdcNbMivqI1oqvaDz';
+// const playlistId2 = 'PL6IEOLxx7x4jNlQcQ3fKEZzRCj3e_9mUg';
 
-// getYoutube(frame2, playlistId2, 2);
-// getYoutube(frame1, playlistId1, 5);
+// getYoutube(frame2, playlistId2, 3);
+// getYoutube(frame1, playlistId1, 12);
 
 // async function getYoutube(frame, playlist, count) {
 // 	const key = 'AIzaSyDq1ThuKd63CGMc178rIvnscNriIww6L4A';

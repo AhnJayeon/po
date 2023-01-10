@@ -4,9 +4,62 @@
 .inner {
     width: 100%;
     height: 100%;
+    position: relative;
+    #box {
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+        .container {
+            max-width: 1180px;
+            width: 100vw;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            .wrap {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                article {
+                    width: 24%; 
+                    height: 150px; 
+                    float: left;
+                    margin-bottom: 1%; 
+                    background-color: #e7f5f4;
+                    padding: 30px 20px;
+                    position: relative;
+                    border-radius: 10px; 
+                    box-shadow: 0 0 10px (0,0,0,0.1);
+                    h2 {
+                        font: $s_font;
+                        color: #444;
+                        margin-bottom: 15px;
+                    }
+                        p {
+                            font: $p_font;
+                            a {
+                                font: bold 14px 'arial';
+                                color: #555;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    .btnMore{
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        z-index: 1;
+                        color: #8bd1c9;  
+                      }
+                }
+                    &:last-of-type {
+                        margin-right: 0px;
+                    } 
+        } //wrap
+    } //container
+    } //box
     #slider {
         margin: 50px auto;
-        position: relative;
+        position: absolute;
+        margin-left: 150px;
         height: 500px;
         .slider_item {
              width: 100%;
@@ -28,13 +81,20 @@
              opacity: 1;
              transform: none;
          }
+
      }
+
  }
 }
-
+@media screen and (max-width: $tablet) {
+    #box{
+        display: none;
+}
+}
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
 //------mobile- HEADER_SUB-------
+
     #slider {
         width: 30%;
         height: 30%;

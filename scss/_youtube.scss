@@ -1,6 +1,7 @@
 .inner {  
     
     width: 100%;
+    position: relative;
     .vidList {
         max-width: 1180px;
         width: 100vw;
@@ -11,7 +12,7 @@
         align-content: flex-start;
         article {
             width: 48%;
-            height: 26vw;
+            height: 23vw;
             border: 0.8vw solid $tint80;
             margin-right: 1%;
             margin-bottom: 1%;
@@ -67,6 +68,12 @@
                 cursor: pointer;
             }
         }
+    }
+    .vidList0 {
+        position: absolute;
+        width: 1180px;
+        top: 0;
+        left: 0;
     }
 } 
 @media screen and (max-width: $tablet) {
