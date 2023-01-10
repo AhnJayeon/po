@@ -35,7 +35,7 @@
                         color: #fff;   
                     }
                     h4 {
-                        font-size: clamp(1.4rem, 0.6rem + 10vw, 2rem);
+                        font-size: clamp(1.3rem, 0.5rem + 10vw, 2rem);
                         font-family: 'Fredoka One', cursive;
                         margin: 15px 0 20px;
                         font-weight: normal;
@@ -71,6 +71,7 @@
             width: 100%;
             .atc_box {
                 height: 100%;
+                
              }
     
             }
@@ -79,16 +80,28 @@
 
 //------FOR MOBILE--------
 @media screen and (max-width: $mobile) {
+    
     .profile {
+        margin-top: -50px;
         .inner {
             display: block;
                 width: 100%;
+                height: 100%;
+                transform: translateY(-50px);
                 .atc_box {
-                    height: 50%;
+                    height: 25%;
                     width: 90%;
+                    margin-bottom: 1%;
+                    i {
+                        font-size: 20px;
+                           
+                    }
+                    &:nth-of-type(2), &:nth-of-type(3) {
+                        height: 32%;
+                       
                  }
         
                 }
             }
         }  
-
+    }

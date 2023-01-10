@@ -1,14 +1,81 @@
 //...  Contents 영역 --> 
 .gallery2 {
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
 
+#box2 {
+        width: 1180px;
+        height: 100%;
+        margin: 0 auto;
+        h1 {
+            font: bold 30px/1 "arial";
+            color: #fff;
+            position: absolute;
+            top: 200px;
+            left: 220px;
+            z-index: 5;
+        }
+        .showBox {
+            width: 60vw;
+            height: 50vw;
+            position: absolute;
+            top: 180px;
+            left: 200px;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .controls {
+            width: 40%;
+            padding: 50px;
+            background: rgba(1, 130, 119, 0.7);
+            position: absolute;
+            right: 185px;
+            top: 50px;
+            ul {
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                li {
+                    float: left;
+                    margin-right: 20px;
+                    a {
+                        font: bold 12px/1 "arial";
+                        color: #777;
+                    }
+                    &.on a {
+                        color: #fff;
+                    }
+                }
+            }
+            div {
+                margin: 20px;
+                font-size: 14px;
+                color: #888;
+                strong {
+                    font-size: 40px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+}
 #box1 {
     width: 100%;
+    transform: translateY(900px);
+    
     .container {
         width: 1180px;
         margin: 50px auto;
-        position: relative;
+        
         h1 {
             font: $h1_font;
             text-align: center;
@@ -46,8 +113,6 @@
             }
         }
     }
-}
-
 
 
 //-----FOR TABLET
@@ -56,45 +121,13 @@
         width: 100%;
         height: 100vh;
 //----tablet - header_sub
-#header_sub {
-    .container {
-        width: 100vw;
-        height: 100vh;
-        margin-left: 30px;
-        .menu_web {
-            display: none;
-        }
-        form {
-            .wrap {
-            width: 80%;
-            margin: 12px auto;
-            position: absolute; 
-            img {
-                position: absolute;
-                top: 15px;
-                right: 140px;
-            }  
-        }
-    }
-        .f_box {
-            display: none;
-        }
-        .menuMo {
-            display: block;
-        }  
-        .btnCall {
-            display: block;
-            background-color: #ccc;
-            padding: 20px 20px;
-            border-radius: 10px;
-            top : 40px;
-            position: fixed;
-        }
-    }
-} //-----tablet -header-sub
-//-----tablet -tab-wrapper
 
+//-----tablet -tab-wrapper
+#box2 {
+    width: 100%;
+}
 #box1 {
+    transform: translateY(100px);
     .container {
         width: 100vw;
         .wrap {

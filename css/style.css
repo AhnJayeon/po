@@ -1041,44 +1041,108 @@ body {
     margin-top: -90px;
   }
 }
-.gallery2 #box1 {
+.gallery2 {
   width: 100%;
-}
-.gallery2 #box1 .container {
-  width: 1180px;
-  margin: 50px auto;
+  height: 100%;
   position: relative;
 }
-.gallery2 #box1 .container h1 {
+.gallery2 #box2 {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+.gallery2 #box2 h1 {
+  font: bold 30px/1 "arial";
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 220px;
+  z-index: 5;
+}
+.gallery2 #box2 .showBox {
+  width: 60vw;
+  height: 50vw;
+  position: absolute;
+  top: 180px;
+  left: 200px;
+}
+.gallery2 #box2 .showBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery2 #box2 .controls {
+  width: 40%;
+  padding: 50px;
+  background: rgba(1, 130, 119, 0.7);
+  position: absolute;
+  right: 185px;
+  top: 50px;
+}
+.gallery2 #box2 .controls ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery2 #box2 .controls ul li {
+  float: left;
+  margin-right: 20px;
+}
+.gallery2 #box2 .controls ul li a {
+  font: bold 12px/1 "arial";
+  color: #777;
+}
+.gallery2 #box2 .controls ul li.on a {
+  color: #fff;
+}
+.gallery2 #box2 .controls div {
+  margin: 20px;
+  font-size: 14px;
+  color: #888;
+}
+.gallery2 #box2 .controls div strong {
+  font-size: 40px;
+  color: #fff;
+}
+
+#box1 {
+  width: 100%;
+  transform: translateY(900px);
+}
+#box1 .container {
+  width: 1180px;
+  margin: 50px auto;
+}
+#box1 .container h1 {
   font: 2.8vw "Fredoka One", cursive;
   text-align: center;
   margin-bottom: 40px;
 }
-.gallery2 #box1 .container .wrap {
+#box1 .container .wrap {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.gallery2 #box1 .container .wrap article {
+#box1 .container .wrap article {
   width: 23%;
   border: 1px solid #999;
   margin: 1% 1%;
   padding: 20px;
 }
-.gallery2 #box1 .container .wrap .pic {
+#box1 .container .wrap .pic {
   width: 100%;
   height: 200px;
   background-color: #444;
   margin-bottom: 20px;
 }
-.gallery2 #box1 .container .wrap h2 {
+#box1 .container .wrap h2 {
   font: 1.4vw "Noto Sans", sans-serif;
 }
-.gallery2 #box1 .container .wrap p {
+#box1 .container .wrap p {
   font: bold 1vw "Yanone Kaffeesatz", sans-serif;
 }
-.gallery2 #box1 .container .wrap a {
+#box1 .container .wrap a {
   font: 1vw "Noto Sans", sans-serif;
   color: #333;
 }
@@ -1088,37 +1152,11 @@ body {
     width: 100%;
     height: 100vh;
   }
-  body #header_sub .container {
-    width: 100vw;
-    height: 100vh;
-    margin-left: 30px;
+  body #box2 {
+    width: 100%;
   }
-  body #header_sub .container .menu_web {
-    display: none;
-  }
-  body #header_sub .container form .wrap {
-    width: 80%;
-    margin: 12px auto;
-    position: absolute;
-  }
-  body #header_sub .container form .wrap img {
-    position: absolute;
-    top: 15px;
-    right: 140px;
-  }
-  body #header_sub .container .f_box {
-    display: none;
-  }
-  body #header_sub .container .menuMo {
-    display: block;
-  }
-  body #header_sub .container .btnCall {
-    display: block;
-    background-color: #ccc;
-    padding: 20px 20px;
-    border-radius: 10px;
-    top: 40px;
-    position: fixed;
+  body #box1 {
+    transform: translateY(100px);
   }
   body #box1 .container {
     width: 100vw;
@@ -2113,7 +2151,7 @@ body {
   color: #fff;
 }
 .profile .inner .atc_box h4 {
-  font-size: clamp(1.4rem, 0.6rem + 10vw, 2rem);
+  font-size: clamp(1.3rem, 0.5rem + 10vw, 2rem);
   font-family: "Fredoka One", cursive;
   margin: 15px 0 20px;
   font-weight: normal;
@@ -2146,13 +2184,25 @@ body {
   }
 }
 @media screen and (max-width: 539px) {
+  .profile {
+    margin-top: -50px;
+  }
   .profile .inner {
     display: block;
     width: 100%;
+    height: 100%;
+    transform: translateY(-50px);
   }
   .profile .inner .atc_box {
-    height: 50%;
+    height: 25%;
     width: 90%;
+    margin-bottom: 1%;
+  }
+  .profile .inner .atc_box i {
+    font-size: 20px;
+  }
+  .profile .inner .atc_box:nth-of-type(2), .profile .inner .atc_box:nth-of-type(3) {
+    height: 32%;
   }
 }
 #m_util {
