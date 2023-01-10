@@ -26,14 +26,17 @@
                     height: 100%;
                     object-fit: cover;
                 }
+                
             }
             .con {
                 width: 100%;
-                height: 34%;
+                height: 37%;
                 padding: 2%;
+                background-color: $shade0;
+                
                 h2 {
                     font: bold 1.4vw 'Noto Sans', sans-serif;
-                    color: $shade0;
+                    color: #fff;
                     margin-bottom: 1%;
                 }
                 p {
@@ -69,12 +72,12 @@
             }
         }
     }
-    .vidList0 {
-        position: absolute;
-        width: 1180px;
-        top: 0;
-        left: 0;
-    }
+    // .vidList0 {
+    //     position: absolute;
+    //     width: 1180px;
+    //     top: 0;
+    //     left: 0;
+    // }
 } 
 @media screen and (max-width: $tablet) {
     .vidList {
